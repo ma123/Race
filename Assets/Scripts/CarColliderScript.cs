@@ -7,10 +7,6 @@ public class CarColliderScript : MonoBehaviour {
 	public AudioClip explosionClips;
 	public AudioClip pickupCoinClips;
 
-	void OnCollisionEnter2D(Collision2D coll) {
-
-	}
-
 	void OnTriggerEnter2D(Collider2D coll) {
 		if(coll.GetComponent<Collider2D>().CompareTag("Coin")) {
 			GameObject coin = coll.GetComponent<Collider2D>().gameObject;

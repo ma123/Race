@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\PathScript.cs" />
      <Compile Include="Assets\Scripts\PathScriptLine.cs" />
      <Compile Include="Assets\Scripts\ReactionFromPanelScript.cs" />
+     <Compile Include="Assets\TopCarColliderScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
