@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CameraFollowScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\PathScript.cs" Line="56" Column="58" />
-      <File FileName="Assets\Scripts\CameraFollowScript.cs" Line="27" Column="23" />
+      <File FileName="Assets\Scripts\CameraFollowScript.cs" Line="21" Column="1" />
+      <File FileName="Assets\Scripts\ReactionFromPanelScript.cs" Line="39" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

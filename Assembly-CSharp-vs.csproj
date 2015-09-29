@@ -47,9 +47,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollowScript.cs" />
+     <Compile Include="Assets\Scripts\CarColliderScript.cs" />
      <Compile Include="Assets\Scripts\CarMove.cs" />
+     <Compile Include="Assets\Scripts\CoinScript.cs" />
+     <Compile Include="Assets\Scripts\LevelSelector\ControlLevelSelectorScript.cs" />
+     <Compile Include="Assets\Scripts\LevelSelector\LevelSelectionScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\PanelManagerScript.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\ReactionScript.cs" />
+     <Compile Include="Assets\Scripts\MoneyScript.cs" />
      <Compile Include="Assets\Scripts\PathScript.cs" />
      <Compile Include="Assets\Scripts\PathScriptLine.cs" />
+     <Compile Include="Assets\Scripts\ReactionFromPanelScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

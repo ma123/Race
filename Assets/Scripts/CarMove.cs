@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CarMove : MonoBehaviour {
-	public Rigidbody2D rigidBodyCar;
+	private Rigidbody2D rigidBodyCar;
 	public float maxSpeed = 7f; // max rychlost ktoru moze ziskat hrac na osi x
 	public float moveSpeed = 3f;
 
