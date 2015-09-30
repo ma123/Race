@@ -7,6 +7,7 @@ public class TopCarColliderScript : MonoBehaviour {
 	public AudioClip explosionClips;
 
 	void OnCollisionEnter2D(Collision2D coll) {
+		print (coll);
 		if(coll != null) {
 			print ("kolizia na streche");
 			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
