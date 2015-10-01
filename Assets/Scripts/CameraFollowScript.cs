@@ -3,18 +3,20 @@ using System.Collections;
 
 public class CameraFollowScript : MonoBehaviour {
 	public Transform observingObject;
+	private Vector3 pos;
+	private Vector3 newPos;
 	
-	void Update()
-	{
+	void Update() {
 		if (observingObject == null)
 			return;
 		
-		Vector3 pos = transform.position;
-		Vector3 newPos = observingObject.position;
-		
+		pos = transform.position;
+		newPos = observingObject.position;
+
+		newPos.x = observingObject.position.x + 6f; // posun auta v kamere dozadu
 		newPos.y = pos.y;
 		newPos.z = pos.z;
 		
-		transform.position = Vector3.Lerp(transform.position, newPos, 1f);
+		transform.position = Vector3.Lerp(transform.position, newPos, 1f); // interpolacia starej pozicie kamery s novou
 	}
 }

@@ -11,10 +11,7 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) { 
-			GameObject pathObject = GameObject.Find("BuildingPath"); // najdenie objektu Building path
-			pathObject.GetComponent<PathScript>().SetDrawPermision(false); // nastavenie false abz nebolo mozne kreslit za panelom 
 			Time.timeScale = 0; // pauznutie hry
-		
 
 			winPanel.SetActive(true);
 			GameObject btnInteractable = GameObject.Find("NextLvlBtn");
@@ -43,7 +40,5 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		print ("backToGame");
 		Time.timeScale = 1; // spustenie hry
 		winPanel.SetActive(false);
-		GameObject pathObject = GameObject.Find("BuildingPath");
-		pathObject.GetComponent<PathScript>().SetDrawPermision(true);
 	}
 }
