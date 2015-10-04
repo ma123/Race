@@ -39,11 +39,12 @@ public class PathScript : MonoBehaviour {
 					if(drawPoints.Count > 0) { // pokial je drawPoint prazdny collider sa nevytvara
 						AddColliderToDraw(); // pridanie collideru pre ciaru
 					}
+					drawPoints.Clear ();
 					inkStackObject.GetComponent<InkStackScript>().Hit(lineLength);
 
 					lineStack -= lineLength; // odpocitanie od zasobniku
 					lineLength = 0f; // vynulovanie dlzky ciary pre meranie novej ciary
-					drawPoints.Clear ();
+
 				}
 				
 				if(isMousePressed) {
