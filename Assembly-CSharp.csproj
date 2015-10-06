@@ -45,7 +45,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\LinePrefabScript.cs" />
      <Compile Include="Assets\Scripts\CameraFollowScript.cs" />
      <Compile Include="Assets\Scripts\CarColliderScript.cs" />
      <Compile Include="Assets\Scripts\CarMove.cs" />
@@ -54,6 +53,7 @@
      <Compile Include="Assets\Scripts\InkStackScript.cs" />
      <Compile Include="Assets\Scripts\LevelSelector\ControlLevelSelectorScript.cs" />
      <Compile Include="Assets\Scripts\LevelSelector\LevelSelectionScript.cs" />
+     <Compile Include="Assets\Scripts\LinePrefabScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu\PanelManagerScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ReactionScript.cs" />
      <Compile Include="Assets\Scripts\MoneyScript.cs" />
@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\PathScript.cs" />
      <Compile Include="Assets\Scripts\ReactionFromPanelScript.cs" />
      <Compile Include="Assets\Scripts\TopCarColliderScript.cs" />
+     <None Include="Assets\Graphics\InkScapeGraphics\RaceGame.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
