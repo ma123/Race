@@ -5,6 +5,7 @@ public class CameraFollowScript : MonoBehaviour {
 	public Transform observingObject;
 	private Vector3 pos;
 	private Vector3 newPos;
+	public float offSet = 8f;
 	
 	void Update() {
 		if (observingObject == null)
@@ -13,7 +14,7 @@ public class CameraFollowScript : MonoBehaviour {
 		pos = transform.position;
 		newPos = observingObject.position;
 
-		newPos.x = observingObject.position.x + 6f; // posun auta v kamere dozadu
+		newPos.x = observingObject.position.x + offSet; // posun auta v kamere dozadu
 		newPos.y = pos.y;
 		newPos.z = pos.z;
 		

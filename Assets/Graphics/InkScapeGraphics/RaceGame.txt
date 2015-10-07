@@ -1,6 +1,6 @@
-- spodnı contakt listener  Y.................
+- spodn? contakt listener  Y.................
 - po prejdenie nim vyskoci game over Y................
-- vrchnı panel nereagova iba 
+- vrchn? panel nereagova? iba 
 - spodok a vrch auta Y......................
 - posun auta v kamere dozadu Y.................
 - pridanie zbieranie coin Y...................
@@ -9,19 +9,19 @@
 - main menu - spustenie levelov
 	    - spustenie challange modu
 	    - skore dlzka prejdena v challenge mode a podobne
-	    - generator novıch aut 
-	    - obchod aut a inıch vecí
-- level selector vymyslie ako vytvorit viac 
+	    - generator nov?ch aut 
+	    - obchod aut a in?ch vec?
+- level selector vymyslie? ako vytvorit viac 
 - auto zacina dolu na ceste Y....................
+- tazisko auta vzadu Y....................
 - 60 levelov 
-- roèné obdobia levely 
-- dynamické prekáky
+- ro?n? obdobia levely 
+- dynamick? prek??ky
 - upravit collider
 - parallax background
-- tazisko auta vzadu
 - zmena materialu cesty
 - zvuky - explozia
-        - vıhra
+        - v?hra
         - dosiel atrament
         - pick coin
         - hudba pozadie
