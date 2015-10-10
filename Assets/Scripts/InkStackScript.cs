@@ -2,44 +2,48 @@
 using System.Collections;
 
 public class InkStackScript : MonoBehaviour {
-	private float inkStack = 100f;
-	private float initSize;
-	private Transform transformHealth;
+	private static float inkStack = 100f;
+	private static float initSize;
+	private static Transform transformHealth;
 	
 	// Use this for initialization
 	void Start () {
-		print (inkStack);
+		inkStack = 100f;
 		transformHealth = transform;
 		initSize = transformHealth.localScale.x;  // zisti pociatocnu velkost health baru
-		RefreshHealthBar ();
+		RefreshInkBar ();
 	}
 	
-	public void Hit(float removeInk) {
+	public static void Hit(float removeInk) {
 		inkStack -= removeInk;
 		
 		if(inkStack <= 0f) {
 			inkStack = 0f;
 		}
 		
-		RefreshHealthBar ();
+		RefreshInkBar ();
 	}
 	
-	public void AddInk(int addedHealth) {
-		inkStack += addedHealth;
+	public static void AddInk(float addedInk) {
+		inkStack += addedInk;
 		if(inkStack >= 100f) {
 			inkStack = 100f;
 		}
 		
-		RefreshHealthBar ();
+		RefreshInkBar ();
 	}
 	
-	private void RefreshHealthBar() {
+	private static void RefreshInkBar() {
 		Vector3 scale = transformHealth.localScale;
 		scale.x = (initSize / 100) * inkStack;
 		transformHealth.localScale = scale;
 	}
 
-	public void SetInkStack(float inkStack) {
-		this.inkStack = inkStack;
+	public static float GetInkStack() {
+		return inkStack;
 	}
+
+	/*public static void SetInkStack(float inkStack) {
+		this.inkStack = inkStack;
+	}*/
 }

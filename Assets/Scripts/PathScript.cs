@@ -14,19 +14,20 @@ public class PathScript : MonoBehaviour {
 	private Vector2 endPos;	// End position of line
 	private LineRenderer line; // Reference to LineRenderer
 	private float lineLength = 0f; 
-	public float lineStack = 100f;
-	public GameObject inkStackObject;
+	public float lineStack = 0f;
 	
 	void Start () {
-		inkStackObject = GameObject.FindGameObjectWithTag ("InkStack");
-		inkStackObject.GetComponent<InkStackScript> ().SetInkStack (lineStack);
+		lineStack = InkStackScript.GetInkStack ();
+		print (lineStack);
 		isMousePressed = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Time.timeScale != 0) {
-			if(lineStack >= 0f) {
+			lineStack = InkStackScript.GetInkStack ();
+			print (lineStack);
+			if(lineStack > 0f) {
 				if(Input.GetMouseButtonDown(0)) {
 					isMousePressed = true;
 
@@ -40,11 +41,10 @@ public class PathScript : MonoBehaviour {
 						AddColliderToDraw(); // pridanie collideru pre ciaru
 					}
 					drawPoints.Clear ();
-					inkStackObject.GetComponent<InkStackScript>().Hit(lineLength);
+					InkStackScript.Hit(lineLength);
 
 					lineStack -= lineLength; // odpocitanie od zasobniku
 					lineLength = 0f; // vynulovanie dlzky ciary pre meranie novej ciary
-
 				}
 				
 				if(isMousePressed) {
