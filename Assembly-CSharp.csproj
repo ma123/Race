@@ -45,24 +45,24 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GumScript.cs" />
-     <Compile Include="Assets\InkBottleScript.cs" />
-     <Compile Include="Assets\Scripts\CameraFollowScript.cs" />
-     <Compile Include="Assets\Scripts\CarColliderScript.cs" />
-     <Compile Include="Assets\Scripts\CarMove.cs" />
-     <Compile Include="Assets\Scripts\CoinScript.cs" />
-     <Compile Include="Assets\Scripts\HealthScript.cs" />
-     <Compile Include="Assets\Scripts\InkStackScript.cs" />
+     <Compile Include="Assets\Scripts\Game\CameraFollowScript.cs" />
+     <Compile Include="Assets\Scripts\Game\CarColliderScript.cs" />
+     <Compile Include="Assets\Scripts\Game\CarMove.cs" />
+     <Compile Include="Assets\Scripts\Game\Collection\CoinScript.cs" />
+     <Compile Include="Assets\Scripts\Game\Collection\GumScript.cs" />
+     <Compile Include="Assets\Scripts\Game\Collection\InkBottleScript.cs" />
+     <Compile Include="Assets\Scripts\Game\HealthScript.cs" />
+     <Compile Include="Assets\Scripts\Game\InkStackScript.cs" />
+     <Compile Include="Assets\Scripts\Game\LinePrefabScript.cs" />
+     <Compile Include="Assets\Scripts\Game\MoneyScript.cs" />
+     <Compile Include="Assets\Scripts\Game\ParallaxBackgroundScript.cs" />
+     <Compile Include="Assets\Scripts\Game\PathScript.cs" />
+     <Compile Include="Assets\Scripts\Game\ReactionFromPanelScript.cs" />
+     <Compile Include="Assets\Scripts\Game\TopCarColliderScript.cs" />
      <Compile Include="Assets\Scripts\LevelSelector\ControlLevelSelectorScript.cs" />
      <Compile Include="Assets\Scripts\LevelSelector\LevelSelectionScript.cs" />
-     <Compile Include="Assets\Scripts\LinePrefabScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu\PanelManagerScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ReactionScript.cs" />
-     <Compile Include="Assets\Scripts\MoneyScript.cs" />
-     <Compile Include="Assets\Scripts\ParallaxBackgroundScript.cs" />
-     <Compile Include="Assets\Scripts\PathScript.cs" />
-     <Compile Include="Assets\Scripts\ReactionFromPanelScript.cs" />
-     <Compile Include="Assets\Scripts\TopCarColliderScript.cs" />
      <None Include="Assets\Graphics\InkScapeGraphics\RaceGame.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
