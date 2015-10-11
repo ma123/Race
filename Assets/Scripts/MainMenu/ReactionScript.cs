@@ -4,8 +4,8 @@ using System.Collections;
 
 public class ReactionScript : MonoBehaviour {
 	public void ClickedLevelSelector() {
-		print ("clicked load LevelSelector");
-		Application.LoadLevel ("LevelSelectorScene");
+		print ("clicked load SelectWorldScene");
+		Application.LoadLevel ("SelectWorldScene");
 	}
 
 	public void ClickedChallenge() {

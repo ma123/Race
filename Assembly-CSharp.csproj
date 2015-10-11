@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GoalScript.cs" />
      <Compile Include="Assets\Scripts\Game\CameraFollowScript.cs" />
      <Compile Include="Assets\Scripts\Game\CarColliderScript.cs" />
      <Compile Include="Assets\Scripts\Game\CarMove.cs" />
@@ -59,22 +60,18 @@
      <Compile Include="Assets\Scripts\Game\PathScript.cs" />
      <Compile Include="Assets\Scripts\Game\ReactionFromPanelScript.cs" />
      <Compile Include="Assets\Scripts\Game\TopCarColliderScript.cs" />
-     <Compile Include="Assets\Scripts\LevelSelector\ControlLevelSelectorScript.cs" />
+     <Compile Include="Assets\Scripts\LevelSelector\LevelSelectScript.cs" />
      <Compile Include="Assets\Scripts\LevelSelector\LevelSelectionScript.cs" />
+     <Compile Include="Assets\Scripts\LevelSelector\LockLevelScript.cs" />
+     <Compile Include="Assets\Scripts\LevelSelector\WorldSelectScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu\PanelManagerScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ReactionScript.cs" />
      <None Include="Assets\Graphics\InkScapeGraphics\RaceGame.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

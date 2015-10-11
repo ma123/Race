@@ -18,7 +18,6 @@ public class PathScript : MonoBehaviour {
 	
 	void Start () {
 		lineStack = InkStackScript.GetInkStack ();
-		print (lineStack);
 		isMousePressed = false;
 	}
 	
@@ -26,7 +25,6 @@ public class PathScript : MonoBehaviour {
 	void Update () {
 		if(Time.timeScale != 0) {
 			lineStack = InkStackScript.GetInkStack ();
-			print (lineStack);
 			if(lineStack > 0f) {
 				if(Input.GetMouseButtonDown(0)) {
 					isMousePressed = true;

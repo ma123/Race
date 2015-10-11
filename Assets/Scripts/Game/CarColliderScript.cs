@@ -25,6 +25,12 @@ public class CarColliderScript : MonoBehaviour {
 			//AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
 			gum.SendMessage ("GumReact");
 		}
+
+		if(coll.GetComponent<Collider2D>().CompareTag("Goal")) {
+			GameObject goal = coll.GetComponent<Collider2D>().gameObject;
+			//AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
+			goal.SendMessage ("GoalReact");
+		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("DownCollider")) {
 			print ("down collider");
