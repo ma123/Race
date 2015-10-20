@@ -16,7 +16,11 @@
 - ro?n? obdobia levely 
 - dynamick? prek??ky
 - upravit collider
-- parallax background
+- zvacsit pozadie do vysky
+- pridat pozadiu horny a spodný colider
+- odstranit horny spodný colider z kamery
+- pohyb auta po y osy
+- parallax background iba v challenge mode
 - zmena materialu cesty
 - zvuky - explozia
         - v?hra

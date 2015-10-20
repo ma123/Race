@@ -42,5 +42,16 @@ public class CarColliderScript : MonoBehaviour {
 			GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
 			btnInteractableBack.GetComponent<Button>().interactable = false;
 		}
+
+		if(coll.GetComponent<Collider2D>().CompareTag("TopCollider")) {
+			print ("top collider");
+			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
+			Time.timeScale = 0; // pauznutie hry
+			winPanel.SetActive(true);
+			GameObject btnInteractable = GameObject.Find("NextLvlBtn");
+			btnInteractable.GetComponent<Button>().interactable = false;
+			GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
+			btnInteractableBack.GetComponent<Button>().interactable = false;
+		}
 	}
 }

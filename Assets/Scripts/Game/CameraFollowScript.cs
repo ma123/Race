@@ -15,7 +15,7 @@ public class CameraFollowScript : MonoBehaviour {
 		newPos = observingObject.position;
 
 		newPos.x = observingObject.position.x + offSet; // posun auta v kamere dozadu
-		newPos.y = pos.y;
+		//newPos.y = pos.y;
 		newPos.z = pos.z;
 		
 		transform.position = Vector3.Lerp(transform.position, newPos, 1f); // interpolacia starej pozicie kamery s novou
