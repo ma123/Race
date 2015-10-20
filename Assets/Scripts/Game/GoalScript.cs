@@ -2,17 +2,20 @@
 using System.Collections;
 
 public class GoalScript : MonoBehaviour {
+	private GameObject reactionFromPanel;
 	protected string currentLevel;
 	protected int worldIndex;
 	protected int levelIndex;
 	// Use this for initialization
 	void Start () {
 		currentLevel = Application.loadedLevelName;
+		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
 	}
 
 	public void GoalReact () {
 		print ("destroy object Goal");
-		UnlockLevels ();
+		reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(3); // parameter 3 pre winn stav 
+		//UnlockLevels ();
 		Destroy (gameObject);
 	}
 

@@ -1,11 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game\CarColliderScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Graphics\InkScapeGraphics\RaceGame.txt">
     <Files>
-      <File FileName="Assets\Scripts\Game\TopCarColliderScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game\CarColliderScript.cs" Line="51" Column="15" />
-      <File FileName="Assets\Graphics\InkScapeGraphics\RaceGame.txt" Line="23" Column="43" />
-      <File FileName="Assets\Scripts\Game\CameraFollowScript.cs" Line="18" Column="5" />
+      <File FileName="Assets\Scripts\Game\GoalScript.cs" Line="19" Column="24" />
+      <File FileName="Assets\Scripts\Game\ReactionFromPanelScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game\CarColliderScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Graphics\InkScapeGraphics\RaceGame.txt" Line="20" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

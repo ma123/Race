@@ -3,22 +3,19 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class TopCarColliderScript : MonoBehaviour {
-	public GameObject winPanel;
+	private GameObject reactionFromPanel;
 	public AudioClip explosionClips;
+
+	void Start() {
+		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
+	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if(coll != null) {
 			print ("kolizia na streche");
 			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-			Time.timeScale = 0; // pauznutie hry
-			winPanel.SetActive(true);
-			GameObject btnInteractable = GameObject.Find("NextLvlBtn");
-			btnInteractable.GetComponent<Button>().interactable = false;
-			GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
-			btnInteractableBack.GetComponent<Button>().interactable = false;
+			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 		}	
-
-			
 	}
 
 	/*void OnTriggerEnter2D(Collider2D coll) {
@@ -26,35 +23,6 @@ public class TopCarColliderScript : MonoBehaviour {
 			GameObject coin = coll.GetComponent<Collider2D>().gameObject;
 			AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
 			coin.SendMessage ("CoinReact");
-		}
-		
-		if(coll.GetComponent<Collider2D>().CompareTag("InkBottle")) {
-			GameObject inkBottle = coll.GetComponent<Collider2D>().gameObject;
-			//AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
-			inkBottle.SendMessage ("InkBottleReact");
-		}
-		
-		if(coll.GetComponent<Collider2D>().CompareTag("Gum")) {
-			GameObject gum = coll.GetComponent<Collider2D>().gameObject;
-			//AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
-			gum.SendMessage ("GumReact");
-		}
-		
-		if(coll.GetComponent<Collider2D>().CompareTag("Goal")) {
-			GameObject goal = coll.GetComponent<Collider2D>().gameObject;
-			//AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
-			goal.SendMessage ("GoalReact");
-		}
-		
-		if(coll.GetComponent<Collider2D>().CompareTag("DownCollider")) {
-			print ("down collider");
-			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-			Time.timeScale = 0; // pauznutie hry
-			winPanel.SetActive(true);
-			GameObject btnInteractable = GameObject.Find("NextLvlBtn");
-			btnInteractable.GetComponent<Button>().interactable = false;
-			GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
-			btnInteractableBack.GetComponent<Button>().interactable = false;
 		}
 	}*/
 }

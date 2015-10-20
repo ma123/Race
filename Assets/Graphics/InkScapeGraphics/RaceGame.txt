@@ -4,29 +4,33 @@
 - posun auta v kamere dozadu Y.................
 - pridanie zbieranie coin Y...................
 - ukoncenie ano nie Y.......................
+- level selector vymyslie? ako vytvorit viac 
+- auto zacina dolu na ceste Y....................
+- tazisko auta vzadu Y....................
+- zvacsit pozadie do vysky  Y......................
+- pridat pozadiu horny a spodný colider Y..........................
+- odstranit horny spodný colider z kamery Y..........................
+- pohyb auta po y osy Y.........................
+- uprava winnPanelu abz bralo iba z objektu reactionFromPanel Y..................
+- parallax background iba v challenge mode
+- 60 levelov 
+- ro?n? obdobia levely 
+- dynamick? prek??ky
+- upravit collider
+- zmena materialu cesty
+
+
+- zvuky - explozia
+        - vyhra
+        - dosiel atrament
+        - pick coin
+        - hudba pozadie
+        
 - main menu - spustenie levelov
 	    - spustenie challange modu
 	    - skore dlzka prejdena v challenge mode a podobne
 	    - generator nov?ch aut 
 	    - obchod aut a in?ch vec?
-- level selector vymyslie? ako vytvorit viac 
-- auto zacina dolu na ceste Y....................
-- tazisko auta vzadu Y....................
-- 60 levelov 
-- ro?n? obdobia levely 
-- dynamick? prek??ky
-- upravit collider
-- zvacsit pozadie do vysky
-- pridat pozadiu horny a spodný colider
-- odstranit horny spodný colider z kamery
-- pohyb auta po y osy
-- parallax background iba v challenge mode
-- zmena materialu cesty
-- zvuky - explozia
-        - v?hra
-        - dosiel atrament
-        - pick coin
-        - hudba pozadie
         
 
 

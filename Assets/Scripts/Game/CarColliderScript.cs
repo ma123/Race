@@ -3,9 +3,13 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class CarColliderScript : MonoBehaviour {
-	public GameObject winPanel;
+	private GameObject reactionFromPanel;
 	public AudioClip explosionClips;
 	public AudioClip pickupCoinClips;
+
+	void Start() {
+		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
+	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if(coll.GetComponent<Collider2D>().CompareTag("Coin")) {
@@ -35,23 +39,13 @@ public class CarColliderScript : MonoBehaviour {
 		if(coll.GetComponent<Collider2D>().CompareTag("DownCollider")) {
 			print ("down collider");
 			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-			Time.timeScale = 0; // pauznutie hry
-			winPanel.SetActive(true);
-			GameObject btnInteractable = GameObject.Find("NextLvlBtn");
-			btnInteractable.GetComponent<Button>().interactable = false;
-			GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
-			btnInteractableBack.GetComponent<Button>().interactable = false;
+			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 		}
 
 		if(coll.GetComponent<Collider2D>().CompareTag("TopCollider")) {
 			print ("top collider");
 			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-			Time.timeScale = 0; // pauznutie hry
-			winPanel.SetActive(true);
-			GameObject btnInteractable = GameObject.Find("NextLvlBtn");
-			btnInteractable.GetComponent<Button>().interactable = false;
-			GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
-			btnInteractableBack.GetComponent<Button>().interactable = false;
+			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 		}
 	}
 }
