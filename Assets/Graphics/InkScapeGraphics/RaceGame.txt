@@ -18,6 +18,8 @@
 - dynamick? prek??ky
 - upravit collider
 - zmena materialu cesty
+- ak zastavi na cas t tak prehrava
+- collider v kolesach ked detekuje ciaru
 
 
 - zvuky - explozia
