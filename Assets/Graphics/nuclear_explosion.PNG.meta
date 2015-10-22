@@ -1,0 +1,441 @@
+fileFormatVersion: 2
+guid: b5691fc0449618a48a4fd833b5d36759
+timeCreated: 1445431111
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: nuclear_explosion_0
+    21300002: nuclear_explosion_1
+    21300004: nuclear_explosion_2
+    21300006: nuclear_explosion_3
+    21300008: nuclear_explosion_4
+    21300010: nuclear_explosion_5
+    21300012: nuclear_explosion_6
+    21300014: nuclear_explosion_7
+    21300016: nuclear_explosion_8
+    21300018: nuclear_explosion_9
+    21300020: nuclear_explosion_10
+    21300022: nuclear_explosion_11
+    21300024: nuclear_explosion_12
+    21300026: nuclear_explosion_13
+    21300028: nuclear_explosion_14
+    21300030: nuclear_explosion_15
+    21300032: nuclear_explosion_16
+    21300034: nuclear_explosion_17
+    21300036: nuclear_explosion_18
+    21300038: nuclear_explosion_19
+    21300040: nuclear_explosion_20
+    21300042: nuclear_explosion_21
+    21300044: nuclear_explosion_22
+    21300046: nuclear_explosion_23
+    21300048: nuclear_explosion_24
+    21300050: nuclear_explosion_25
+    21300052: nuclear_explosion_26
+    21300054: nuclear_explosion_27
+    21300056: nuclear_explosion_28
+    21300058: nuclear_explosion_29
+    21300060: nuclear_explosion_30
+    21300062: nuclear_explosion_31
+    21300064: nuclear_explosion_32
+    21300066: nuclear_explosion_33
+    21300068: nuclear_explosion_34
+    21300070: nuclear_explosion_35
+    21300072: nuclear_explosion_36
+    21300074: nuclear_explosion_37
+    21300076: nuclear_explosion_38
+    21300078: nuclear_explosion_39
+    21300080: nuclear_explosion_40
+    21300082: nuclear_explosion_41
+    21300084: nuclear_explosion_42
+    21300086: nuclear_explosion_43
+    21300088: nuclear_explosion_44
+    21300090: nuclear_explosion_45
+    21300092: nuclear_explosion_46
+    21300094: nuclear_explosion_47
+    21300096: nuclear_explosion_48
+    21300098: nuclear_explosion_49
+    21300100: nuclear_explosion_50
+    21300102: nuclear_explosion_51
+    21300104: nuclear_explosion_52
+    21300106: nuclear_explosion_53
+    21300108: nuclear_explosion_54
+    21300110: nuclear_explosion_55
+    21300112: nuclear_explosion_56
+    21300114: nuclear_explosion_57
+    21300116: nuclear_explosion_58
+    21300118: nuclear_explosion_59
+    21300120: nuclear_explosion_60
+    21300122: nuclear_explosion_61
+    21300124: nuclear_explosion_62
+    21300126: nuclear_explosion_63
+    21300128: nuclear_explosion_64
+    21300130: nuclear_explosion_65
+    21300132: nuclear_explosion_66
+    21300134: nuclear_explosion_67
+    21300136: nuclear_explosion_68
+    21300138: nuclear_explosion_69
+    21300140: nuclear_explosion_70
+    21300142: nuclear_explosion_71
+    21300144: nuclear_explosion_72
+    21300146: nuclear_explosion_73
+    21300148: nuclear_explosion_74
+    21300150: nuclear_explosion_75
+    21300152: nuclear_explosion_76
+    21300154: nuclear_explosion_77
+    21300156: nuclear_explosion_78
+    21300158: nuclear_explosion_79
+    21300160: nuclear_explosion_80
+    21300162: nuclear_explosion_81
+    21300164: nuclear_explosion_82
+    21300166: nuclear_explosion_83
+    21300168: nuclear_explosion_84
+    21300170: nuclear_explosion_85
+    21300172: nuclear_explosion_86
+    21300174: nuclear_explosion_87
+    21300176: nuclear_explosion_88
+    21300178: nuclear_explosion_89
+    21300180: nuclear_explosion_90
+    21300182: nuclear_explosion_91
+    21300184: nuclear_explosion_92
+    21300186: nuclear_explosion_93
+    21300188: nuclear_explosion_94
+    21300190: nuclear_explosion_95
+    21300192: nuclear_explosion_96
+    21300194: nuclear_explosion_97
+    21300196: nuclear_explosion_98
+    21300198: nuclear_explosion_99
+    21300200: nuclear_explosion_100
+    21300202: nuclear_explosion_101
+    21300204: nuclear_explosion_102
+    21300206: nuclear_explosion_103
+    21300208: nuclear_explosion_104
+    21300210: nuclear_explosion_105
+    21300212: nuclear_explosion_106
+    21300214: nuclear_explosion_107
+    21300216: nuclear_explosion_108
+    21300218: nuclear_explosion_109
+    21300220: nuclear_explosion_110
+    21300222: nuclear_explosion_111
+    21300224: nuclear_explosion_112
+    21300226: nuclear_explosion_113
+    21300228: nuclear_explosion_114
+    21300230: nuclear_explosion_115
+    21300232: nuclear_explosion_116
+    21300234: nuclear_explosion_117
+    21300236: nuclear_explosion_118
+    21300238: nuclear_explosion_119
+    21300240: nuclear_explosion_120
+    21300242: nuclear_explosion_121
+    21300244: nuclear_explosion_122
+    21300246: nuclear_explosion_123
+    21300248: nuclear_explosion_124
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: nuclear_explosion_0
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 946
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_1
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 943
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_2
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 946
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 945
+        width: 55
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_4
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 945
+        width: 75
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 713
+        width: 95
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_6
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 713
+        width: 118
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_7
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 714
+        width: 132
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 712
+        width: 142
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_9
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 714
+        width: 151
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 483
+        width: 175
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 482
+        width: 189
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_12
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 482
+        width: 191
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_13
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 483
+        width: 207
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_14
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 482
+        width: 224
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 252
+        width: 227
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_16
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 251
+        width: 247
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_17
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 253
+        width: 252
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_18
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 255
+        width: 262
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_19
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 257
+        width: 280
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 25
+        width: 278
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_30
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 18
+        width: 250
+        height: 186
+      alignment: 9
+      pivot: {x: .499991864, y: .534573734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_33
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 23
+        width: 287
+        height: 187
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_40
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 18
+        width: 300
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_46
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 17
+        width: 292
+        height: 192
+      alignment: 9
+      pivot: {x: .640383422, y: .477539659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: nuclear_explosion_86
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 84
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
