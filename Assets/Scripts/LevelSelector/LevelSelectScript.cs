@@ -36,7 +36,7 @@ public class LevelSelectScript : MonoBehaviour {
 		for(int j = 1; j < LockLevelScript.levels; j++){
 			levelIndex = (j+1);
 			if((PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +levelIndex.ToString()))==1){
-				GameObject.Find("LockedLevel"+(j+1)).active = false;
+				GameObject.Find("LockedLevel"+(j+1)).SetActive(false);
 				Debug.Log ("Unlocked");
 			}
 		}

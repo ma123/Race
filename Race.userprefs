@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Plantopia\Assets\Scripts\Game\ReactionFromPanelScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game\CarColliderScript.cs">
     <Files>
-      <File FileName="..\Plantopia\Assets\Scripts\Game\ReactionFromPanelScript.cs" Line="19" Column="64" />
+      <File FileName="Assets\Graphics\InkScapeGraphics\RaceGame.txt" Line="27" Column="49" />
+      <File FileName="Assets\Scripts\Game\CarColliderScript.cs" Line="9" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

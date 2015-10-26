@@ -15,10 +15,18 @@ public class PathScript : MonoBehaviour {
 	private LineRenderer line; // Reference to LineRenderer
 	private float lineLength = 0f; 
 	public float lineStack = 0f;
+	private Color c1;
+	private Color c2;
+	private Color c3;
+	private Color c4;
 	
 	void Start () {
 		lineStack = InkStackScript.GetInkStack ();
 		isMousePressed = false;
+		c1 = new Color32 (254,224,32,200);
+		c2 = new Color32 (178,2,25,200);
+		c3 = new Color32 (0,156,184,255); 
+		c4 = new Color32 (0,102,51,255);
 	}
 	
 	// Update is called once per frame
@@ -32,6 +40,7 @@ public class PathScript : MonoBehaviour {
 					lineDrawPrefab = GameObject.Instantiate(lineDrawPrefabs) as GameObject;
 					lineRenderer = lineDrawPrefab.GetComponent<LineRenderer>();
 					lineRenderer.SetVertexCount(0);
+					lineRenderer.SetColors(c1, c2);
 
 				} else if(Input.GetMouseButtonUp(0)) {
 					isMousePressed = false;
@@ -40,6 +49,7 @@ public class PathScript : MonoBehaviour {
 					}
 					drawPoints.Clear ();
 					InkStackScript.Hit(lineLength);
+					lineRenderer.SetColors(c3, c4);
 
 					lineStack -= lineLength; // odpocitanie od zasobniku
 					lineLength = 0f; // vynulovanie dlzky ciary pre meranie novej ciary
@@ -70,3 +80,11 @@ public class PathScript : MonoBehaviour {
 		col.points = drawPoints.ToArray();
 	}
 }
+
+/*public Color c1 = Color.white;
+public Color c2 = new Color(1, 1, 1, 0);
+void Start() {
+	LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
+	lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
+	lineRenderer.SetColors(c1, c2);
+}*/

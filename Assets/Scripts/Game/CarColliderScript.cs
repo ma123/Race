@@ -6,6 +6,7 @@ public class CarColliderScript : MonoBehaviour {
 	private GameObject reactionFromPanel;
 	public AudioClip explosionClips;
 	public AudioClip pickupCoinClips;
+	public Animator anim;
 
 	void Start() {
 		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
@@ -38,14 +39,25 @@ public class CarColliderScript : MonoBehaviour {
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("DownCollider")) {
 			print ("down collider");
-			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+			DestroyCarAndWinnPanel();
 		}
 
 		if(coll.GetComponent<Collider2D>().CompareTag("TopCollider")) {
 			print ("top collider");
-			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+			DestroyCarAndWinnPanel();
 		}
 	}
+
+	public void DestroyCarAndWinnPanel() {
+		DestroyObject(GameObject.Find("Player"));
+		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
+		reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+	}
+
+	/*IEnumerator Wait() {
+		print(Time.time);
+		yield return new WaitForSeconds(0.3f);
+		reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+		print(Time.time);
+	}*/
 }
