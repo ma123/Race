@@ -6,6 +6,30 @@ public class CameraFollowScript : MonoBehaviour {
 	private Vector3 pos;
 	private Vector3 newPos;
 	public float offSet = 8f;
+	private int currentVehicle = 2;
+
+	void Start() {
+		GameObject playerParent = GameObject.Find ("Player");
+		Transform car = null;
+
+		switch(currentVehicle) {
+		case 1: 
+			car = playerParent.transform.Find("PlayerArmyCar");
+			car.gameObject.SetActive(true);
+			observingObject = car.transform;
+			break;
+		case 2: 
+			car = playerParent.transform.Find("PlayerSedanCar");
+			car.gameObject.SetActive(true);
+			observingObject = car.transform;
+			break;
+
+	    // TODO DALSIE AUTA 
+		default: 
+			break;
+		}
+	
+	}
 	
 	void Update() {
 		if (observingObject == null)

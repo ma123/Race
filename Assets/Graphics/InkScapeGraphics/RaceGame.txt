@@ -16,7 +16,9 @@
 - collider v kolesach ked detekuje ciaru Y....................
 - sedan car pripravit spolu s kolesami Y...................
 - zmena farby cesty pri vytvarani a vytvoreni Y..................
+- collection zbierame celym autom nie iba karoseriou Y.......................
 - problem s restartom a vyhadzovanim dead panelu 
+- pomala reakcia tlacitiek obcas ziadna preco?
 - animacia po prehre vybuch auta
 - system viacerych aut
 - asynchronne nacitanie sceny
@@ -27,7 +29,7 @@
 - animacia otacanie mince popripade nejaky pohyb
 - obchod s autami 
 - po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami 
-
+- najst font na pouzitie v celej hre
 
 
 
