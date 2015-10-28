@@ -9,10 +9,10 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 	public AudioClip explosionClips;
 	public AudioClip pickupCoinClips;
-	public Animator anim;
 
 	void Start() {
 		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
+		animation = GetComponent<Animation> ();
 	}
 
 
@@ -78,7 +78,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 	}
 	
 	public void DestroyCarAndWinnPanel() {
-		DestroyObject(GameObject.Find("Player"));
+		//DestroyObject(GameObject.Find("Player"));
 		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
 		reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 	}

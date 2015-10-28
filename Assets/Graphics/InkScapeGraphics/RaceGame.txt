@@ -31,6 +31,15 @@
 - po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami 
 - najst font na pouzitie v celej hre
 
+- mince
+- prekazky
+- utes startovaci
+- nakreslit mincu
+- nakreslit gumu 
+- nakreslit atrament
+- nakreslit indikator atramentu
+- 
+
 
 
 - zvuky - explozia

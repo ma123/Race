@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CameraFollowScript : MonoBehaviour {
-	public Transform observingObject;
+	private Transform observingObject;
 	private Vector3 pos;
 	private Vector3 newPos;
 	public float offSet = 8f;
