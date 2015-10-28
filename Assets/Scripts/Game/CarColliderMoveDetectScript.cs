@@ -12,7 +12,6 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 	void Start() {
 		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
-		animation = GetComponent<Animation> ();
 	}
 
 
