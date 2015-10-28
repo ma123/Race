@@ -12,7 +12,7 @@ public class WorldSelectScript : MonoBehaviour {
 
 	public void OpenGrasLandWorld(){
 		print ("Open grassLand");
-		Application.LoadLevel("GreenLandLevelsScene"); //load the level
+		Application.LoadLevel("World1"); //nacitanie sveta
 	}
 
 	// toto dalsie svety

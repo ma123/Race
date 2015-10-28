@@ -11,7 +11,7 @@ public class LockLevelScript : MonoBehaviour {
 	
 	
 	void  Start (){
-		PlayerPrefs.DeleteAll(); //erase data on start
+		//PlayerPrefs.DeleteAll(); //erase data on start
 		LockLevels();   //call function LockLevels
 	}
 	

@@ -1,44 +1,77 @@
 ﻿using UnityEngine;
+using UnityEngine.UI; 
 using System.Collections;
 
 public class LevelSelectScript : MonoBehaviour {
 	private int worldIndex;   
-	private int levelIndex;   
+	private int levelIndex;  
 	
-	void  Start (){
+	public GameObject levelLoadingPanel;
+	//public Image progressBarImage;
+	//private GameObject levelObject;
+	private int loadProgress;
+	//private static Text loadingText;
+	
+	void Start (){
 		//loop thorugh all the worlds
-		for(int i = 1; i <= LockLevelScript.worlds; i++){
-			if(Application.loadedLevelName == "World"+i){
+		for (int i = 1; i <= LockLevelScript.worlds; i++) {
+			if (Application.loadedLevelName == "World" + i) {
 				worldIndex = i;
-				//CheckLockedLevels(); 
+				CheckLockedLevels (); 
 			}
 		}
-	}
 
+		levelLoadingPanel.SetActive (false);
+		//loadingText = GameObject.Find("LoadingText").GetComponent<Text>();
+		//print (loadingText);
+		//progressText.SetActive (false);
+		//progressBarImage.SetActive (false);
+
+	}
 	
-	//uncomment the below code if you have a main menu scene to navigate to it on clicking escape when in World1 scene
 	public void  Update (){
+		// po stlaceni esc poprípade back na telefone navrat do SelectWorld sceny
   		if (Input.GetKeyDown(KeyCode.Escape) ){
    			Application.LoadLevel("SelectWorldScene");
   		}
  	}
 	
-	//Level to load on button click. Will be used for Level button click event 
+	//vybranie levelu podla argumentu worldLevel ktory je zadany v editore napr. 1.1, 2.6
 	public void Selectlevel(string worldLevel){
 		print ("Level loaded " + worldLevel);
-		Application.LoadLevel("Level"+worldLevel); //load the level
+		StartCoroutine (DisplayLevelLoadingScreen(worldLevel));
 	}
 
+
 	
-	//function to check for the levels locked
+	//zistenie ktory level je odomknuty a zobrazenie bez zamku
 	void  CheckLockedLevels (){
-		//loop through the levels of a particular world
-		for(int j = 1; j < LockLevelScript.levels; j++){
+		for(int j = 1; j < LockLevelScript.levels; j++){ // podla poctu levelov
 			levelIndex = (j+1);
 			if((PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +levelIndex.ToString()))==1){
-				GameObject.Find("LockedLevel"+(j+1)).SetActive(false);
+				GameObject.Find("Level"+(j+1)+"Lock").SetActive(false); // vypnutie tlacitka zo zamkom nad skutocnym tlacitkom
 				Debug.Log ("Unlocked");
 			}
 		}
 	}
+
+	// asynchronne nacitanie sceny
+	IEnumerator DisplayLevelLoadingScreen(string worldLevel) {
+		levelLoadingPanel.SetActive (true);
+		
+		AsyncOperation async = Application.LoadLevelAsync ("Level"+worldLevel);
+		while(!async.isDone) {
+			loadProgress = (int)(async.progress * 100) + 10;
+			//RefreshLoadingText();
+			print (loadProgress);
+			yield return null;
+		}
+	}
+
+	/*private static void RefreshLoadingText() {
+		loadingText.text = loadProgress + " %";
+	}*/
 }
+
+
+

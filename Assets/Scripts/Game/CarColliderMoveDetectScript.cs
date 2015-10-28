@@ -4,40 +4,33 @@ using System.Collections;
 
 public class CarColliderMoveDetectScript : MonoBehaviour {
 	private GameObject reactionFromPanel;
-	private float speed = 0f;
-	//private bool firstMeasure = true;
+	private float speed = 1f;
+	private bool firstMeasure = false;
 
 	public AudioClip explosionClips;
 	public AudioClip pickupCoinClips;
 
 	void Start() {
 		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
+		StartCoroutine(Wait());
 	}
 
 
 	void Update() {
-		if(Time.timeScale == 1) {
-			/*if(firstMeasure) { 
-				print ("first");
-				//StartCoroutine(Wait());
-				//firstMeasure = false;
-			} else {*/
-				//print (speed);
-				speed = (float) System.Math.Round(this.GetComponent<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
-
-				if(speed <= 0.0) {
-					print ("ides pomaly asda");
-					//reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
-				}
-			//}
+		if(firstMeasure) {  // prve meranie az po 2 sekundach funkcie Wait() 
+			speed = (float) System.Math.Round(this.GetComponent<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
+			if(speed <= 0.0) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
+				print ("ides pomaly");
+				reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+			}
 		}
 	}
 
-	/*IEnumerator Wait() {
-		print(Time.time);
-		yield return new WaitForSeconds(3);
-		print(Time.time);
-	}*/
+	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
+	IEnumerator Wait() { 
+		yield return new WaitForSeconds(2);
+		firstMeasure = true;
+	}
 	
 
 	void OnTriggerEnter2D(Collider2D coll) {

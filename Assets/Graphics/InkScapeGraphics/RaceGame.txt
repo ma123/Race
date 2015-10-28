@@ -1,10 +1,11 @@
+-------------------Marek-------------------------------------------------------
 - spodn? contakt listener  Y.................
 - po prejdenie nim vyskoci game over Y................
 - spodok a vrch auta Y......................
 - posun auta v kamere dozadu Y.................
 - pridanie zbieranie coin Y...................
 - ukoncenie ano nie Y.......................
-- level selector vymyslie? ako vytvorit viac 
+- level selector vymysliet ako vytvorit viac svetov Y.........................
 - auto zacina dolu na ceste Y....................
 - tazisko auta vzadu Y....................
 - zvacsit pozadie do vysky  Y......................
@@ -17,19 +18,23 @@
 - sedan car pripravit spolu s kolesami Y...................
 - zmena farby cesty pri vytvarani a vytvoreni Y..................
 - collection zbierame celym autom nie iba karoseriou Y.......................
-- problem s restartom a vyhadzovanim dead panelu 
+- level selector zfunkcnit Y................................
+- sfunkcnit unity remote nastroj Y......................................
+- asynchronne nacitanie sceny Y.......................
+- problem s restartom a vyhadzovanim dead panelu Y.......................
+
+
 - pomala reakcia tlacitiek obcas ziadna preco?
 - animacia po prehre vybuch auta
 - system viacerych aut
-- asynchronne nacitanie sceny
 - v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu
-- level selector zfunkcnit
-- parallax background iba v challenge mode
 - zmena materialu cesty 
-- animacia otacanie mince popripade nejaky pohyb
 - obchod s autami 
 - po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami 
-- najst font na pouzitie v celej hre
+- parallax background iba v challenge mode
+- optimalizovat na android rozlisenia
+
+----------------Matus----------------------------
 
 - prekazky
 - utes startovaci
@@ -37,6 +42,7 @@
 - nakreslit gumu 
 - nakreslit atrament
 - nakreslit indikator atramentu
+- najst font na pouzitie v celej hre
 
 
 
@@ -45,13 +51,6 @@
         - dosiel atrament
         - pick coin
         - hudba pozadie
-        
-- main menu - spustenie levelov
-	    - spustenie challange modu
-	    - skore dlzka prejdena v challenge mode a podobne
-	    - generator nov?ch aut 
-	    - obchod aut a in?ch vec?
-        
 
 
 240*320-ldpi
