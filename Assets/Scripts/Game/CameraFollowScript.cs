@@ -6,7 +6,7 @@ public class CameraFollowScript : MonoBehaviour {
 	private Vector3 pos;
 	private Vector3 newPos;
 	public float offSet = 8f;
-	private int currentVehicle = 2;
+	private int currentVehicle = 1;
 
 	void Start() {
 		GameObject playerParent = GameObject.Find ("Player");
