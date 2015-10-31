@@ -6,6 +6,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 	private GameObject reactionFromPanel;
 	private float speed = 1f;
 	private bool firstMeasure = false;
+	public GameObject particles;
 
 	public AudioClip explosionClips;
 	public AudioClip pickupCoinClips;
@@ -68,10 +69,12 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			DestroyCarAndWinnPanel();
 		}
 	}
-	
+
 	public void DestroyCarAndWinnPanel() {
-		//DestroyObject(GameObject.Find("Player"));
+		DestroyObject(GameObject.Find("Player"));
 		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-		reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+		Instantiate(particles, transform.position, transform.rotation);
+	    reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
+
 	}
 }

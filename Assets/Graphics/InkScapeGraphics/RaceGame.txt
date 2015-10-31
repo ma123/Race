@@ -30,7 +30,9 @@
 - v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu
 - zmena materialu cesty 
 - obchod s autami 
-- po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami 
+- pridanie particle filtru pocasie do scen
+- po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami
+- zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
 - parallax background iba v challenge mode
 - optimalizovat na android rozlisenia
 
