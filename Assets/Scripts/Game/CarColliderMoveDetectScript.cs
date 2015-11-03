@@ -6,6 +6,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 	private GameObject reactionFromPanel;
 	private float speed = 1f;
 	private bool firstMeasure = false;
+	private bool particleEnd = false;
 	public GameObject particles;
 
 	public AudioClip explosionClips;
@@ -70,11 +71,24 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 		}
 	}
 
+	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
+	IEnumerator WaitParticle() { 
+		print ("waiting");
+		yield return new WaitForSeconds(3);
+		print ("particle end true");
+		particleEnd = true;
+
+	}
+
 	public void DestroyCarAndWinnPanel() {
+		StartCoroutine(WaitParticle());
 		DestroyObject(GameObject.Find("Player"));
 		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-		Instantiate(particles, transform.position, transform.rotation);
-	   // reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
+		//Instantiate(particles, transform.position, transform.rotation);
 
+		if(particleEnd) {
+			print ("nieco");
+			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
+		}
 	}
 }
