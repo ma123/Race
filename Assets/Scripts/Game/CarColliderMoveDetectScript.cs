@@ -74,7 +74,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 		DestroyObject(GameObject.Find("Player"));
 		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
 		Instantiate(particles, transform.position, transform.rotation);
-	    reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
+	   // reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
 
 	}
 }
