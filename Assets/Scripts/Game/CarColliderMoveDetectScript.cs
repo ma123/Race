@@ -26,10 +26,18 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 				reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 			}
 		}
-		print ("update");
+
 		if(particleEnd) {
 			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
 		}
+
+		/*if ((GameObject.Find ("LeftWheel").transform.localPosition.y <= -1.37f) && (GameObject.Find ("RightWheel").transform.localPosition.y <= -1.37f)) {
+			GameObject.Find ("LeftWheel").transform.localPosition = new Vector3(GameObject.Find ("LeftWheel").transform.localPosition.x, -1.37f, 0);
+			GameObject.Find ("RightWheel").transform.localPosition = new Vector3(GameObject.Find ("RightWheel").transform.localPosition.x, -1.37f, 0); // 
+		}*/
+		//print(GameObject.Find ("Player").GetComponentInChildren<WheelJoint2D>().motor.motorSpeed);
+		// podla transform karoserie auta a polohz kolies vzpocitat nejaku medyu kde sa kolesa nesmu dostat uz
+		// ak sa tam dostanu tak sa nepohnu uy dalej
 	}
 
 	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
@@ -82,15 +90,17 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 		GameObject.Find ("Player").SetActive(false);
 		//GameObject vehicle = GameObject.Find ("Player");
-		//vehicle.GetComponent<Rigidbody2D> ().velocity = Vector3.zero;
-		//vehicle.GetComponentInChildren<SpriteRenderer>().enabled = false;
+		//vehicle.transform.Translate(new Vector3(0,0,0));
+		//vehicle.GetComponentsInChildren<SpriteRenderer>()[0].enabled = false;
+		//vehicle.GetComponentsInChildren<SpriteRenderer>()[1].enabled = false;
+		//vehicle.GetComponentsInChildren<SpriteRenderer>()[2].enabled = false;
 		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
 		Instantiate(particles, transform.position, transform.rotation);
 	}
 
 	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
 	IEnumerator WaitParticle() { 
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(2f);
 		particleEnd = true;
 	}
 }
