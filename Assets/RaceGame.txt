@@ -25,6 +25,8 @@
 - animacia po prehre vybuch auta/ popripade particle filter Y......................
 - peniaze ukladať Y..............................
 
+- odstavajuce koleso na sedane
+- odstavajuce kolesa neutekajuce koleso od pruzin
 - po prehre vybehnutie panelu particle filter sa neprehra
 - pomala reakcia tlacitiek obcas ziadna preco?
 - system viacerych aut
@@ -46,6 +48,8 @@
 - kolesa hatchback Y............
 - auto army Y....................
 - kolesa army Y..................
+- balon , vzducholod ako prekazky
+
 
 - nakreslit zamok na levely
 - prekazky

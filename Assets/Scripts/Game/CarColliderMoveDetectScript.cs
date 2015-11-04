@@ -26,6 +26,10 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 				reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 			}
 		}
+		print ("update");
+		if(particleEnd) {
+			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
+		}
 	}
 
 	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
@@ -71,24 +75,22 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 		}
 	}
 
-	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
-	IEnumerator WaitParticle() { 
-		print ("waiting");
-		yield return new WaitForSeconds(3);
-		print ("particle end true");
-		particleEnd = true;
 
-	}
 
 	public void DestroyCarAndWinnPanel() {
 		StartCoroutine(WaitParticle());
-		DestroyObject(GameObject.Find("Player"));
-		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-		//Instantiate(particles, transform.position, transform.rotation);
 
-		if(particleEnd) {
-			print ("nieco");
-			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
-		}
+		GameObject.Find ("Player").SetActive(false);
+		//GameObject vehicle = GameObject.Find ("Player");
+		//vehicle.GetComponent<Rigidbody2D> ().velocity = Vector3.zero;
+		//vehicle.GetComponentInChildren<SpriteRenderer>().enabled = false;
+		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
+		Instantiate(particles, transform.position, transform.rotation);
+	}
+
+	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
+	IEnumerator WaitParticle() { 
+		yield return new WaitForSeconds(1);
+		particleEnd = true;
 	}
 }
