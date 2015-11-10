@@ -23,7 +23,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			speed = (float) System.Math.Round(this.GetComponent<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
 			if(speed <= 0.0) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
 				print ("ides pomaly");
-				reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+				DestroyCarAndWinnPanel(); 
 			}
 		}
 
@@ -88,12 +88,14 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 	public void DestroyCarAndWinnPanel() {
 		StartCoroutine(WaitParticle());
 
-		GameObject.Find ("Player").SetActive(false);
-		//GameObject vehicle = GameObject.Find ("Player");
-		//vehicle.transform.Translate(new Vector3(0,0,0));
-		//vehicle.GetComponentsInChildren<SpriteRenderer>()[0].enabled = false;
-		//vehicle.GetComponentsInChildren<SpriteRenderer>()[1].enabled = false;
-		//vehicle.GetComponentsInChildren<SpriteRenderer>()[2].enabled = false;
+		//GameObject.Find ("Player").SetActive(false);
+		GameObject vehicle = GameObject.Find ("Player");
+		for(int i = 0; i < 3; i++) {
+			vehicle.GetComponentsInChildren<Rigidbody2D> ()[i].velocity = Vector2.zero;
+			vehicle.GetComponentsInChildren<Rigidbody2D> () [i].gravityScale = 0f;
+			vehicle.GetComponentsInChildren<SpriteRenderer>()[i].enabled = false;
+		}
+
 		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
 		Instantiate(particles, transform.position, transform.rotation);
 	}
