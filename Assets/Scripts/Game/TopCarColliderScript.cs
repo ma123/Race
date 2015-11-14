@@ -14,7 +14,9 @@ public class TopCarColliderScript : MonoBehaviour {
 		if(coll != null) {
 			print ("kolizia na streche");
 			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+			GameObject vehicle = GameObject.Find("Player");
+			vehicle.GetComponentInChildren<CarColliderMoveDetectScript>().DestroyCarAndWinnPanel();
+			//reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 		}	
 	}
 

@@ -10,7 +10,9 @@ public class WheelColliderScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll) {
 		if(coll.gameObject.tag == "EdgeColl") {
 			print ("Colizia ciara pod kolesom prehra");
-			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
+			GameObject vehicle = GameObject.Find("Player");
+			vehicle.GetComponentInChildren<CarColliderMoveDetectScript>().DestroyCarAndWinnPanel();
+			//reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 		}
 	}
 }

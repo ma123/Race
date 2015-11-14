@@ -24,10 +24,10 @@
 - problem s restartom a vyhadzovanim dead panelu Y.......................
 - animacia po prehre vybuch auta/ popripade particle filter Y......................
 - peniaze ukladať Y..............................
+- po prehre vybehnutie panelu particle filter sa neprehra Y..........................
 
 - odstavajuce koleso na sedane
 - odstavajuce kolesa neutekajuce koleso od pruzin
-- po prehre vybehnutie panelu particle filter sa neprehra
 - pomala reakcia tlacitiek obcas ziadna preco?
 - system viacerych aut
 - v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu
@@ -38,6 +38,7 @@
 - zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
 - parallax background iba v challenge mode
 - optimalizovat na android rozlisenia
+- dynamicke prekazky
 
 ----------------Matus----------------------------
 
@@ -48,10 +49,11 @@
 - kolesa hatchback Y............
 - auto army Y....................
 - kolesa army Y..................
+- nakreslit zamok na levely Y................
+
+- VYTVORIT VIZUAL
 - balon , vzducholod ako prekazky
-
-
-- nakreslit zamok na levely
+- skusit ako vypadaju auta bez kontur 
 - prekazky
 - utes startovaci
 - nakreslit indikator atramentu

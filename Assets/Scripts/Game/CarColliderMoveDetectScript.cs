@@ -7,6 +7,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 	private float speed = 1f;
 	private bool firstMeasure = false;
 	private bool particleEnd = false;
+	private bool isParticle = true;
 	public GameObject particles;
 
 	public AudioClip explosionClips;
@@ -19,6 +20,11 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 
 	void Update() {
+		if(particleEnd) {
+			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
+			particleEnd = false;
+		}
+
 		if(firstMeasure) {  // prve meranie az po 2 sekundach funkcie Wait() 
 			speed = (float) System.Math.Round(this.GetComponent<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
 			if(speed <= 0.0) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
@@ -27,9 +33,6 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			}
 		}
 
-		if(particleEnd) {
-			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
-		}
 
 		/*if ((GameObject.Find ("LeftWheel").transform.localPosition.y <= -1.37f) && (GameObject.Find ("RightWheel").transform.localPosition.y <= -1.37f)) {
 			GameObject.Find ("LeftWheel").transform.localPosition = new Vector3(GameObject.Find ("LeftWheel").transform.localPosition.x, -1.37f, 0);
@@ -83,21 +86,21 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 		}
 	}
 
-
-
 	public void DestroyCarAndWinnPanel() {
-		StartCoroutine(WaitParticle());
+		if(isParticle) {
+			StartCoroutine(WaitParticle());
 
-		//GameObject.Find ("Player").SetActive(false);
-		GameObject vehicle = GameObject.Find ("Player");
-		for(int i = 0; i < 3; i++) {
-			vehicle.GetComponentsInChildren<Rigidbody2D> ()[i].velocity = Vector2.zero;
-			vehicle.GetComponentsInChildren<Rigidbody2D> () [i].gravityScale = 0f;
-			vehicle.GetComponentsInChildren<SpriteRenderer>()[i].enabled = false;
+			GameObject vehicle = GameObject.Find ("Player");
+			for(int i = 0; i < 3; i++) {
+				vehicle.GetComponentsInChildren<Rigidbody2D> ()[i].isKinematic = true;
+				vehicle.GetComponentsInChildren<SpriteRenderer>()[i].enabled = false;
+			}
+			
+			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
+			Instantiate(particles, transform.position, transform.rotation);
+			isParticle = false;
+
 		}
-
-		AudioSource.PlayClipAtPoint(explosionClips, transform.position);
-		Instantiate(particles, transform.position, transform.rotation);
 	}
 
 	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
