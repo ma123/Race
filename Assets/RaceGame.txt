@@ -25,12 +25,13 @@
 - animacia po prehre vybuch auta/ popripade particle filter Y......................
 - peniaze ukladať Y..............................
 - po prehre vybehnutie panelu particle filter sa neprehra Y..........................
+- dynamicke prekazky Y................................
+- odstavajuce kolesa neutekajuce koleso od pruzin Y............................
+- v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu Y.......................
 
 - odstavajuce koleso na sedane
-- odstavajuce kolesa neutekajuce koleso od pruzin
 - pomala reakcia tlacitiek obcas ziadna preco?
 - system viacerych aut
-- v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu
 - zmena materialu cesty 
 - obchod s autami 
 - pridanie particle filtru pocasie do scen
@@ -38,7 +39,6 @@
 - zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
 - parallax background iba v challenge mode
 - optimalizovat na android rozlisenia
-- dynamicke prekazky
 
 ----------------Matus----------------------------
 

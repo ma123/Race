@@ -30,13 +30,14 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			if(speed <= 0.0) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
 				print ("ides pomaly");
 				DestroyCarAndWinnPanel(); 
+				firstMeasure = false;
 			}
 		}
 
 
-		/*if ((GameObject.Find ("LeftWheel").transform.localPosition.y <= -1.37f) && (GameObject.Find ("RightWheel").transform.localPosition.y <= -1.37f)) {
-			GameObject.Find ("LeftWheel").transform.localPosition = new Vector3(GameObject.Find ("LeftWheel").transform.localPosition.x, -1.37f, 0);
-			GameObject.Find ("RightWheel").transform.localPosition = new Vector3(GameObject.Find ("RightWheel").transform.localPosition.x, -1.37f, 0); // 
+		/*if ((GameObject.Find ("LeftWheel").transform.localPosition.y < -1.3f) && (GameObject.Find ("RightWheel").transform.localPosition.y < -1.3f)) {
+			GameObject.Find ("LeftWheel").transform.localPosition = new Vector3(GameObject.Find ("LeftWheel").transform.localPosition.x, -1.3f, 0);
+			GameObject.Find ("RightWheel").transform.localPosition = new Vector3(GameObject.Find ("RightWheel").transform.localPosition.x, -1.3f, 0);
 		}*/
 		//print(GameObject.Find ("Player").GetComponentInChildren<WheelJoint2D>().motor.motorSpeed);
 		// podla transform karoserie auta a polohz kolies vzpocitat nejaku medyu kde sa kolesa nesmu dostat uz
@@ -82,6 +83,11 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("TopCollider")) {
 			print ("top collider");
+			DestroyCarAndWinnPanel();
+		}
+
+		if(coll.GetComponent<Collider2D>().CompareTag("DynamicObstacle")) {
+			print ("dynamic obstacle");
 			DestroyCarAndWinnPanel();
 		}
 	}

@@ -7,10 +7,9 @@ public class LevelSelectScript : MonoBehaviour {
 	private int levelIndex;  
 	
 	public GameObject levelLoadingPanel;
-	//public Image progressBarImage;
-	//private GameObject levelObject;
 	private int loadProgress;
-	//private static Text loadingText;
+
+
 	
 	void Start (){
 		//loop thorugh all the worlds
@@ -21,12 +20,7 @@ public class LevelSelectScript : MonoBehaviour {
 			}
 		}
 
-		levelLoadingPanel.SetActive (false);
-		//loadingText = GameObject.Find("LoadingText").GetComponent<Text>();
-		//print (loadingText);
-		//progressText.SetActive (false);
-		//progressBarImage.SetActive (false);
-
+		//levelLoadingPanel.SetActive (false);
 	}
 	
 	public void  Update (){
@@ -57,20 +51,20 @@ public class LevelSelectScript : MonoBehaviour {
 
 	// asynchronne nacitanie sceny
 	IEnumerator DisplayLevelLoadingScreen(string worldLevel) {
-		levelLoadingPanel.SetActive (true);
-		
 		AsyncOperation async = Application.LoadLevelAsync ("Level"+worldLevel);
+		levelLoadingPanel.SetActive (true);
+		Text loadingText = levelLoadingPanel.GetComponentInChildren<Text> ();
+		Scrollbar progressBar = levelLoadingPanel.GetComponentInChildren<Scrollbar> ();
+
 		while(!async.isDone) {
 			loadProgress = (int)(async.progress * 100) + 10;
-			//RefreshLoadingText();
-			print (loadProgress);
+			loadingText.text = loadProgress + " %";
+			progressBar.size = loadProgress / 100f;
+			print (progressBar.size);
+			//print (loadProgress);
 			yield return null;
 		}
 	}
-
-	/*private static void RefreshLoadingText() {
-		loadingText.text = loadProgress + " %";
-	}*/
 }
 
 
