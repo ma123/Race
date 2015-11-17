@@ -28,13 +28,12 @@
 - dynamicke prekazky Y................................
 - odstavajuce kolesa neutekajuce koleso od pruzin Y............................
 - v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu Y.......................
+- pridanie particle filtru pocasie do scen Y............................
 
-- odstavajuce koleso na sedane
 - pomala reakcia tlacitiek obcas ziadna preco?
 - system viacerych aut
 - zmena materialu cesty 
 - obchod s autami 
-- pridanie particle filtru pocasie do scen
 - po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami
 - zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
 - parallax background iba v challenge mode
