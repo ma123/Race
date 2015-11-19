@@ -29,11 +29,11 @@
 - odstavajuce kolesa neutekajuce koleso od pruzin Y............................
 - v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu Y.......................
 - pridanie particle filtru pocasie do scen Y............................
+- kolesa pod stodolou problem Y..........................
 
 - auta bez kontur
 - ui progress atrament s 
-- upravit detekovanie rzchlosti
-- kolesa pod stodolou problem
+- upravit detekovanie rychlosti
 - ukazatel priebehu levelu skusit pohladat pozriet
 - pomala reakcia tlacitiek obcas ziadna preco?
 - system viacerych aut
