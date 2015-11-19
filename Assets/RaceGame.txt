@@ -30,6 +30,9 @@
 - v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu Y.......................
 - pridanie particle filtru pocasie do scen Y............................
 
+- auta bez kontur
+- ui progress atrament s 
+- upravit detekovanie rzchlosti
 - kolesa pod stodolou problem
 - ukazatel priebehu levelu skusit pohladat pozriet
 - pomala reakcia tlacitiek obcas ziadna preco?
