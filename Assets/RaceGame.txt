@@ -30,8 +30,9 @@
 - v nacitavani nejaky progress bar/ percenta/ nacitanie atramentu Y.......................
 - pridanie particle filtru pocasie do scen Y............................
 - kolesa pod stodolou problem Y..........................
+- auta bez kontur Y...................
 
-- auta bez kontur
+- brat mince celym autom nie iba karoseriou
 - ui progress atrament s 
 - upravit detekovanie rychlosti
 - ukazatel priebehu levelu skusit pohladat pozriet
@@ -43,6 +44,7 @@
 - zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
 - parallax background iba v challenge mode
 - optimalizovat na android rozlisenia
+- zrychlenie auta
 
 ----------------Matus----------------------------
 
@@ -54,16 +56,19 @@
 - auto army Y....................
 - kolesa army Y..................
 - nakreslit zamok na levely Y................
+- utes startovaci Y.................
+- nakreslit indikator atramentu Y...............
 
 - VYTVORIT VIZUAL
 - balon , vzducholod ako prekazky
-- skusit ako vypadaju auta bez kontur 
 - prekazky
-- utes startovaci
-- nakreslit indikator atramentu
 - najst font na pouzitie v celej hre
+- LOGO
+- nazov hry 
+- nazov firmy ešte premyslieť
+- stránka informačná, facebook, vytvoriť emailový účet s účtom na play, twitter, instagram
 
-
+Draw path, Draw road
 
 - zvuky - explozia
         - vyhra

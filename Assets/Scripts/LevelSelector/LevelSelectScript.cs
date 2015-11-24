@@ -60,8 +60,6 @@ public class LevelSelectScript : MonoBehaviour {
 			loadProgress = (int)(async.progress * 100) + 10;
 			loadingText.text = loadProgress + " %";
 			progressBar.size = loadProgress / 100f;
-			print (progressBar.size);
-			//print (loadProgress);
 			yield return null;
 		}
 	}

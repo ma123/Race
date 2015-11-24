@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class WheelColliderScript : MonoBehaviour {
-	private GameObject reactionFromPanel;
+	//private GameObject reactionFromPanel;
 	void Start() {
-		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
+	//	reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {

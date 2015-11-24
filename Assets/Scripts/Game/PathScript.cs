@@ -49,6 +49,7 @@ public class PathScript : MonoBehaviour {
 					}
 					drawPoints.Clear ();
 					InkStackScript.Hit(lineLength);
+					InkBarScript.Hit(lineLength);
 					lineRenderer.SetColors(c3, c4);
 
 					lineStack -= lineLength; // odpocitanie od zasobniku

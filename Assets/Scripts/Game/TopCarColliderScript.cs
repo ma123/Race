@@ -3,12 +3,12 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class TopCarColliderScript : MonoBehaviour {
-	private GameObject reactionFromPanel;
+	//private GameObject reactionFromPanel;
 	public AudioClip explosionClips;
 
-	void Start() {
+	/*void Start() {
 		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
-	}
+	}*/
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if(coll != null) {
