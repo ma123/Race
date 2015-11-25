@@ -19,9 +19,11 @@ public class PathScript : MonoBehaviour {
 	private Color c2;
 	private Color c3;
 	private Color c4;
+	private GameObject inkBarObject;
 	
 	void Start () {
-		lineStack = InkStackScript.GetInkStack ();
+		inkBarObject = GameObject.FindGameObjectWithTag ("InkBarReact");
+		lineStack = inkBarObject.GetComponent<InkBarScript> ().GetInkStack();
 		isMousePressed = false;
 		c1 = new Color32 (254,224,32,200);
 		c2 = new Color32 (178,2,25,200);
@@ -32,7 +34,7 @@ public class PathScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Time.timeScale != 0) {
-			lineStack = InkStackScript.GetInkStack ();
+			lineStack = inkBarObject.GetComponent<InkBarScript> ().GetInkStack();
 			if(lineStack > 0f) {
 				if(Input.GetMouseButtonDown(0)) {
 					isMousePressed = true;
@@ -48,8 +50,7 @@ public class PathScript : MonoBehaviour {
 						AddColliderToDraw(); // pridanie collideru pre ciaru
 					}
 					drawPoints.Clear ();
-					InkStackScript.Hit(lineLength);
-					InkBarScript.Hit(lineLength);
+					inkBarObject.GetComponent<InkBarScript> ().Hit(lineLength);
 					lineRenderer.SetColors(c3, c4);
 
 					lineStack -= lineLength; // odpocitanie od zasobniku

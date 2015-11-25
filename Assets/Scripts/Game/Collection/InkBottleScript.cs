@@ -3,8 +3,9 @@ using System.Collections;
 
 public class InkBottleScript : MonoBehaviour {
 	public void InkBottleReact () {
-		print ("destroy object inkbottle");
-		InkStackScript.AddInk (20f);
+		GameObject inkBarObject = GameObject.FindGameObjectWithTag ("InkBarReact");
+		inkBarObject.GetComponent<InkBarScript>().AddInk(30f);
 		Destroy (gameObject);
+		print ("destroy object inkbottle");
 	}
 }

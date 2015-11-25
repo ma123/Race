@@ -31,9 +31,10 @@
 - pridanie particle filtru pocasie do scen Y............................
 - kolesa pod stodolou problem Y..........................
 - auta bez kontur Y...................
+- ui progress atrament s Y....................
+
 
 - brat mince celym autom nie iba karoseriou
-- ui progress atrament s 
 - upravit detekovanie rychlosti
 - ukazatel priebehu levelu skusit pohladat pozriet
 - pomala reakcia tlacitiek obcas ziadna preco?
@@ -44,7 +45,7 @@
 - zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
 - parallax background iba v challenge mode
 - optimalizovat na android rozlisenia
-- zrychlenie auta
+- unity logo v splash screene nie na ciernom pozadi
 
 ----------------Matus----------------------------
 

@@ -3,8 +3,9 @@ using System.Collections;
 
 public class GumScript : MonoBehaviour {
 	public void GumReact () {
-		print ("destroy object gum");
-		InkStackScript.Hit (30f);
+		GameObject inkBarObject = GameObject.FindGameObjectWithTag ("InkBarReact");
+	    inkBarObject.GetComponent<InkBarScript>().Hit (30f);
 		Destroy (gameObject);
+		print ("destroy object gum");
 	}
 }

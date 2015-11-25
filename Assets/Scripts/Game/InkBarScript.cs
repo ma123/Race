@@ -3,9 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class InkBarScript : MonoBehaviour {
-	private static float inkStack = 100f;
-	public GameObject inkPanel;
-	private static Scrollbar inkBar;
+	private float inkStack = 100f;
+	public GameObject inkBarPanel;
 	
 	// Use this for initialization
 	void Start () {
@@ -13,7 +12,7 @@ public class InkBarScript : MonoBehaviour {
 		RefreshInkBar ();
 	}
 	
-	public static void Hit(float removeInk) {
+	public void Hit(float removeInk) {
 		inkStack -= removeInk;
 		
 		if(inkStack <= 0f) {
@@ -23,7 +22,7 @@ public class InkBarScript : MonoBehaviour {
 		RefreshInkBar ();
 	}
 	
-	public static void AddInk(float addedInk) {
+	public void AddInk(float addedInk) {
 		inkStack += addedInk;
 		if(inkStack >= 100f) {
 			inkStack = 100f;
@@ -32,8 +31,8 @@ public class InkBarScript : MonoBehaviour {
 		RefreshInkBar ();
 	}
 	
-	private static void RefreshInkBar() {
-		inkBar = GameObject.GetComponent<Scrollbar> ();
+	private void RefreshInkBar() {
+		Scrollbar inkBar = inkBarPanel.GetComponent<Scrollbar> ();
 		inkBar.size = inkStack / 100f;
 	}
 	
@@ -41,7 +40,7 @@ public class InkBarScript : MonoBehaviour {
 		return inkStack;
 	}
 	
-	/*public static void SetInkStack(float inkStack) {
+	/*public void SetInkStack(float inkStack) {
 		this.inkStack = inkStack;
 	}*/
 }
