@@ -9,8 +9,6 @@ public class LevelSelectScript : MonoBehaviour {
 	public GameObject levelLoadingPanel;
 	private int loadProgress;
 
-
-	
 	void Start (){
 		//loop thorugh all the worlds
 		for (int i = 1; i <= LockLevelScript.worlds; i++) {
@@ -53,12 +51,10 @@ public class LevelSelectScript : MonoBehaviour {
 	IEnumerator DisplayLevelLoadingScreen(string worldLevel) {
 		AsyncOperation async = Application.LoadLevelAsync ("Level"+worldLevel);
 		levelLoadingPanel.SetActive (true);
-		Text loadingText = levelLoadingPanel.GetComponentInChildren<Text> ();
 		Scrollbar progressBar = levelLoadingPanel.GetComponentInChildren<Scrollbar> ();
 
 		while(!async.isDone) {
 			loadProgress = (int)(async.progress * 100) + 10;
-			loadingText.text = loadProgress + " %";
 			progressBar.size = loadProgress / 100f;
 			yield return null;
 		}

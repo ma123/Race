@@ -52,6 +52,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 	
 
 	void OnTriggerEnter2D(Collider2D coll) {
+		print (coll);
 		if(coll.GetComponent<Collider2D>().CompareTag("Coin")) {
 			GameObject coin = coll.GetComponent<Collider2D>().gameObject;
 			AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
