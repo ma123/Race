@@ -2,20 +2,18 @@
 using System.Collections;
 
 public class GoalScript : MonoBehaviour {
-	//private GameObject reactionFromPanel;  //zatial nepouzite pretoze sa vraciame priamo do LevelSelectoru
 	protected string currentLevel;
 	protected int worldIndex;
 	protected int levelIndex;
 	// Use this for initialization
 	void Start () {
 		currentLevel = Application.loadedLevelName; // nacitanie mena aktualneho levela
-		//reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");  // nacitanie objektu ReactionFromPanel
 	}
 
 	public void GoalReact () {
 		print ("destroy object Goal");
+		PlayerPrefs.SetInt ("money", MoneyScript.GetMoney());
 		UnlockLevels ();
-		//reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(3); // parameter 3 pre winn stav 
 		Destroy (gameObject);
 	}
 

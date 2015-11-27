@@ -33,10 +33,13 @@
 - auta bez kontur Y...................
 - ui progress atrament s Y....................
 - level nacitanie asynchronna scena Y................. 
+- upravenie napisu na vzducholodi Y...................
+- odstranit zlomy v pozadi  spodný opar dopredu Y...............
+- ukladanie minci az po prejdenie levelu Y.....................
 
 
-- ukladanie minci az po prejdenie levelu
-
+- sikmo iduce prekazky
+- casovac na prekazky zo spustacom
 - brat mince celym autom nie iba karoseriou
 - upravit detekovanie rychlosti
 - ukazatel priebehu levelu skusit pohladat pozriet
@@ -49,6 +52,7 @@
 - parallax background iba v challenge mode
 - optimalizovat na android rozlisenia
 - unity logo v splash screene nie na ciernom pozadi
+- klzanie po strechce do stodoly a nasledny pad z utesu  ???????
 
 ----------------Matus----------------------------
 
@@ -62,9 +66,9 @@
 - nakreslit zamok na levely Y................
 - utes startovaci Y.................
 - nakreslit indikator atramentu Y...............
+- balon , vzducholod ako prekazky Y............
 
 - VYTVORIT VIZUAL
-- balon , vzducholod ako prekazky
 - prekazky
 - najst font na pouzitie v celej hre
 - LOGO
@@ -99,3 +103,5 @@ Draw path, Draw road
 768*1280-xhdpi
 1080*1920-xxhdpi
 800*1280-tvdpi
+
+1440*2560 

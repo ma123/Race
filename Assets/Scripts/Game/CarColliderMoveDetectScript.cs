@@ -27,7 +27,8 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 		if(firstMeasure) {  // prve meranie az po 2 sekundach funkcie Wait() 
 			speed = (float) System.Math.Round(this.GetComponent<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
-			if(speed <= 0.0) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
+			print (speed);
+			if(speed <= 0.01) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
 				print ("ides pomaly");
 				DestroyCarAndWinnPanel(); 
 				firstMeasure = false;
@@ -52,7 +53,6 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 	
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		print (coll);
 		if(coll.GetComponent<Collider2D>().CompareTag("Coin")) {
 			GameObject coin = coll.GetComponent<Collider2D>().gameObject;
 			AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);

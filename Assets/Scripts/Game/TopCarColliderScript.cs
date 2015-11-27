@@ -3,12 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class TopCarColliderScript : MonoBehaviour {
-	//private GameObject reactionFromPanel;
 	public AudioClip explosionClips;
-
-	/*void Start() {
-		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
-	}*/
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if(coll != null) {
@@ -16,7 +11,6 @@ public class TopCarColliderScript : MonoBehaviour {
 			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
 			GameObject vehicle = GameObject.Find("Player");
 			vehicle.GetComponentInChildren<CarColliderMoveDetectScript>().DestroyCarAndWinnPanel();
-			//reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav 
 		}	
 	}
 
