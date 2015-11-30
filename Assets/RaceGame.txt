@@ -36,7 +36,7 @@
 - upravenie napisu na vzducholodi Y...................
 - odstranit zlomy v pozadi  spodný opar dopredu Y...............
 - ukladanie minci az po prejdenie levelu Y.....................
-
+- system viacerych aut Y.........................
 
 - sikmo iduce prekazky
 - casovac na prekazky zo spustacom
@@ -44,7 +44,6 @@
 - upravit detekovanie rychlosti
 - ukazatel priebehu levelu skusit pohladat pozriet
 - pomala reakcia tlacitiek obcas ziadna preco?
-- system viacerych aut
 - zmena materialu cesty 
 - obchod s autami 
 - po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami

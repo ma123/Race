@@ -11,13 +11,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="184.60001mm"
-   height="61.799999mm"
+   width="654.09448"
+   height="218.97638"
    viewBox="0 0 654.09443 218.97627"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="army.svg"
+   sodipodi:docname="army_car.svg"
    inkscape:export-filename="C:\Users\Matthess\Desktop\Game Project\vehicle\army2.png"
    inkscape:export-xdpi="235.08804"
    inkscape:export-ydpi="235.08804">
@@ -379,9 +379,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="344.58821"
-     inkscape:cy="109.38983"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="264.47442"
+     inkscape:cy="-47.727918"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -391,7 +391,8 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     fit-margin-bottom="2.4980018e-016" />
+     fit-margin-bottom="2.4980018e-016"
+     units="px" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -400,7 +401,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
