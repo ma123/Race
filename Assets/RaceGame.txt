@@ -37,7 +37,9 @@
 - odstranit zlomy v pozadi  spodný opar dopredu Y...............
 - ukladanie minci az po prejdenie levelu Y.....................
 - system viacerych aut Y.........................
+- pridat do editoru vsetky rozlisenia Y.......................
 
+- hlavne menu moc staticke pridat pohyb oblakov mozno vzducholod
 - vibracie v hre
 - vypnúť zvuky , hudbu
 - info o hre
@@ -46,7 +48,7 @@
 - brat mince celym autom nie iba karoseriou
 - upravit detekovanie rychlosti
 - ukazatel priebehu levelu skusit pohladat pozriet
-- pomala reakcia tlacitiek obcas ziadna preco?
+- pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat
 - zmena materialu cesty 
 - obchod s autami 
 - po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami
@@ -55,6 +57,17 @@
 - optimalizovat na android rozlisenia
 - unity logo v splash screene nie na ciernom pozadi
 - klzanie po strechce do stodoly a nasledny pad z utesu  ???????
+
+
+mierne zmeny kazdý obrázok 
+- zima sneh // iglu arkticka stanica
+- greenland tmavsi s prsanim 
+- mesto // garaz 
+- pust  // pyramida padajuce mumie
+- ostrov sopecna krajina, padajuci popol iskry // 
+- jesen padajuce listy 
+- dzungla padajuce opice
+- 
 
 ----------------Matus----------------------------
 
@@ -70,9 +83,12 @@
 - nakreslit indikator atramentu Y...............
 - balon , vzducholod ako prekazky Y............
 
+- vyber svetov
+- meteorit, druzica, piano, náklad na padáku, 
 - VYTVORIT VIZUAL
 - prekazky
 - najst font na pouzitie v celej hre
+- vytvorenie ikony
 - LOGO
 - nazov hry 
 - nazov firmy ešte premyslieť
@@ -91,8 +107,6 @@ Draw path, Draw road
 240*400-ldpi
 240*432-ldpi
 320*480-mdpi
-480*800-mdpi
-480*854-mdpi
 1024*600-mdpi
 1280*800-mdpi
 480*800-hdpi

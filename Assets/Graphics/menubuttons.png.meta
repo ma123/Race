@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 68f192c0c5359e444bf05d3cf539526e
+timeCreated: 1449137748
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: menubuttons_0
+    21300002: menubuttons_1
+    21300004: menubuttons_2
+    21300006: menubuttons_3
+    21300008: menubuttons_4
+    21300010: menubuttons_5
+    21300012: menubuttons_6
+    21300014: menubuttons_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: menubuttons_0
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 2408
+        width: 4629
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_1
+      rect:
+        serializedVersion: 2
+        x: 5684
+        y: 2521
+        width: 570
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1317
+        width: 1414
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_3
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 1317
+        width: 1414
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_4
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 1317
+        width: 1414
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 570
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_6
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 460
+        width: 2056
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_7
+      rect:
+        serializedVersion: 2
+        x: 5086
+        y: 0
+        width: 574
+        height: 517
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
