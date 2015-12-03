@@ -38,6 +38,9 @@
 - ukladanie minci az po prejdenie levelu Y.....................
 - system viacerych aut Y.........................
 
+- vibracie v hre
+- vypnúť zvuky , hudbu
+- info o hre
 - sikmo iduce prekazky
 - casovac na prekazky zo spustacom
 - brat mince celym autom nie iba karoseriou
