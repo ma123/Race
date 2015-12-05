@@ -74,11 +74,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.23570226"
-     inkscape:cx="656.18083"
-     inkscape:cy="755.56492"
+     inkscape:zoom="0.33333333"
+     inkscape:cx="711.96593"
+     inkscape:cy="553.39278"
      inkscape:document-units="px"
-     inkscape:current-layer="g24988"
+     inkscape:current-layer="g14509"
      showgrid="false"
      height="1080mm"
      units="px"
@@ -89,9 +89,9 @@
      inkscape:snap-smooth-nodes="false"
      inkscape:object-nodes="true"
      inkscape:snap-midpoints="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="706"
-     inkscape:window-x="-8"
+     inkscape:window-width="1440"
+     inkscape:window-height="878"
+     inkscape:window-x="1358"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-others="false"
@@ -141,7 +141,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -18996,156 +18996,6 @@
                  style="opacity:1;fill:#366930;fill-opacity:1;stroke:#366930;stroke-width:0.733854;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
             </g>
           </g>
-          <g
-             style="display:inline;opacity:0.77999998;fill:#ffffff"
-             id="g7102-8"
-             transform="matrix(0.66246122,0,0,0.42451063,-498.67235,6.0123655)"
-             inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\greenland.png"
-             inkscape:export-xdpi="90"
-             inkscape:export-ydpi="90">
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-251.99997"
-               cx="3405"
-               id="path6261-3"
-               style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60.068031"
-               rx="114.06803"
-               cy="-191.99997"
-               cx="3483"
-               id="path6261-8-2"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8639375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-196.24261"
-               cx="3372.364"
-               id="path6261-9-7"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-278.12131"
-               cx="3292.2427"
-               id="path6261-84-3"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60.088978"
-               rx="103.23795"
-               cy="-209.76274"
-               cx="3189.405"
-               id="path6261-7-6"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.82204533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-173.70029"
-               cx="3309.2598"
-               id="path6261-98-6"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-          </g>
-          <g
-             style="display:inline;opacity:0.77999998;fill:#ffffff"
-             id="g7102-6"
-             transform="matrix(0.66002057,0,0,0.66712732,-49.03028,175.4114)"
-             inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\greenland.png"
-             inkscape:export-xdpi="90"
-             inkscape:export-ydpi="90">
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-251.99997"
-               cx="3405"
-               id="path6261-6"
-               style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60.068031"
-               rx="114.06803"
-               cy="-191.99997"
-               cx="3483"
-               id="path6261-8-0"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8639375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-196.24261"
-               cx="3372.364"
-               id="path6261-9-9"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-278.12131"
-               cx="3292.2427"
-               id="path6261-84-4"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60.088978"
-               rx="103.23795"
-               cy="-209.76274"
-               cx="3189.405"
-               id="path6261-7-1"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.82204533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-173.70029"
-               cx="3309.2598"
-               id="path6261-98-7"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-          </g>
-          <g
-             style="display:inline;opacity:0.77999998;fill:#ffffff"
-             id="g7102-7"
-             transform="matrix(0.66246122,0,0,0.66246122,-1232.7829,38.518959)"
-             inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\greenland.png"
-             inkscape:export-xdpi="90"
-             inkscape:export-ydpi="90">
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-251.99997"
-               cx="3405"
-               id="path6261-37"
-               style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60.068031"
-               rx="114.06803"
-               cy="-191.99997"
-               cx="3483"
-               id="path6261-8-00"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8639375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-196.24261"
-               cx="3372.364"
-               id="path6261-9-5"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-278.12131"
-               cx="3292.2427"
-               id="path6261-84-30"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60.088978"
-               rx="103.23795"
-               cy="-209.76274"
-               cx="3189.405"
-               id="path6261-7-4"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.82204533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-173.70029"
-               cx="3309.2598"
-               id="path6261-98-3"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-          </g>
           <path
              style="opacity:0.87000002;fill:#7bb443;fill-opacity:1;fill-rule:evenodd;stroke:#7bb443;stroke-width:2.87222958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              d="m 629.32,784.66105 c 3.1884,0.3934 6.0021,0.31 6.4604,-2.7705 -3.1449,-0.8805 -5.4404,-0.2155 -6.4604,2.7705 z"
@@ -24037,56 +23887,6 @@
                inkscape:transform-center-x="-0.19223937"
                inkscape:transform-center-y="-10.011247"
                transform="matrix(0.99673343,0,0,1.49032,2215.2468,209.12539)" />
-          </g>
-          <g
-             style="display:inline;opacity:0.77999998;fill:#ffffff"
-             id="g7102-7-6"
-             transform="matrix(0.60348612,0,0,0.55542214,-695.47508,230.78152)"
-             inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\greenland.png"
-             inkscape:export-xdpi="90"
-             inkscape:export-ydpi="90">
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-251.99997"
-               cx="3405"
-               id="path6261-37-5"
-               style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60.068031"
-               rx="114.06803"
-               cy="-191.99997"
-               cx="3483"
-               id="path6261-8-00-4"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.8639375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-196.24261"
-               cx="3372.364"
-               id="path6261-9-5-5"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-278.12131"
-               cx="3292.2427"
-               id="path6261-84-30-4"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60.088978"
-               rx="103.23795"
-               cy="-209.76274"
-               cx="3189.405"
-               id="path6261-7-4-4"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.82204533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-            <ellipse
-               ry="60"
-               rx="153"
-               cy="-173.70029"
-               cx="3309.2598"
-               id="path6261-98-3-4"
-               style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
           </g>
         </g>
       </g>

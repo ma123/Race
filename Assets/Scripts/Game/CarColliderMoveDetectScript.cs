@@ -4,17 +4,16 @@ using System.Collections;
 
 public class CarColliderMoveDetectScript : MonoBehaviour {
 	private GameObject reactionFromPanel;
+	private GameObject soundsAndMusic;
 	private float speed = 1f;
 	private bool firstMeasure = false;
 	private bool particleEnd = false;
 	private bool isParticle = true;
 	public GameObject particles;
-
-	public AudioClip explosionClips;
-	public AudioClip pickupCoinClips;
-
+	
 	void Start() {
 		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
+		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
 		StartCoroutine(Wait());
 	}
 
@@ -27,21 +26,13 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 		if(firstMeasure) {  // prve meranie az po 2 sekundach funkcie Wait() 
 			speed = (float) System.Math.Round(this.GetComponentInChildren<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
+			print (speed);
 			if(speed <= 0.01) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
 				print ("ides pomaly");
 				DestroyCarAndWinnPanel(); 
 				firstMeasure = false;
 			}
 		}
-
-
-		/*if ((GameObject.Find ("LeftWheel").transform.localPosition.y < -1.3f) && (GameObject.Find ("RightWheel").transform.localPosition.y < -1.3f)) {
-			GameObject.Find ("LeftWheel").transform.localPosition = new Vector3(GameObject.Find ("LeftWheel").transform.localPosition.x, -1.3f, 0);
-			GameObject.Find ("RightWheel").transform.localPosition = new Vector3(GameObject.Find ("RightWheel").transform.localPosition.x, -1.3f, 0);
-		}*/
-		//print(GameObject.Find ("Player").GetComponentInChildren<WheelJoint2D>().motor.motorSpeed);
-		// podla transform karoserie auta a polohz kolies vzpocitat nejaku medyu kde sa kolesa nesmu dostat uz
-		// ak sa tam dostanu tak sa nepohnu uy dalej
 	}
 
 	// prejdu 2 sekundy nasledne sa firstMeasure zmeni na true
@@ -54,25 +45,25 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll) {
 		if(coll.GetComponent<Collider2D>().CompareTag("Coin")) {
 			GameObject coin = coll.GetComponent<Collider2D>().gameObject;
-			AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
+			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
 			coin.SendMessage ("CoinReact");
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("InkBottle")) {
 			GameObject inkBottle = coll.GetComponent<Collider2D>().gameObject;
-			//AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
+			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
 			inkBottle.SendMessage ("InkBottleReact");
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("Gum")) {
 			GameObject gum = coll.GetComponent<Collider2D>().gameObject;
-			//AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
+			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
 			gum.SendMessage ("GumReact");
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("Goal")) {
 			GameObject goal = coll.GetComponent<Collider2D>().gameObject;
-			//AudioSource.PlayClipAtPoint(pickupCoinClips, transform.position);
+			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
 			goal.SendMessage ("GoalReact");
 		}
 		
@@ -101,8 +92,8 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 				vehicle.GetComponentsInChildren<Rigidbody2D> ()[i].isKinematic = true;
 				vehicle.GetComponentsInChildren<SpriteRenderer>()[i].enabled = false;
 			}
-			
-			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
+
+			soundsAndMusic.GetComponent<SoundsAndMusicScript>().ExplosionAudio(transform);
 			Instantiate(particles, transform.position, transform.rotation);
 			isParticle = false;
 

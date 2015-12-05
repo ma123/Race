@@ -38,18 +38,17 @@
 - ukladanie minci az po prejdenie levelu Y.....................
 - system viacerych aut Y.........................
 - pridat do editoru vsetky rozlisenia Y.......................
+- hlavne menu moc staticke pridat pohyb oblakov mozno vzducholod Y......................
+- brat mince celym autom nie iba karoseriou Y..........................
 
-- hlavne menu moc staticke pridat pohyb oblakov mozno vzducholod
 - vibracie v hre
 - vypnúť zvuky , hudbu
 - info o hre
 - sikmo iduce prekazky
 - casovac na prekazky zo spustacom
-- brat mince celym autom nie iba karoseriou
 - upravit detekovanie rychlosti
 - ukazatel priebehu levelu skusit pohladat pozriet
 - pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat
-- zmena materialu cesty 
 - obchod s autami 
 - po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami
 - zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
