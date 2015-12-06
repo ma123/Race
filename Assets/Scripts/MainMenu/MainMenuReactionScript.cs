@@ -36,6 +36,11 @@ public class MainMenuReactionScript : MonoBehaviour {
 		print ("clicked load Challenge");
 		Application.LoadLevel ("ChallengeScene");
 	}
+
+	public void ClickedSettings() {
+		print ("clicked settings");
+		ChangePanel(2);
+	}
 	
 	public void ClickedExit() {
 		print ("clicked exit");

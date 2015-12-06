@@ -40,25 +40,28 @@
 - pridat do editoru vsetky rozlisenia Y.......................
 - hlavne menu moc staticke pridat pohyb oblakov mozno vzducholod Y......................
 - brat mince celym autom nie iba karoseriou Y..........................
+- pozadie greenlandWorld Scene upravene pridane Y...........................
+- vibracie v hre Y...............................
+- pridanie settings panelu Y....................
+- mierne zmeny kazdý obrázok Y.........................
 
-- vibracie v hre
-- vypnúť zvuky , hudbu
+
+- vypnúť zvuky , hudbu, vibracie
 - info o hre
 - sikmo iduce prekazky
 - casovac na prekazky zo spustacom
 - upravit detekovanie rychlosti
-- ukazatel priebehu levelu skusit pohladat pozriet
 - pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat
 - obchod s autami 
 - po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami
 - zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
-- parallax background iba v challenge mode
 - optimalizovat na android rozlisenia
 - unity logo v splash screene nie na ciernom pozadi
 - klzanie po strechce do stodoly a nasledny pad z utesu  ???????
+- ukazatel priebehu levelu skusit pohladat pozriet
+- parallax background iba v challenge mode
 
 
-mierne zmeny kazdý obrázok 
 - zima sneh // iglu arkticka stanica
 - greenland tmavsi s prsanim 
 - mesto // garaz 
@@ -98,6 +101,8 @@ Draw path, Draw road
 - zvuky - explozia
         - vyhra
         - dosiel atrament
+        - zobranie gumy
+        - zobranie atramentu
         - pick coin
         - hudba pozadie
 
