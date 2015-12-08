@@ -45,8 +45,11 @@
 - pridanie settings panelu Y....................
 - mierne zmeny kazdý obrázok Y.........................
 
-
+- skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
 - vypnúť zvuky , hudbu, vibracie
+- vyberiem si svet akonahle sa vratim zmeni sa pozadie výberu svetov na predtym kliknuty svet
+- každé tlačidlo sveta bude mať v sebe výrez z pozadia aké má reprezentovat
+
 - info o hre
 - sikmo iduce prekazky
 - casovac na prekazky zo spustacom
