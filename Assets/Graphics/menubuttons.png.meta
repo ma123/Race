@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 68f192c0c5359e444bf05d3cf539526e
-timeCreated: 1449137748
+timeCreated: 1449579504
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,8 @@ TextureImporter:
     21300010: menubuttons_5
     21300012: menubuttons_6
     21300014: menubuttons_7
+    21300016: menubuttons_8
+    21300018: menubuttons_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -61,10 +63,10 @@ TextureImporter:
     - name: menubuttons_0
       rect:
         serializedVersion: 2
-        x: 310
-        y: 2408
-        width: 4629
-        height: 604
+        x: 661
+        y: 2924
+        width: 4278
+        height: 605
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -72,9 +74,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5684
-        y: 2521
+        y: 3037
         width: 570
-        height: 517
+        height: 518
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -82,9 +84,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 301
-        y: 1317
+        y: 1834
         width: 1414
-        height: 706
+        height: 705
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -92,9 +94,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1986
-        y: 1317
+        y: 1834
         width: 1414
-        height: 706
+        height: 705
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -102,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3669
-        y: 1317
+        y: 1834
         width: 1414
-        height: 706
+        height: 705
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 23
+        y: 539
         width: 570
         height: 519
       alignment: 0
@@ -122,7 +124,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1702
-        y: 460
+        y: 979
         width: 2056
         height: 693
       alignment: 0
@@ -132,11 +134,31 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5086
-        y: 0
+        y: 515
         width: 574
-        height: 517
+        height: 519
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_8
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 0
+        width: 1414
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: menubuttons_9
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 2
+        width: 1414
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
