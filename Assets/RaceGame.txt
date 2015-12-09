@@ -44,35 +44,32 @@
 - vibracie v hre Y...............................
 - pridanie settings panelu Y....................
 - mierne zmeny kazdý obrázok Y.........................
+- každé tlačidlo sveta bude mať v sebe výrez z pozadia aké má reprezentovat Y.................
+- 3 x variacie citiland Y..................................
+- klzanie po strechce do stodoly a nasledny pad z utesu  Y.............
 
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
 - vypnúť zvuky , hudbu, vibracie
+- obchod cena + tlačidlo po kupeni cena zmizne a zobrazi sa tlacidlo selectt
 - vyberiem si svet akonahle sa vratim zmeni sa pozadie výberu svetov na predtym kliknuty svet
-- každé tlačidlo sveta bude mať v sebe výrez z pozadia aké má reprezentovat
-
 - info o hre
 - sikmo iduce prekazky
 - casovac na prekazky zo spustacom
 - upravit detekovanie rychlosti
-- pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat
-- obchod s autami 
-- po rozkliknuti auta v obchode sa zobrazi panel s jeho jazdnymi vlastnostami
-- zmena jazdnych vlastnosti unifikovat iba menenie physics materialu 
+- pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat 
 - optimalizovat na android rozlisenia
 - unity logo v splash screene nie na ciernom pozadi
-- klzanie po strechce do stodoly a nasledny pad z utesu  ???????
+
 - ukazatel priebehu levelu skusit pohladat pozriet
 - parallax background iba v challenge mode
 
 
 - zima sneh // iglu arkticka stanica
 - greenland tmavsi s prsanim 
-- mesto // garaz 
 - pust  // pyramida padajuce mumie
 - ostrov sopecna krajina, padajuci popol iskry // 
 - jesen padajuce listy 
 - dzungla padajuce opice
-- 
 
 ----------------Matus----------------------------
 
@@ -87,10 +84,10 @@
 - utes startovaci Y.................
 - nakreslit indikator atramentu Y...............
 - balon , vzducholod ako prekazky Y............
+- vyber svetov Y.....................
+- VYTVORIT VIZUAL Y.....................
 
-- vyber svetov
-- meteorit, druzica, piano, náklad na padáku, 
-- VYTVORIT VIZUAL
+- meteorit, druzica, piano, náklad na padáku,
 - prekazky
 - najst font na pouzitie v celej hre
 - vytvorenie ikony
@@ -101,7 +98,9 @@
 
 Draw path, Draw road
 
-- zvuky - explozia
+
+
+- zvuky - explozia  Y............
         - vyhra
         - dosiel atrament
         - zobranie gumy
@@ -126,5 +125,4 @@ Draw path, Draw road
 768*1280-xhdpi
 1080*1920-xxhdpi
 800*1280-tvdpi
-
 1440*2560 
