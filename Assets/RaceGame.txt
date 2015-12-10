@@ -48,6 +48,7 @@
 - 3 x variacie citiland Y..................................
 - klzanie po strechce do stodoly a nasledny pad z utesu  Y.............
 
+- nakreslit garay tovarna s kominom y ktorej vuyzchdza auto
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
 - vypnúť zvuky , hudbu, vibracie
 - obchod cena + tlačidlo po kupeni cena zmizne a zobrazi sa tlacidlo selectt
