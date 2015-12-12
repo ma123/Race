@@ -47,6 +47,7 @@
 - každé tlačidlo sveta bude mať v sebe výrez z pozadia aké má reprezentovat Y.................
 - 3 x variacie citiland Y..................................
 - klzanie po strechce do stodoly a nasledny pad z utesu  Y.............
+- zobrazovat v main menu aktualne coin Y........................
 
 - nakreslit garay tovarna s kominom y ktorej vuyzchdza auto
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
@@ -63,6 +64,9 @@
 
 - ukazatel priebehu levelu skusit pohladat pozriet
 - parallax background iba v challenge mode
+
+- neuro games, studio
+
 
 
 - zima sneh // iglu arkticka stanica
