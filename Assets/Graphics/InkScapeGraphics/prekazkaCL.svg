@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="prekazka.svg">
+   sodipodi:docname="prekazkaCL.svg"
+   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\obstaclecityland.png"
+   inkscape:export-xdpi="110.74"
+   inkscape:export-ydpi="110.74">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -26,13 +29,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="1555.0434"
+     inkscape:cx="1085.0434"
      inkscape:cy="408.50853"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
@@ -44,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

@@ -55,6 +55,7 @@
 - obchod cena + tlačidlo po kupeni cena zmizne a zobrazi sa tlacidlo selectt
 - vyberiem si svet akonahle sa vratim zmeni sa pozadie výberu svetov na predtym kliknuty svet
 - info o hre
+- najst font ku picus games
 - sikmo iduce prekazky
 - casovac na prekazky zo spustacom
 - upravit detekovanie rychlosti
@@ -64,10 +65,6 @@
 
 - ukazatel priebehu levelu skusit pohladat pozriet
 - parallax background iba v challenge mode
-
-- neuro games, studio
-
-
 
 - zima sneh // iglu arkticka stanica
 - greenland tmavsi s prsanim 
