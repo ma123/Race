@@ -2,11 +2,13 @@
 using System.Collections;
 
 public class GoalScript : MonoBehaviour {
+	private GameObject reactionFromPanel;
 	protected string currentLevel;
 	protected int worldIndex;
 	protected int levelIndex;
 	// Use this for initialization
 	void Start () {
+		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
 		currentLevel = Application.loadedLevelName; // nacitanie mena aktualneho levela
 	}
 
@@ -27,7 +29,8 @@ public class GoalScript : MonoBehaviour {
 				}
 			}
 		}
+		reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(3); // parameter 2 pre dead stav
 		//load the World1 level 
-		Application.LoadLevel("World1");
+		//Application.LoadLevel("World1");
 	}
 }

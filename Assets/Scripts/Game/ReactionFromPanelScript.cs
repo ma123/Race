@@ -56,9 +56,9 @@ public class ReactionFromPanelScript : MonoBehaviour {
 
 	public void NextLevel() {
 		print ("nextLevel");
-		//int currentLevel = (PlayerPrefs.GetInt ("currentLevel") + 1);
-		//Application.LoadLevel ("Lvl" + currentLevel);
-		//PlayerPrefs.SetInt("currentLevel", currentLevel);
+		int currentLevel = (PlayerPrefs.GetInt ("currentLevel") + 1);
+		Application.LoadLevel ("Lvl" + currentLevel);
+		PlayerPrefs.SetInt("currentLevel", currentLevel);
 	}
 	
 	public void Restart() {
@@ -68,7 +68,7 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	
 	public void BackToLevelSelector() {
 		print ("backLevelSelector");
-		Application.LoadLevel ("MainMenuScene");
+		Application.LoadLevel ("World1");
 	}
 
 	public void BackToGame() {

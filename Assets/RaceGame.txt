@@ -48,23 +48,26 @@
 - 3 x variacie citiland Y..................................
 - klzanie po strechce do stodoly a nasledny pad z utesu  Y.............
 - zobrazovat v main menu aktualne coin Y........................
+- vypnúť zvuky , hudbu, vibracie Y.................................
+- nakreslit garay tovarna s kominom y ktorej vuyzchdza auto Y................
+- sikmo iduce prekazky Y................
+- casovac na prekazky zo spustacom Y.........
 
-- nakreslit garay tovarna s kominom y ktorej vuyzchdza auto
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
-- vypnúť zvuky , hudbu, vibracie
 - obchod cena + tlačidlo po kupeni cena zmizne a zobrazi sa tlacidlo selectt
 - vyberiem si svet akonahle sa vratim zmeni sa pozadie výberu svetov na predtym kliknuty svet
-- info o hre
-- najst font ku picus games
-- sikmo iduce prekazky
-- casovac na prekazky zo spustacom
+- po prejdenie levelu sa mozem dostat do dalsieho levelu s tlacitkom doprava
+- po kliknuti na navrat do menu, sa vratime do aktuálneho sveta 
+- z levelu návrat do sceny s vyberom levelov
 - upravit detekovanie rychlosti
 - pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat 
-- optimalizovat na android rozlisenia
-- unity logo v splash screene nie na ciernom pozadi
+
 
 - ukazatel priebehu levelu skusit pohladat pozriet
 - parallax background iba v challenge mode
+- najst font ku picus games
+- optimalizovat na android rozlisenia
+- unity logo v splash screene nie na ciernom pozadi
 
 - zima sneh // iglu arkticka stanica
 - greenland tmavsi s prsanim 
@@ -103,12 +106,13 @@ Draw path, Draw road
 
 
 - zvuky - explozia  Y............
-        - vyhra
+        - vyhra, aplaus, skandovanie
         - dosiel atrament
         - zobranie gumy
         - zobranie atramentu
         - pick coin
-        - hudba pozadie
+        - zobranie otocenia auta gravitacie 
+        - hudba pozadie apple tvorba hudby
 
 
 240*320-ldpi

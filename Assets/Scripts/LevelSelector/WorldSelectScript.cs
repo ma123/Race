@@ -10,10 +10,8 @@ public class WorldSelectScript : MonoBehaviour {
 		}
 	}
 
-	public void OpenGrasLandWorld(){
-		print ("Open grassLand");
-		Application.LoadLevel("World1"); //nacitanie sveta
+	public void OpenWorld(string worldName){
+		print ("Open world" + worldName);
+		Application.LoadLevel(worldName); //nacitanie sveta
 	}
-
-	// toto dalsie svety
 }

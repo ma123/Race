@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="219mm"
-   height="221mm"
-   viewBox="0 0 775.98428 783.07078"
+   width="2026"
+   height="783.07086"
+   viewBox="0 0 2026.0001 783.07078"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="znacka.svg"
-   inkscape:export-filename="C:\Users\Matthess\Desktop\Game Project\znacka.png"
-   inkscape:export-xdpi="235"
-   inkscape:export-ydpi="235">
+   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\Collections\znackaindustry.png"
+   inkscape:export-xdpi="236.53"
+   inkscape:export-ydpi="236.53">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,17 +28,25 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="724.10961"
-     inkscape:cy="247.2696"
+     inkscape:zoom="0.35"
+     inkscape:cx="-36.14167"
+     inkscape:cy="354.07666"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-nodes="false"
+     units="px" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -47,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -55,7 +63,7 @@
      inkscape:label="Vrstva 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-269.29148)">
+     transform="translate(0,-269.29147)">
     <g
        id="g4239"
        transform="translate(1102.8571,348.57143)">
@@ -76,9 +84,17 @@
          id="rect4170"
          style="fill:#ffd800;fill-opacity:1;stroke:#000000;stroke-width:9.49999905;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Kohut"
+     sodipodi:insensitive="true"
+     style="display:none"
+     transform="translate(0,1.250892e-5)">
     <g
        id="g4222"
-       transform="translate(38.701216,169.61777)">
+       transform="translate(50.129773,-99.673715)">
       <path
          id="path4136"
          d="m 441.03062,469.10461 a 73.741135,71.720825 0 0 1 -73.74113,71.72083 73.741135,71.720825 0 0 1 -73.74113,-71.72083 73.741135,71.720825 0 0 1 73.74113,-71.72082 73.741135,71.720825 0 0 1 73.74113,71.72082 z"
@@ -178,6 +194,49 @@
          id="path4198-7"
          d="m 482.5096,647.57623 -32.28212,1.8936 -0.57646,25.24847"
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8.19999981;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Industry"
+     transform="translate(0,1.250892e-5)">
+    <g
+       id="g3459"
+       transform="translate(-1.2557128,-25.304179)">
+      <rect
+         y="393.15198"
+         x="222.23355"
+         height="141.42136"
+         width="326.7981"
+         id="rect3414"
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="rect3416"
+         d="m 242.3034,235.2137 26.46643,0 17.61385,208.44588 -64.16737,0 c 2.01071,-20.86534 -1.49269,-40.48068 0.51803,-61.34602 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3421"
+         d="m 284.43367,393.14378 65.6017,-46.49346 0.5475,46.49346 z"
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.8753407px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3421-7"
+         d="m 350.58287,393.14378 65.60169,-46.49346 0.54749,46.49346 z"
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.8753407px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3421-9"
+         d="m 416.73205,393.14378 65.60171,-46.49346 0.5475,46.49346 z"
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.8753407px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3421-9-1"
+         d="m 482.88126,393.14378 65.6017,-46.49345 0.5475,46.49345 z"
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.8753407px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     </g>
   </g>
 </svg>

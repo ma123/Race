@@ -51,7 +51,9 @@ public class PathScript : MonoBehaviour {
 					}
 					drawPoints.Clear ();
 					inkBarObject.GetComponent<InkBarScript> ().Hit(lineLength);
-					lineRenderer.SetColors(c3, c4);
+					if(lineRenderer != null) { // po navrate z pauzy do hry hadzalo problem
+						lineRenderer.SetColors(c3, c4);
+					}
 
 					lineStack -= lineLength; // odpocitanie od zasobniku
 					lineLength = 0f; // vynulovanie dlzky ciary pre meranie novej ciary

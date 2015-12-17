@@ -2,46 +2,55 @@
 using System.Collections;
 
 public class DynamicObstacleScript : MonoBehaviour {
-	public float obstacleSpeed = 1.5f; 
+	public Transform[] path;
+	public float speed = 5.0f;
+	public float reachDist = 1.0f;
+	private int currentPoint = 0;
+	private float direction = 1.0f;
+	private bool pathDirection = true;
 
-	public Transform[] routPoints;
-	private bool[] routPointsBool;
-
-	void Start () {
-		routPointsBool = new bool[routPoints.Length];
-	    routPointsBool[0] = true;
-		routPointsBool[1] = false;
-		routPointsBool[2] = false;
+	void Start() {
+		transform.position = path [0].position;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(routPointsBool[0]) {
-			if (transform.position == routPoints [0].position) {
-				routPointsBool[0] = false;
-				routPointsBool[1] = true;
-			} else {
-				transform.position = Vector2.MoveTowards(transform.position, routPoints[0].position, Time.deltaTime* obstacleSpeed);
-			}
+
+	void Update() {
+	  if(SwitchDynamicObstacleScript.GetSwitchOn()) { 
+		float dist = Vector3.Distance (path[currentPoint].position, transform.position);
+		transform.position = Vector3.MoveTowards(transform.position, path[currentPoint].position, Time.deltaTime * speed);
+
+		if (pathDirection) {
+			if (dist <= reachDist) {
+				if (currentPoint < path.Length - 1) {
+					currentPoint++;
+				} else {
+					pathDirection = false;
+				}
+			} 
+		} else {
+			if (dist <= reachDist) {
+				if(currentPoint > 0) {
+					currentPoint--;
+				} else {
+					pathDirection = true;
+				}
+			} 
 		}
 
-		if(routPointsBool[1]) {
-			if (transform.position == routPoints [1].position) {
-				routPointsBool[1] = false;
-				routPointsBool[2] = true;
-			} else {
-				transform.position = Vector2.MoveTowards(transform.position, routPoints[1].position, Time.deltaTime* obstacleSpeed);
-			}
+		if ((direction < 0.0f) && ((transform.position.x + 5) >= path[path.Length - 1].position.x)) {
+			direction = 1.0f;
+			Flip ();
 		}
 
-		if(routPointsBool[2]) {
-			if (transform.position == routPoints [2].position) {
-				routPointsBool[2] = false;
-				routPointsBool[0] = true;
-			} else {
-				transform.position = Vector2.MoveTowards(transform.position, routPoints[1].position, Time.deltaTime* obstacleSpeed);
-			}
-		}
+		if ((direction > 0.0f) && ((transform.position.x - 5) <= path [0].position.x)) {
+			direction = -1.0f;
+			Flip ();
+		} 
+	  }
+	}
 
+	private void Flip() {
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		transform.localScale = theScale;
 	}
 }
