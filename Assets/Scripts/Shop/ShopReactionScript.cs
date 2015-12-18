@@ -8,4 +8,8 @@ public class ShopReactionScript : MonoBehaviour {
 			Application.LoadLevel("MainMenuScene");
 		}
 	}
+
+	public void ReturnToMainMenu() {
+		Application.LoadLevel("MainMenuScene");
+	}
 }

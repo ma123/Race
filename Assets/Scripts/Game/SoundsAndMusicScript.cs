@@ -17,18 +17,25 @@ public class SoundsAndMusicScript : MonoBehaviour {
 	public void PickupCoinAudio(Transform transPos) {
 		if(vibrationEnabled == 1) {
 			print ("vibration coin");
-		   Handheld.Vibrate();
+		    Handheld.Vibrate();
 		}
 
 		if(soundEnabled == 1) {
 			print ("sound coin");
-		   AudioSource.PlayClipAtPoint(pickupCoinClips, transPos.position);
+		    AudioSource.PlayClipAtPoint(pickupCoinClips, transPos.position);
 		}
 	}
 
 	public void ExplosionAudio(Transform transPos) {
-		Handheld.Vibrate();
-		AudioSource.PlayClipAtPoint(pickupCoinClips, transPos.position);
+		if (vibrationEnabled == 1) {
+			print ("vibration explosion");
+			Handheld.Vibrate ();
+		}
+
+		if (soundEnabled == 1) {
+			print ("sound explosion");
+			AudioSource.PlayClipAtPoint (explosionClips, transPos.position);
+		}
 	}
 
 }

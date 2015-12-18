@@ -60,6 +60,23 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
 			gum.SendMessage ("GumReact");
 		}
+
+		if(coll.GetComponent<Collider2D>().CompareTag("ReverseGravity")) {
+			GameObject reverse = coll.GetComponent<Collider2D>().gameObject;
+			print(reverse);
+			Destroy(reverse);
+
+		   /* this.transform.Rotate(180 , 0, 0);
+			this.GetComponent<Rigidbody2D>().gravityScale = -1.0f;
+
+			Rigidbody2D[] rigid =  this.GetComponentsInChildren<Rigidbody2D>();
+			for(int i = 0; i < rigid.Length; i++) {
+				rigid[i].gravityScale = -1.0f;
+			}*/
+
+			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
+
+		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("Goal")) {
 			GameObject goal = coll.GetComponent<Collider2D>().gameObject;

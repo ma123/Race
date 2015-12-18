@@ -27,6 +27,10 @@ public class LevelSelectScript : MonoBehaviour {
    			Application.LoadLevel("SelectWorldScene");
   		}
  	}
+
+	public void ReturnToSelectWorld() {
+		Application.LoadLevel("SelectWorldScene");
+	}
 	
 	//vybranie levelu podla argumentu worldLevel ktory je zadany v editore napr. 1.1, 2.6
 	public void Selectlevel(string worldLevel){
