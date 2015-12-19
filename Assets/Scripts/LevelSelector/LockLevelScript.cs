@@ -3,15 +3,14 @@ using System.Collections;
 
 public class LockLevelScript : MonoBehaviour {
 
-	public static int worlds = 1; //number of worlds
-	public static int levels = 8; //number of levels
+	public static int worlds = 2; //number of worlds
+	public static int levels = 15; //number of levels
 	
 	private int worldIndex;   
 	private int levelIndex;   
 	
 	
 	void  Start (){
-		//PlayerPrefs.DeleteAll(); //erase data on start
 		LockLevels();   //call function LockLevels
 	}
 	

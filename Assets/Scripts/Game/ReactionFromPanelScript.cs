@@ -56,9 +56,8 @@ public class ReactionFromPanelScript : MonoBehaviour {
 
 	public void NextLevel() {
 		print ("nextLevel");
-		int currentLevel = (PlayerPrefs.GetInt ("currentLevel") + 1);
-		Application.LoadLevel ("Lvl" + currentLevel);
-		PlayerPrefs.SetInt("currentLevel", currentLevel);
+		string currentLevel = Application.loadedLevelName;
+		print (currentLevel);
 	}
 	
 	public void Restart() {
