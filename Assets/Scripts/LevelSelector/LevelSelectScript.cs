@@ -30,7 +30,7 @@ public class LevelSelectScript : MonoBehaviour {
   		}
  	}
 
-	public void ReturnToSelectWorld() {
+	public void BackToSelectWorld() {
 		Application.LoadLevel("SelectWorldScene");
 	}
 	

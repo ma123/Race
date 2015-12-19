@@ -3,10 +3,12 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class TopCarColliderScript : MonoBehaviour {
+	public AudioClip explosionClips;
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if(coll != null) {
 			print ("kolizia na streche");
+			AudioSource.PlayClipAtPoint(explosionClips, transform.position);
 			GameObject vehicle = GameObject.Find("Player");
 			vehicle.GetComponentInChildren<CarColliderMoveDetectScript>().DestroyCarAndWinnPanel();
 		}	

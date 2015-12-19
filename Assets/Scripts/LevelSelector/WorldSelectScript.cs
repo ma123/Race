@@ -10,12 +10,12 @@ public class WorldSelectScript : MonoBehaviour {
 		}
 	}
 
+	public void ReturnToMainMenu() { 
+		Application.LoadLevel("MainMenuScene"); 
+	}
+
 	public void OpenWorld(string worldName){
 		print ("Open world" + worldName);
 		Application.LoadLevel(worldName); //nacitanie sveta
-	}
-
-	public void ReturnToMainMenu() {
-		Application.LoadLevel("MainMenuScene"); 
 	}
 }
