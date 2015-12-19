@@ -63,27 +63,27 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 		if(coll.GetComponent<Collider2D>().CompareTag("ReverseGravity")) {
 			GameObject reverse = coll.GetComponent<Collider2D>().gameObject;
-			print(reverse);
 			Destroy(reverse);
 
-			/*transform.eulerAngles = new Vector3(180, 0, 0);
+			this.transform.Rotate(180.0f, 0, 0);
+			GameObject.FindWithTag("CarCollider").transform.Rotate(180.0f, 0, 0);;
 
-			//this.transform.Rotate(180.0f, 0, 0, Space.Self);
-			print (this.transform.rotation);
-			this.GetComponent<Rigidbody2D>().gravityScale = -1.0f;
+			//this.GetComponent<Rigidbody2D>().gravityScale = -1.0f;
 
 			Rigidbody2D[] rigid =  this.GetComponentsInChildren<Rigidbody2D>();
 			for(int i = 0; i < rigid.Length; i++) {
-				rigid[i].gravityScale = -1.0f;
-			}*/
+				rigid[i].gravityScale = -rigid[i].gravityScale;
+			}
 
-			/*WheelJoint2D[] wheelJoint = this.GetComponents<WheelJoint2D>();
+			WheelJoint2D[] wheelJoint = this.GetComponents<WheelJoint2D>();
 			for(int i = 0; i < wheelJoint.Length; i++) {
-				wheelJoint[i].motor.motorSpeed = 400f;
-			}*/
+				wheelJoint[i].anchor = new Vector2(wheelJoint[i].anchor.x, -wheelJoint[i].anchor.y);  // zmena anchor na opacne
 
+				JointMotor2D m = wheelJoint[i].motor; // zmena rychlosti na opacnu
+				m.motorSpeed = -wheelJoint[i].motor.motorSpeed;
+				wheelJoint[i].motor = m;
+			}
 			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
-
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("Goal")) {

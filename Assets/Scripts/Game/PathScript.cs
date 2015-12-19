@@ -76,7 +76,7 @@ public class PathScript : MonoBehaviour {
 
 	public void AddColliderToDraw() {
 		EdgeCollider2D col = new GameObject("EdgeCollider").AddComponent<EdgeCollider2D> ();
-		col.tag = "EdgeColl";
+		col.tag = "LineDraw";
 		col.transform.parent = lineDrawPrefab.transform;
 
 		//col.transform.parent = lineRenderer.transform; // Collider is added as child object of line
