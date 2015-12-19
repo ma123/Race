@@ -5,11 +5,13 @@ using System.Collections;
 public class LevelSelectScript : MonoBehaviour {
 	private int worldIndex;   
 	private int levelIndex;  
+	public int selectedBackround = 1;
 	
 	public GameObject levelLoadingPanel;
 	private int loadProgress;
 
 	void Start (){
+		PlayerPrefs.SetInt ("background", selectedBackround);
 		//loop thorugh all the worlds
 		for (int i = 1; i <= LockLevelScript.worlds; i++) {
 			if (Application.loadedLevelName == "World" + i) {

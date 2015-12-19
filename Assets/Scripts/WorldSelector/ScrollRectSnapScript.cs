@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class ScrollRectSnapScript : MonoBehaviour {
-	public RectTransform panel;
+	/*public RectTransform panel;
 	public Button[] bttns;
 	public RectTransform center;
 
@@ -22,5 +22,5 @@ public class ScrollRectSnapScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-	}
+	}*/
 }

@@ -66,12 +66,20 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			print(reverse);
 			Destroy(reverse);
 
-		   /* this.transform.Rotate(180 , 0, 0);
+			/*transform.eulerAngles = new Vector3(180, 0, 0);
+
+			//this.transform.Rotate(180.0f, 0, 0, Space.Self);
+			print (this.transform.rotation);
 			this.GetComponent<Rigidbody2D>().gravityScale = -1.0f;
 
 			Rigidbody2D[] rigid =  this.GetComponentsInChildren<Rigidbody2D>();
 			for(int i = 0; i < rigid.Length; i++) {
 				rigid[i].gravityScale = -1.0f;
+			}*/
+
+			/*WheelJoint2D[] wheelJoint = this.GetComponents<WheelJoint2D>();
+			for(int i = 0; i < wheelJoint.Length; i++) {
+				wheelJoint[i].motor.motorSpeed = 400f;
 			}*/
 
 			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
