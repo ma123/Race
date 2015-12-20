@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25"
-     inkscape:cx="-355.85203"
-     inkscape:cy="307.41724"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="-966.6293"
+     inkscape:cy="476.93228"
      inkscape:document-units="px"
      inkscape:current-layer="g4339"
      showgrid="false"
@@ -78,9 +78,12 @@
        transform="translate(135.95562,494.12447)"
        style="fill:#808080;fill-opacity:1">
       <g
-         transform="translate(848.57143,-264.57139)"
+         transform="translate(848.57143,-304.57139)"
          id="g4228"
-         style="fill:#808080;fill-opacity:1">
+         style="fill:#808080;fill-opacity:1"
+         inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\garage.png"
+         inkscape:export-xdpi="285.07001"
+         inkscape:export-ydpi="285.07001">
         <rect
            style="opacity:0.98000004;fill:#808080;fill-opacity:1;stroke:none;stroke-width:33.09999847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98039216"
            id="rect4210"
@@ -116,8 +119,11 @@
       <path
          inkscape:connector-curvature="0"
          id="path4337"
-         d="M -248,-83.92351 807.71429,-85.352082"
-         style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="m -248,-129.92351 1055.71429,-1.42857"
+         style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\garage.png"
+         inkscape:export-xdpi="285.07001"
+         inkscape:export-ydpi="285.07001" />
     </g>
   </g>
   <g
@@ -130,7 +136,10 @@
        d="m -202.38818,75.960059 0,999.618341 123.240196,0 0,-553.10196 c 34.2334,-429.600481 942.126704,-404.46925 1006.111404,0 l 0,553.10196 119.19728,0 0,-999.618341 z"
        id="rect4164"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccc" />
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\garage.png"
+       inkscape:export-xdpi="285.07001"
+       inkscape:export-ydpi="285.07001" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -140,7 +149,10 @@
     <g
        style="display:inline"
        id="g6003-8"
-       transform="translate(-3707.8325,449.22122)">
+       transform="translate(-3707.8325,449.22122)"
+       inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\garage.png"
+       inkscape:export-xdpi="285.07001"
+       inkscape:export-ydpi="285.07001">
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
@@ -159,10 +171,16 @@
        d="m 978.13742,78.843009 65.47438,0 0,81.111381 c -20.022,20.84565 -41.8214,21.13884 -65.47438,0 z"
        id="rect5967-6-4"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\garage.png"
+       inkscape:export-xdpi="285.07001"
+       inkscape:export-ydpi="285.07001" />
     <g
        id="g6161"
-       transform="translate(-4050.3866,938.84332)">
+       transform="translate(-4050.3866,938.84332)"
+       inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\garage.png"
+       inkscape:export-xdpi="285.07001"
+       inkscape:export-ydpi="285.07001">
       <g
          id="g6083">
         <path

@@ -6,26 +6,28 @@ public class CameraFollowScript : MonoBehaviour {
 	private Vector3 pos;
 	private Vector3 newPos;
 	public float offSet = 8f;
-	public int currentVehicle = 1;
+	public int currentVehicle = 0;
 
 	void Start() {
+		currentVehicle = PlayerPrefs.GetInt ("selectedCar", 0);
 		GameObject playerParent = GameObject.Find ("Player");
 		Transform car = null;
 
 		switch(currentVehicle) {
-		case 1: 
-			car = playerParent.transform.Find("PlayerArmyCar");
+		case 0: 
+			car = playerParent.transform.Find("PlayerSedanCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
+
 			break;
-		case 2: 
-			car = playerParent.transform.Find("PlayerSedanCar");
+		case 1: 
+			car = playerParent.transform.Find("PlayerSkodaRapidCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;
 
-		case 3: 
-			car = playerParent.transform.Find("PlayerSkodaRapidCar");
+		case 2: 
+			car = playerParent.transform.Find("PlayerArmyCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;

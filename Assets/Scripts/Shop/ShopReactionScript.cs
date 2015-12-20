@@ -2,14 +2,79 @@
 using System.Collections;
 
 public class ShopReactionScript : MonoBehaviour {
+	private GameObject[] frame;
+	private GameObject[] selectFrame;
+	private GameObject[] selectedFrame;
 
-	void Update() {
-		if (Input.GetKeyDown (KeyCode.Escape)) { 
-			Application.LoadLevel("MainMenuScene");
-		}
+	private int numberOfCars = 3;
+	private int[] priceCar = {10, 20, 15};
+	private int selectedCar = 0;
+	
+	void Start() {
+		frame = new GameObject[numberOfCars];
+		selectFrame = new GameObject[numberOfCars];
+		selectedFrame = new GameObject[numberOfCars];
+		selectedCar = PlayerPrefs.GetInt ("selectedCar", 0);
+
+		for(int i = 0; i < numberOfCars; i++) { // prebehne pole ak su zbrane true ulozia sa do listu
+			if(PlayerPrefs.GetInt("car" + i, 0) == 1) {
+				if(selectedCar == i) {
+					frame[i] = GameObject.Find("Frame"+ i);
+					frame[i].SetActive(false);
+					selectFrame[i] = GameObject.Find("SelectFrame"+ i);
+					selectFrame[i].SetActive(false);
+				    selectedFrame[i] = GameObject.Find("SelectedFrame"+ i);
+				    selectedFrame[i].SetActive(true);
+				} else {
+					frame[i] = GameObject.Find("Frame"+ i);
+					frame[i].SetActive(false);
+					selectFrame[i] = GameObject.Find("SelectFrame"+ i);
+					selectFrame[i].SetActive(true);
+					selectedFrame[i] = GameObject.Find("SelectedFrame"+ i);
+					selectedFrame[i].SetActive(false);
+				}
+			} else {
+				frame[i] = GameObject.Find("Frame"+ i);
+				frame[i].SetActive(true);
+				selectFrame[i] = GameObject.Find("SelectFrame"+ i);
+				selectFrame[i].SetActive(false);
+				selectedFrame[i] = GameObject.Find("SelectedFrame"+ i);
+				selectedFrame[i].SetActive(false);
+			}
+		} 
 	}
+	
+	public void BuyCar(int typeOfCar) {
+		if (PlayerPrefs.GetInt ("car" + typeOfCar, 0) == 0) {
+			print ("chcem kupit");
+			if (PlayerPrefs.GetInt ("money", 0) >= priceCar [typeOfCar]) {   // zisti ci mas dost penazi
+				MoneyScript.RemoveScore (priceCar [typeOfCar]); //odobranie penazi
+				PlayerPrefs.SetInt ("money", MoneyScript.GetMoney ()); // ulozenie zostatku penazi
+				PlayerPrefs.SetInt ("car" + typeOfCar, 1); // ulozenie vlastnictva auta
 
-	public void ReturnToMainMenu() {
-		Application.LoadLevel("MainMenuScene");
+				frame [typeOfCar].SetActive (false);
+				selectFrame [typeOfCar].SetActive (false);
+				selectedFrame [typeOfCar].SetActive (true);
+			} else {
+				print ("nemas dost penazi bez makat biely cigan");
+			}
+		} else {
+			print ("vyberam");
+			PlayerPrefs.SetInt ("selectedCar", typeOfCar);
+			frame [typeOfCar].SetActive (false);
+			selectFrame [typeOfCar].SetActive (false);
+			selectedFrame [typeOfCar].SetActive (true);
+			for(int i = 0; i < numberOfCars; i++) {
+				if(i == typeOfCar) {
+					frame [i].SetActive (false);
+					selectFrame [i].SetActive (false);
+					selectedFrame [i].SetActive (true);
+				} else {
+					frame [i].SetActive (false);
+					selectFrame [i].SetActive (true);
+					selectedFrame [i].SetActive (false);
+				}
+			}
+		}
 	}
 }
