@@ -56,15 +56,16 @@
 - pridat tlacidlo naspat do vyberu svetov Y..............
 - pridat tlacidlo naspat do vyberu levelov a do settings Y...............
 - vyberiem si svet akonahle sa vratim zmeni sa pozadie výberu svetov na predtym kliknuty svet Y......................
-
+- pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat Y.............
 
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
 - obchod cena + tlačidlo po kupeni cena zmizne a zobrazi sa tlacidlo selectt
+
 - po prejdenie levelu sa mozem dostat do dalsieho levelu s tlacitkom doprava
 - po kliknuti na navrat do menu, sa vratime do aktuálneho sveta 
 - z levelu návrat do sceny s vyberom levelov
 - upravit detekovanie rychlosti
-- pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat 
+
 
 
 - ukazatel priebehu levelu skusit pohladat pozriet
