@@ -27,8 +27,13 @@ public class SoundsAndMusicScript : MonoBehaviour {
 	}
 
 	public void ExplosionAudio(Transform transPos) {
-		Handheld.Vibrate();
-		AudioSource.PlayClipAtPoint(explosionClips, transPos.position);
+		if (vibrationEnabled == 1) {
+			Handheld.Vibrate ();
+		}
+
+		if (soundEnabled == 1) {
+			AudioSource.PlayClipAtPoint (explosionClips, transPos.position);
+		}
 	}
 
 }
