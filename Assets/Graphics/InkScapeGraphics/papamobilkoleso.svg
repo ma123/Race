@@ -15,10 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="papa koleso.svg"
-   inkscape:export-filename="C:\Users\Matthess\Desktop\papakoleso.png"
-   inkscape:export-xdpi="235"
-   inkscape:export-ydpi="235">
+   sodipodi:docname="papamobilkoleso.svg"
+   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\Vehicles\KolesoPapamobil.png"
+   inkscape:export-xdpi="98.181816"
+   inkscape:export-ydpi="98.181816">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -29,16 +29,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="174.156"
-     inkscape:cy="350.54506"
+     inkscape:cx="-295.844"
+     inkscape:cy="269.04647"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4242"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     showguides="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -58,6 +59,12 @@
     <g
        id="g4242"
        transform="translate(-148.57143,182.85714)">
+      <circle
+         style="opacity:1;fill:#c8b7b7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:8.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path3347"
+         cx="432.35004"
+         cy="584.67749"
+         r="178.57143" />
       <path
          transform="matrix(0.54461924,0,0,0.49843661,241.32997,555.83426)"
          inkscape:transform-center-y="4.8823766"

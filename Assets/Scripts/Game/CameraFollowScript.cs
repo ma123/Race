@@ -32,6 +32,12 @@ public class CameraFollowScript : MonoBehaviour {
 			observingObject = car.transform;
 			break;
 
+		case 3: 
+			car = playerParent.transform.Find("PlayerPapamobilCar");
+			car.gameObject.SetActive(true);
+			observingObject = car.transform;
+			break;
+
 	    // TODO DALSIE AUTA 
 		default: 
 			break;
