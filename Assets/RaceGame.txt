@@ -59,16 +59,14 @@
 - pomala reakcia tlacitiek obcas ziadna preco?  po bokoch mensie sipky ktorymi sa to da posuvat Y.............
 - obchod cena + tlačidlo po kupeni cena zmizne a zobrazi sa tlacidlo selectt Y.......................
 - papa mobil blbosti Y....................
+- potvrdzovacia hlaska na kupu auta ano nie panel vyskoci zmizne Y............................
+- urcit ktore auto bude zakladne na zaklade toho upravit obchod aby sa nedalo kupit a bolo v zaklade 
 
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
-- potvrdzovacia hlaska na kupu auta ano nie panel vyskoci zmizne
-
 - po prejdenie levelu sa mozem dostat do dalsieho levelu s tlacitkom doprava
 - po kliknuti na navrat do menu, sa vratime do aktuálneho sveta 
 - z levelu návrat do sceny s vyberom levelov
 - upravit detekovanie rychlosti
-
-
 
 - ukazatel priebehu levelu skusit pohladat pozriet
 - parallax background iba v challenge mode
