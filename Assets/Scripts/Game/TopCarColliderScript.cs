@@ -4,7 +4,6 @@ using System.Collections;
 
 public class TopCarColliderScript : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll) {
-		print (coll.gameObject.tag);
 		if((coll.gameObject.tag == "LineDraw")  || (coll.gameObject.tag == "Obstacle")) {
 			print ("kolizia na streche");
 			GameObject vehicle = GameObject.Find("Player");

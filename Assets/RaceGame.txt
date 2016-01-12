@@ -67,10 +67,16 @@
 - po kliknuti na navrat do menu, sa vratime do aktuálneho sveta 
 - z levelu návrat do sceny s vyberom levelov
 - upravit detekovanie rychlosti
+- zle vypadajuce tlacidlo vyberu v obchode
+- rovnaka velkost aut
+- tlacidlo naspat ine obla sipka namiesto rovnej sipky
+- vyskusat funkciu zvuku vibracii hudby
+- najst hudbu v pozadi jeep Z6 melodia
 
 - ukazatel priebehu levelu skusit pohladat pozriet
 - parallax background iba v challenge mode
-- najst font ku picus games
+- kliknutie na tlacidlo nejaka vyraznejsia zmena aby hrac vedel ze klikol
+- scroll panel detekovanie kliknutia a tahania na svety a v obchode
 - optimalizovat na android rozlisenia
 - unity logo v splash screene nie na ciernom pozadi
 

@@ -65,10 +65,8 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			GameObject reverse = coll.GetComponent<Collider2D>().gameObject;
 			Destroy(reverse);
 
-			this.transform.Rotate(180.0f, 0, 0);
-			GameObject.FindWithTag("CarCollider").transform.Rotate(180.0f, 0, 0);;
-
-			//this.GetComponent<Rigidbody2D>().gravityScale = -1.0f;
+			this.transform.Rotate(180.0f, 0.0f, 0.0f);
+			GameObject.FindWithTag("CarBody").transform.Rotate(180.0f, 0.0f, 0.0f);
 
 			Rigidbody2D[] rigid =  this.GetComponentsInChildren<Rigidbody2D>();
 			for(int i = 0; i < rigid.Length; i++) {
@@ -79,6 +77,34 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			for(int i = 0; i < wheelJoint.Length; i++) {
 				wheelJoint[i].anchor = new Vector2(wheelJoint[i].anchor.x, -wheelJoint[i].anchor.y);  // zmena anchor na opacne
 
+				JointMotor2D m = wheelJoint[i].motor; // zmena rychlosti na opacnu
+				m.motorSpeed = -wheelJoint[i].motor.motorSpeed;
+				wheelJoint[i].motor = m;
+			}
+			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
+		}
+
+		if(coll.GetComponent<Collider2D>().CompareTag("ReverseGravityNormal")) {
+			GameObject reverse = coll.GetComponent<Collider2D>().gameObject;
+			Destroy(reverse);
+
+			this.transform.Rotate(180.0f, 0.0f, 0.0f);
+			/*foreach (Transform child in transform) {
+				child.rotation = Quaternion.identity;
+				child.Rotate(180.0f, 0, 0);
+			}*/
+
+			GameObject.FindWithTag("CarBody").transform.Rotate(180.0f, 0.0f, 0.0f);
+			
+			Rigidbody2D[] rigid =  this.GetComponentsInChildren<Rigidbody2D>();
+			for(int i = 0; i < rigid.Length; i++) {
+				rigid[i].gravityScale = -rigid[i].gravityScale;
+			}
+			
+			WheelJoint2D[] wheelJoint = this.GetComponents<WheelJoint2D>();
+			for(int i = 0; i < wheelJoint.Length; i++) {
+				wheelJoint[i].anchor = new Vector2(wheelJoint[i].anchor.x, -wheelJoint[i].anchor.y);  // zmena anchor na opacne
+				
 				JointMotor2D m = wheelJoint[i].motor; // zmena rychlosti na opacnu
 				m.motorSpeed = -wheelJoint[i].motor.motorSpeed;
 				wheelJoint[i].motor = m;
