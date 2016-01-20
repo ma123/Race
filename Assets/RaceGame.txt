@@ -61,6 +61,11 @@
 - papa mobil blbosti Y....................
 - potvrdzovacia hlaska na kupu auta ano nie panel vyskoci zmizne Y............................
 - tlacidlo naspat ine obla sipka namiesto rovnej sipky  Y.......................
+- scroll panel detekovanie kliknutia a tahania na svety a v obchode Y...................
+- zle vypadajuce tlacidlo vyberu v obchode Y.................
+- upravit detekovanie rychlosti Y.....................
+- urcit ktore auto bude zakladne na zaklade toho upravit obchod aby sa nedalo kupit a bolo v zaklade Y.................
+- vyskusat funkciu zvuku vibracii Y..............................
 - unity logo v splash screene nie na ciernom pozadi  Y...................... problem unity
 
 
@@ -68,17 +73,14 @@
 - po prejdenie levelu sa mozem dostat do dalsieho levelu s tlacitkom doprava
 - po kliknuti na navrat do menu, sa vratime do aktuálneho sveta 
 - z levelu návrat do sceny s vyberom levelov
-- upravit detekovanie rychlosti
-- zle vypadajuce tlacidlo vyberu v obchode
+
 - rovnaka velkost aut
-- vyskusat funkciu zvuku vibracii hudby
 - najst hudbu v pozadi jeep Z6 melodia
-- urcit ktore auto bude zakladne na zaklade toho upravit obchod aby sa nedalo kupit a bolo v zaklade 
+
 
 - ukazatel priebehu levelu skusit pohladat pozriet
 - parallax background iba v challenge mode
 - kliknutie na tlacidlo nejaka vyraznejsia zmena aby hrac vedel ze klikol
-- scroll panel detekovanie kliknutia a tahania na svety a v obchode
 - optimalizovat na android rozlisenia
 
 

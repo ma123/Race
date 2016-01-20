@@ -16,13 +16,14 @@ public class ShopReactionScript : MonoBehaviour {
 	private int selectedCar = 0;
 	
 	void Start() {
+		PlayerPrefs.SetInt ("car" + 0, 1); // ulozenie vlastnictva prveho auta
 		currentPanelIndex = 0;
 		frame = new GameObject[numberOfCars];
 		selectFrame = new GameObject[numberOfCars];
 		selectedFrame = new GameObject[numberOfCars];
 		selectedCar = PlayerPrefs.GetInt ("selectedCar", 0);
 
-		for(int i = 0; i < numberOfCars; i++) { // prebehne pole ak su zbrane true ulozia sa do listu
+		for(int i = 0; i < numberOfCars; i++) { // prebehne pole ak su auta true ulozia sa do listu
 			if(PlayerPrefs.GetInt("car" + i, 0) == 1) {
 				if(selectedCar == i) {
 					frame[i] = GameObject.Find("Frame"+ i);
@@ -90,6 +91,7 @@ public class ShopReactionScript : MonoBehaviour {
 			MoneyScript.RemoveScore (priceCar [typeOfCar]); //odobranie penazi
 			PlayerPrefs.SetInt ("money", MoneyScript.GetMoney ()); // ulozenie zostatku penazi
 			PlayerPrefs.SetInt ("car" + typeOfCar, 1); // ulozenie vlastnictva auta
+			PlayerPrefs.SetInt ("selectedCar", typeOfCar);
 			
 			frame [typeOfCar].SetActive (false);
 			selectFrame [typeOfCar].SetActive (false);
