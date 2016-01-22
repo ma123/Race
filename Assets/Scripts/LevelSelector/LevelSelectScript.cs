@@ -39,9 +39,7 @@ public class LevelSelectScript : MonoBehaviour {
 		print ("Level loaded " + worldLevel);
 		StartCoroutine (DisplayLevelLoadingScreen(worldLevel));
 	}
-
-
-	
+		
 	//zistenie ktory level je odomknuty a zobrazenie bez zamku
 	void  CheckLockedLevels (){
 		for(int j = 1; j < LockLevelScript.levels; j++){ // podla poctu levelov

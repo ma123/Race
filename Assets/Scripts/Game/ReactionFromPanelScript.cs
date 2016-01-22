@@ -12,13 +12,6 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) { 
 			WinnPanelReaction(1); // parameter pre pauzu
-
-			/*Time.timeScale = 0; // pauznutie hry
-			
-			winPanel.SetActive(true);
-			GameObject btnInteractable = GameObject.Find("NextLvlBtn");
-			print (btnInteractable);
-			btnInteractable.GetComponent<Button>().interactable = false;*/
 		}
 	}
 
@@ -29,22 +22,19 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
 
 		switch(reaction) {
-			case 1: 
-				//esc
-			print("esc");
+			case 1:    //esc
+			    print("esc");
 				btnInteractable.GetComponent<Button>().interactable = false;
 			break;
 
-			case 2:
-				//dead
-			print("dead");
+			case 2:   //dead
+			    print("dead");
 				btnInteractable.GetComponent<Button>().interactable = false;
 				btnInteractableBack.GetComponent<Button>().interactable = false;
 			break;
 
-		    case 3:
-				//winn
-			print("winn");
+		    case 3:  //winn
+			    print("winn");
 				//btnInteractable.GetComponent<Button>().interactable = true;
 				btnInteractableBack.GetComponent<Button>().interactable = false;
 			break;
@@ -67,7 +57,8 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	
 	public void BackToLevelSelector() {
 		print ("backLevelSelector");
-		Application.LoadLevel ("World1");
+		string currentLevel = Application.loadedLevelName;
+		Application.LoadLevel ("World"+ currentLevel[5]);
 	}
 
 	public void BackToGame() {
