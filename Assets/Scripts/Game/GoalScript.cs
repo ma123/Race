@@ -20,17 +20,23 @@ public class GoalScript : MonoBehaviour {
 	}
 
 	protected void UnlockLevels (){
-		for(int i = 0; i < LockLevelScript.worlds; i++){
-			for(int j = 1; j < LockLevelScript.levels; j++){               
-				if(currentLevel == "Level"+(i+1).ToString() +"." +j.ToString()){
-					worldIndex  = (i+1);
-					levelIndex  = (j+1);
-					PlayerPrefs.SetInt("level"+worldIndex.ToString() +":" +levelIndex.ToString(),1);
+		for(int i = 1; i <= LockLevelScript.worlds; i++){
+			for(int j = 1; j <= LockLevelScript.levels; j++){
+				if(currentLevel == "Level"+ i.ToString() +"." +j.ToString()){
+					if (j == LockLevelScript.levels) { // posledny level vo svete
+						if (i != LockLevelScript.worlds) { // ak nie sme v poslednom svete 
+							worldIndex = i + 1;
+							levelIndex = 1;
+							PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + levelIndex.ToString (), 1);
+						}
+					} else {
+						worldIndex = i;
+						levelIndex = (j + 1);
+						PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + levelIndex.ToString (), 1);
+					}
 				}
 			}
 		}
 		reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(3); // parameter 2 pre dead stav
-		//load the World1 level 
-		//Application.LoadLevel("World1");
 	}
 }

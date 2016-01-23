@@ -42,10 +42,11 @@ public class LevelSelectScript : MonoBehaviour {
 		
 	//zistenie ktory level je odomknuty a zobrazenie bez zamku
 	void  CheckLockedLevels (){
-		for(int j = 1; j < LockLevelScript.levels; j++){ // podla poctu levelov
-			levelIndex = (j+1);
+		for(int j = 1; j <= LockLevelScript.levels; j++){ // podla poctu levelov
+			levelIndex = j;
+			//print (worldIndex + " " + levelIndex);
 			if((PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +levelIndex.ToString()))==1){
-				GameObject.Find("Level"+(j+1)+"Lock").SetActive(false); // vypnutie tlacitka zo zamkom nad skutocnym tlacitkom
+				GameObject.Find("Level"+j+"Lock").SetActive(false); // vypnutie tlacitka zo zamkom nad skutocnym tlacitkom
 				Debug.Log ("Unlocked");
 			}
 		}

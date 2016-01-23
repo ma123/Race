@@ -67,16 +67,16 @@
 - urcit ktore auto bude zakladne na zaklade toho upravit obchod aby sa nedalo kupit a bolo v zaklade Y.................
 - vyskusat funkciu zvuku vibracii Y..............................
 - po kliknuti na navrat do menu, sa vratime do aktuálneho sveta Y.......................
+- level selector  Y......................................
 - unity logo v splash screene nie na ciernom pozadi  Y...................... problem unity
 
 
-- skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
-- po prejdenie levelu sa mozem dostat do dalsieho levelu s tlacitkom doprava
+
 - pocet hviezd podla prejdenia levelov
 
 - rovnaka velkost aut
 - najst hudbu v pozadi jeep Z6 melodia
-
+- skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
 
 - ukazatel priebehu levelu skusit pohladat pozriet
 - parallax background iba v challenge mode

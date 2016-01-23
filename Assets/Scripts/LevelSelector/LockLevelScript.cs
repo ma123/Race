@@ -4,12 +4,12 @@ using System.Collections;
 public class LockLevelScript : MonoBehaviour {
 
 	public static int worlds = 2; //number of worlds
-	public static int levels = 15; //number of levels
+	public static int levels = 3; //number of levels
 	
 	private int worldIndex;   
 	private int levelIndex;   
 	
-	
+	/* myslim ze uplne zbytocne cele dolu */
 	void  Start (){
 		LockLevels();   //call function LockLevels
 	}

@@ -70,9 +70,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.079999999"
-     inkscape:cx="-1269.7284"
-     inkscape:cy="2231.186"
+     inkscape:zoom="0.11313708"
+     inkscape:cx="-829.36975"
+     inkscape:cy="1638.1266"
      inkscape:document-units="px"
      inkscape:current-layer="layer7"
      showgrid="false"
@@ -139,7 +139,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -258,7 +258,7 @@
      inkscape:label="PiesokPredPieskom">
     <path
        style="fill:#f29924;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 0,3008.014 c 574.52565,97.8587 1132.5872,-155.7376 1500.0001,-271.1639 491.0089,-73.5858 884.3146,78.4445 1259.9999,271.1639 L 2760,3900 0,3900 Z"
+       d="m 0,3008.014 c 574.52565,97.8587 1279.5328,-247.4405 1500.0001,-271.1639 491.0089,-73.5858 884.3146,78.4445 1259.9999,271.1639 L 2760,3900 0,3900 Z"
        id="path4573"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />

@@ -46,7 +46,20 @@ public class ReactionFromPanelScript : MonoBehaviour {
 
 	public void NextLevel() {
 		print ("nextLevel");
-		string currentLevel = Application.loadedLevelName;
+		string currentLevel = Application.loadedLevelName; // ziskam nazov levelu
+		int worldNumber = int.Parse (currentLevel[5].ToString()); // ziskam cislo sveta
+		string[] splitString = currentLevel.Split ('.');
+		int levelNumber = int.Parse (splitString [1]); // ziskam cislo levelu
+
+		if (levelNumber == LockLevelScript.levels) {  // ak sme v poslednom levele 
+			if (worldNumber == LockLevelScript.worlds) { // ak sme v poslednom svete 
+				Application.LoadLevel ("MainMenuScene");  // tak sa dostaneme do hlavneho menu
+			} else {
+				Application.LoadLevel ("Level" + (worldNumber + 1) + "." + "1");  // tak otvorime level 1 v dalsom svete
+			}
+		} else {
+			Application.LoadLevel (splitString[0]+ "." + (levelNumber+1));
+		}
 		print (currentLevel);
 	}
 	
@@ -58,7 +71,7 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	public void BackToLevelSelector() {
 		print ("backLevelSelector");
 		string currentLevel = Application.loadedLevelName;
-		Application.LoadLevel ("World"+ currentLevel[5]);
+		Application.LoadLevel ("World"+ currentLevel[5]); // ziskam svet v ktorom sa nachadzam a vratim sa do vyberu levelov
 	}
 
 	public void BackToGame() {
