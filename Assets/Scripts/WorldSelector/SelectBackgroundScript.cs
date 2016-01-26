@@ -16,6 +16,18 @@ public class SelectBackgroundScript : MonoBehaviour {
 			// city background
 			this.GetComponent<Image>().overrideSprite = images[1];
 			break;
+		case 3:
+			// dessert background
+			this.GetComponent<Image>().overrideSprite = images[2];
+			break;
+		case 4:
+			// dark greenland background
+			this.GetComponent<Image>().overrideSprite = images[3];
+			break;
+		case 5:
+			// snowland background
+			this.GetComponent<Image>().overrideSprite = images[4];
+			break;
 
 	    // todo dalsie pozadia
 		default:
