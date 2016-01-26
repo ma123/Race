@@ -71,14 +71,15 @@
 - zima sneh Y.................
 - greenland tmavsi s prsanim Y...................
 - pust  Y...........................
+- najst hudbu v pozadi jeep Z6 melodia Y..............................
 - unity logo v splash screene nie na ciernom pozadi  Y...................... problem unity
 
 
 
 - pocet hviezd podla prejdenia levelov
-
+- rozdiely medzi autami, rozdielne jazdne vlastnosti, moznost vylepsovat ak ano tak ako??? 
 - rovnaka velkost aut
-- najst hudbu v pozadi jeep Z6 melodia
+
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
 
 - ukazatel priebehu levelu skusit pohladat pozriet

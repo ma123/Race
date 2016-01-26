@@ -74,10 +74,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.12374369"
-     inkscape:cx="128.58319"
+     inkscape:cx="-1200.7775"
      inkscape:cy="2363.965"
      inkscape:document-units="px"
-     inkscape:current-layer="layer8"
+     inkscape:current-layer="layer3"
      showgrid="false"
      units="px"
      inkscape:window-width="1366"
@@ -409,8 +409,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Sneh"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <path
        style="opacity:1;fill:#e7e9f6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 0,2646.3752 452.8355,24.9862 c 173.71631,9.5852 706.3235,-112.8045 887.9469,-125.0271 194.1801,-13.0677 808.8586,205.5144 999.1863,144.2989 190.3277,-61.2155 420.0313,-44.258 420.0313,-44.258 l 0,1253.6246 -2760,0 z"
