@@ -91,6 +91,8 @@
 - vzducholod s napisom atonom games Y.......................................
 - vytvorenie ikony  Y.........................
 - nakreslit sfingu Y.....................
+- nakreslit meteorit  Y...........................
+- vlozit zvuky Y...................
 
 
 - pocet hviezd podla prejdenia levelov
@@ -101,8 +103,6 @@
 - kliknutie na tlacidlo nejaka vyraznejsia zmena aby hrac vedel ze klikol
 - optimalizovat na android rozlisenia
 - vlozit hudbu na pozadi
-- vlozit zvuky
-- nakreslit meteorit
 - nakreslit druzicu
 - zmena farieb prekaziek na rôzdne svety
 - startovacie pozicie ine farby
@@ -112,6 +112,7 @@
 - dlazdice svetov 
 - nasekat levely
 - autaaaaaaaaaa
+- problem pri zvuku ziaden atrament neacitava ho v update stale dookola
 
 - skutocna cena aut
 - LOGO
