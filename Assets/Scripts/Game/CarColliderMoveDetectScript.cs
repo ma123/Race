@@ -61,7 +61,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			gum.SendMessage ("GumReact");
 		}
 
-		if(coll.GetComponent<Collider2D>().CompareTag("ReverseGravity")) {
+		/*if(coll.GetComponent<Collider2D>().CompareTag("ReverseGravity")) {
 			GameObject reverse = coll.GetComponent<Collider2D>().gameObject;
 			Destroy(reverse);
 
@@ -82,17 +82,17 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 				wheelJoint[i].motor = m;
 			}
 			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
-		}
+		}*/
 
-		if(coll.GetComponent<Collider2D>().CompareTag("ReverseGravityNormal")) {
+		/*if(coll.GetComponent<Collider2D>().CompareTag("ReverseGravityNormal")) {
 			GameObject reverse = coll.GetComponent<Collider2D>().gameObject;
 			Destroy(reverse);
 
 			this.transform.Rotate(180.0f, 0.0f, 0.0f);
-			/*foreach (Transform child in transform) {
-				child.rotation = Quaternion.identity;
-				child.Rotate(180.0f, 0, 0);
-			}*/
+			//foreach (Transform child in transform) {
+			//	child.rotation = Quaternion.identity;
+			//	child.Rotate(180.0f, 0, 0);
+			//}
 
 			GameObject.FindWithTag("CarBody").transform.Rotate(180.0f, 0.0f, 0.0f);
 			
@@ -110,7 +110,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 				wheelJoint[i].motor = m;
 			}
 			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
-		}
+		}*/
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("Goal")) {
 			GameObject goal = coll.GetComponent<Collider2D>().gameObject;

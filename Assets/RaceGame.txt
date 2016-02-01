@@ -93,17 +93,16 @@
 - nakreslit sfingu Y.....................
 - nakreslit meteorit  Y...........................
 - vlozit zvuky Y...................
+- nakreslit druzicu Y.................................
+- kliknutie na tlacidlo nejaka vyraznejsia zmena aby hrac vedel ze klikol Y..............................
 
 
-- pocet hviezd podla prejdenia levelov
 
 
-- skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
-- parallax background iba v challenge mode
-- kliknutie na tlacidlo nejaka vyraznejsia zmena aby hrac vedel ze klikol
-- optimalizovat na android rozlisenia
+- problem pri zvuku ziaden atrament neacitava ho v update stale dookola
+- pridat zvuk do UI kliknutie
 - vlozit hudbu na pozadi
-- nakreslit druzicu
+
 - zmena farieb prekaziek na rôzdne svety
 - startovacie pozicie ine farby
 - spodna hmla ine farby
@@ -112,8 +111,7 @@
 - dlazdice svetov 
 - nasekat levely
 - autaaaaaaaaaa
-- problem pri zvuku ziaden atrament neacitava ho v update stale dookola
-
+- optimalizovat na android rozlisenia
 - skutocna cena aut
 - LOGO
 - nazov hry    {Draw path, Draw road}
@@ -134,11 +132,14 @@
 
 
 // dalsie rozsirenia v buducnosti
+- parallax background iba v challenge mode
+- pocet hviezd podla prejdenia levelov
 - ukazatel priebehu levelu skusit pohladat pozriet
 - ostrov sopecna krajina, padajuci popol iskry  
 - jesen padajuce listy 
 - dzungla padajuce opice
 - piano, náklad na padáku,
+- skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
 
 240*320-ldpi
 240*400-ldpi
