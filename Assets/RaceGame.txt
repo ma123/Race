@@ -1,4 +1,3 @@
--------------------Marek-------------------------------------------------------
 - spodn? contakt listener  Y.................
 - po prejdenie nim vyskoci game over Y................
 - spodok a vrch auta Y......................
@@ -71,30 +70,6 @@
 - zima sneh Y.................
 - greenland tmavsi s prsanim Y...................
 - pust  Y...........................
-- najst hudbu v pozadi jeep Z6 melodia Y..............................
-- unity logo v splash screene nie na ciernom pozadi  Y...................... problem unity
-
-
-
-- pocet hviezd podla prejdenia levelov
-- rozdiely medzi autami, rozdielne jazdne vlastnosti, moznost vylepsovat ak ano tak ako??? 
-- rovnaka velkost aut
-
-- skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
-
-- ukazatel priebehu levelu skusit pohladat pozriet
-- parallax background iba v challenge mode
-- kliknutie na tlacidlo nejaka vyraznejsia zmena aby hrac vedel ze klikol
-- optimalizovat na android rozlisenia
-
-
-
-- ostrov sopecna krajina, padajuci popol iskry // 
-- jesen padajuce listy 
-- dzungla padajuce opice
-
-----------------Matus----------------------------
-
 - nakreslit mincu Y.......................
 - nakreslit gumu Y..............
 - nakreslit atrament Y..................
@@ -109,18 +84,43 @@
 - vyber svetov Y.....................
 - VYTVORIT VIZUAL Y.....................
 - najst font na pouzitie v celej hre Y.....................
+- najst hudbu v pozadi jeep Z6 melodia Y..............................
+- upravit hudbu aby mohla byt v loop Y.................................
+- obchod garaz preco to je vzadu    Y.....................................
+- unity logo v splash screene nie na ciernom pozadi  Y...................... problem unity
+- vzducholod s napisom atonom games Y.......................................
+- vytvorenie ikony  Y.........................
+- nakreslit sfingu Y.....................
 
-- meteorit, druzica, piano, náklad na padáku,
-- prekazky
-- vytvorenie ikony
+
+- pocet hviezd podla prejdenia levelov
+
+
+- skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
+- parallax background iba v challenge mode
+- kliknutie na tlacidlo nejaka vyraznejsia zmena aby hrac vedel ze klikol
+- optimalizovat na android rozlisenia
+- vlozit hudbu na pozadi
+- vlozit zvuky
+- nakreslit meteorit
+- nakreslit druzicu
+- zmena farieb prekaziek na rôzdne svety
+- startovacie pozicie ine farby
+- spodna hmla ine farby
+- rovnaka velkost aut
+- rozdiely medzi autami, rozdielne jazdne vlastnosti, moznost vylepsovat ak ano tak ako??? 
+- dlazdice svetov 
+- nasekat levely
+- autaaaaaaaaaa
+
+- skutocna cena aut
 - LOGO
-- nazov hry 
-- nazov firmy ešte premyslieť
-- stránka informačná, facebook, vytvoriť emailový účet s účtom na play, twitter, instagram
-
-Draw path, Draw road
-
-
+- nazov hry    {Draw path, Draw road}
+- stránka informačná
+- facebook
+- vytvoriť emailový účet s účtom na play
+- twitter
+- instagram
 
 - zvuky - explozia  Y............
         - vyhra, aplaus, skandovanie
@@ -129,8 +129,15 @@ Draw path, Draw road
         - zobranie atramentu
         - pick coin
         - zobranie otocenia auta gravitacie 
-        - hudba pozadie apple tvorba hudby
+        - hudba pozadie apple tvorba hudby Y...........................
 
+
+// dalsie rozsirenia v buducnosti
+- ukazatel priebehu levelu skusit pohladat pozriet
+- ostrov sopecna krajina, padajuci popol iskry  
+- jesen padajuce listy 
+- dzungla padajuce opice
+- piano, náklad na padáku,
 
 240*320-ldpi
 240*400-ldpi

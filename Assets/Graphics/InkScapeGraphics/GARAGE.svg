@@ -38,11 +38,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.1767767"
-     inkscape:cx="-966.6293"
-     inkscape:cy="476.93228"
+     inkscape:zoom="0.50000001"
+     inkscape:cx="348.49385"
+     inkscape:cy="520.3733"
      inkscape:document-units="px"
-     inkscape:current-layer="g4339"
+     inkscape:current-layer="layer5"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -50,7 +50,25 @@
      inkscape:window-height="706"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-nodes="true">
+    <sodipodi:guide
+       position="583.99999,685.23909"
+       orientation="0,1"
+       id="guide3379" />
+    <sodipodi:guide
+       position="-79.147985,490.7321"
+       orientation="1,0"
+       id="guide3383" />
+    <sodipodi:guide
+       position="926.96343,272"
+       orientation="1,0"
+       id="guide3385" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -75,7 +93,7 @@
      style="display:inline">
     <g
        id="g4339"
-       transform="translate(135.95562,494.12447)"
+       transform="translate(135.95562,464.12447)"
        style="fill:#808080;fill-opacity:1">
       <g
          transform="translate(848.57143,-304.57139)"
@@ -132,8 +150,8 @@
      inkscape:label="stena"
      style="display:inline">
     <path
-       style="display:inline;opacity:1;fill:#ba9245;fill-opacity:1;stroke:#643613;stroke-width:14.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98039216"
-       d="m -202.38818,75.960059 0,999.618341 123.240196,0 0,-553.10196 c 34.2334,-429.600481 942.126704,-404.46925 1006.111404,0 l 0,553.10196 119.19728,0 0,-999.618341 z"
+       style="display:inline;opacity:1;fill:#ba9245;fill-opacity:1;stroke:#643613;stroke-width:14.30000019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.98039216"
+       d="m -202.38818,75.960059 0,999.618341 123.240196,0 0,-708.45527 c 36.936219,-248.51161 944.757014,-228.23834 1006.111404,0 l 0,708.45527 119.19728,0 0,-999.618341 z"
        id="rect4164"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccccc"

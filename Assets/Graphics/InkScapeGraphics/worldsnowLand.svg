@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748738"
-     inkscape:cx="-74.696067"
-     inkscape:cy="533.43636"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="-1256.7929"
+     inkscape:cy="387.5625"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer8"
      showgrid="false"
      units="px"
      inkscape:window-width="1366"
@@ -110,7 +110,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -119,50 +119,60 @@
      id="layer2"
      inkscape:label="Obloha"
      style="display:inline"
-     transform="translate(0,-3440)"
-     sodipodi:insensitive="true">
+     transform="translate(0,-3440)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="SnehVrch"
+     transform="translate(0,-3440)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="SnehTmavsi"
+     style="display:inline"
+     transform="translate(0,-3440)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="StromyZaSnehom"
+     transform="translate(0,-3440)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Sneh"
+     style="display:inline"
+     transform="translate(0,-3440)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Stromy"
+     transform="translate(0,-3440)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Vysielac"
+     style="display:inline"
+     transform="translate(0,-3440)">
     <rect
-       style="opacity:1;fill:#7ebce4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;opacity:1;fill:#7ebce4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect3345"
        width="1600"
        height="803.21899"
        x="0"
        y="3440"
        ry="0" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer5"
-     inkscape:label="SnehVrch"
-     transform="translate(0,-3440)"
-     sodipodi:insensitive="true">
     <path
        style="fill:#e7e9f6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.14384401px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 460.00142,3801.1135 c 0,0 285.61048,-147.4322 508.05582,-131.1028 222.44516,16.3294 517.10966,207.3086 517.10966,207.3086 -55.0353,119.4867 -341.2725,-49.0028 -641.20978,-54.6985 l -365.33291,196.6053 -361.00976,-46.8938 z"
        id="path4235"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="czccccc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="SnehTmavsi"
-     style="display:inline"
-     transform="translate(0,-3440)"
-     sodipodi:insensitive="true">
     <path
-       style="opacity:1;fill:#c9d9f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;opacity:1;fill:#c9d9f2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 0,3831.3636 c 0,0 350.73948,52.1695 417.08693,22.2537 C 660.77884,3774.9579 1110.466,3767.0457 1600,3831.3636 l 0,411.8553 -1600,0 z"
        id="rect4204"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer7"
-     inkscape:label="StromyZaSnehom"
-     transform="translate(0,-3440)"
-     sodipodi:insensitive="true">
     <g
        id="g4653-0-7"
        transform="matrix(0.20501606,0,0,0.16698729,0.76741171,3627.4306)">
@@ -318,27 +328,12 @@
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cccc" />
     </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Sneh"
-     style="display:inline"
-     transform="translate(0,-3440)"
-     sodipodi:insensitive="true">
     <path
-       style="opacity:1;fill:#e7e9f6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="display:inline;opacity:1;fill:#e7e9f6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:31.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 0,3975.8754 262.51333,8.4533 c 100.70511,3.2429 409.4629,-38.1638 514.75183,-42.2989 112.56817,-4.421 468.90354,69.5293 579.23844,48.8189 C 1466.8385,3970.1384 1600,3975.8754 1600,3975.8754 L 1600,4400 0,4400 Z"
        id="rect4198"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="csszcccc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer6"
-     inkscape:label="Stromy"
-     transform="translate(0,-3440)"
-     sodipodi:insensitive="true">
     <g
        id="g4318"
        transform="matrix(0.57977101,0,0,0.4722283,-0.1833392,2715.9765)">
@@ -1544,14 +1539,6 @@
            style="fill:#015e63;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.10544646px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
       </g>
     </g>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer8"
-     inkscape:label="Vysielac"
-     style="display:inline"
-     transform="translate(0,-3440)"
-     sodipodi:insensitive="true">
     <g
        id="g4916"
        transform="matrix(0.32503979,0,0,0.32359265,980.6706,3175.7608)">
