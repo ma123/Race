@@ -60,7 +60,7 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		} else {
 			Application.LoadLevel (splitString[0]+ "." + (levelNumber+1));
 		}
-		print (currentLevel);
+		//print (currentLevel);
 	}
 	
 	public void Restart() {
