@@ -25,7 +25,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 
 
 	//public AudioClip gravityReverseClips;
-	private AudioSource sfxEffect;
+	//private AudioSource sfxEffect;
 	private AudioSource musicBackground;
 
 	private int soundEnabled = 0;
@@ -68,7 +68,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				musicBackground.clip = desertlandLoop; // priradi loop melodiu
 				musicBackground.Play();
 				break;
-			case 4: // drakgreenland
+			case 4: // darkgreenland
 				musicBackground.clip = darkgreenlandIntro;  // priradi intro melodiu  
 				musicBackground.Play();  
 				yield return new WaitForSeconds(musicBackground.clip.length);  // ked zisti ze skoncilo intro 
@@ -88,11 +88,14 @@ public class SoundsAndMusicScript : MonoBehaviour {
 			}
 	}
 
+	public AudioSource GetMusicBackgroundObject() {
+		return musicBackground;
+	}
+
 	public void PickupCoinAudio(Transform transPos) {
 		PhoneVibrate ();
 
 		if(soundEnabled == 1) {
-			print ("sound coin");
 			try {
 				AudioSource.PlayClipAtPoint(pickupCoinClips, transPos.position);
 			}

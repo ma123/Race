@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="817"
+   viewBox="0 0 512.00001 817.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="dlazdica_prazdna.svg"
+   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\Backgrounds\dlazdicaprazdna.png"
+   inkscape:export-xdpi="179.3"
+   inkscape:export-ydpi="179.3">
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4006">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#d60000;stroke-width:33.09999847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4008"
+         width="783.54156"
+         height="478.62372"
+         x="2834.0876"
+         y="-961.65289"
+         ry="73.539116"
+         rx="73.539108"
+         transform="matrix(0,1,-1,0,0,0)"
+         inkscape:export-xdpi="360"
+         inkscape:export-ydpi="360" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-95"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4267"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-235.36216)">
+    <g
+       id="g4267"
+       transform="translate(-963.96245,-2428.2698)">
+      <rect
+         inkscape:export-ydpi="360"
+         inkscape:export-xdpi="360"
+         transform="matrix(0,1,-1,0,0,0)"
+         rx="73.539108"
+         ry="73.539116"
+         y="-1459.1361"
+         x="2680.5403"
+         height="478.62372"
+         width="783.54156"
+         id="rect6729-6-0"
+         style="fill:none;fill-opacity:1;stroke:#d60000;stroke-width:33.09999847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

@@ -96,10 +96,13 @@
 - nakreslit druzicu Y.................................
 - kliknutie na tlacidlo nejaka vyraznejsia zmena aby hrac vedel ze klikol Y..............................
 - exception sounds Y..........................
+- vlozit hudbu na pozadi Y.................................
+- prerusit background zvuk ked pauznem hru Y........................
+
 
 - pridat zvuk do UI kliknutie
 - problem pri zvuku ziaden atrament neacitava ho v update stale dookola
-- vlozit hudbu na pozadi
+
 
 - zmena farieb prekaziek na rôzdne svety
 - startovacie pozicie ine farby
@@ -112,8 +115,8 @@
 - optimalizovat na android rozlisenia
 - skutocna cena aut
 - LOGO
+
 - nazov hry    {Draw path, Draw road}
-- stránka informačná
 - facebook
 - vytvoriť emailový účet s účtom na play
 - twitter
@@ -130,6 +133,7 @@
 
 
 // dalsie rozsirenia v buducnosti
+- stránka informačná
 - parallax background iba v challenge mode
 - pocet hviezd podla prejdenia levelov
 - ukazatel priebehu levelu skusit pohladat pozriet

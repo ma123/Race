@@ -4,14 +4,17 @@ using System.Collections;
 
 public class ReactionFromPanelScript : MonoBehaviour {
 	public GameObject winPanel;
+	private GameObject soundsAndMusic;
 
 	void Start() {
 		Time.timeScale = 1; // spustenie hry
+		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
 	}
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) { 
 			WinnPanelReaction(1); // parameter pre pauzu
+			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // trochu surovy pristup pauznutie background hudby
 		}
 	}
 
@@ -60,7 +63,6 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		} else {
 			Application.LoadLevel (splitString[0]+ "." + (levelNumber+1));
 		}
-		//print (currentLevel);
 	}
 	
 	public void Restart() {
@@ -78,5 +80,6 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		print ("backToGame");
 		Time.timeScale = 1; // spustenie hry
 		winPanel.SetActive(false);
+		soundsAndMusic.GetComponent<SoundsAndMusicScript> ().GetMusicBackgroundObject().Play (); // znovu spustenie hudby pozadia
 	}
 }
