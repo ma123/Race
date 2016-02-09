@@ -14,13 +14,18 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) { 
 			WinnPanelReaction(1); // parameter pre pauzu
-			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // trochu surovy pristup pauznutie background hudby
+			PauseMusic();
 		}
+	}
+
+	public void PauseMusic() {
+		soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
 	}
 
 	public void WinnPanelReaction(int reaction) {
 		Time.timeScale = 0; // pauznutie hry
 		winPanel.SetActive(true);
+
 		GameObject btnInteractable = GameObject.Find("NextLvlBtn");
 		GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
 

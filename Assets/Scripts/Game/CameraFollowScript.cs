@@ -9,7 +9,7 @@ public class CameraFollowScript : MonoBehaviour {
 	public int currentVehicle = 0;
 
 	void Start() {
-		currentVehicle = 5;//PlayerPrefs.GetInt ("selectedCar", 0);
+		currentVehicle = PlayerPrefs.GetInt ("selectedCar", 0);
 		GameObject playerParent = GameObject.Find ("Player");
 		Transform car = null;
 
@@ -45,6 +45,12 @@ public class CameraFollowScript : MonoBehaviour {
 			break;
 
 		case 5: 
+			car = playerParent.transform.Find("PlayerAmbulanceCar");
+			car.gameObject.SetActive(true);
+			observingObject = car.transform;
+			break;
+
+		case 6: 
 			car = playerParent.transform.Find("PlayerPickupCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;

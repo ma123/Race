@@ -11,18 +11,9 @@ public class SoundsAndMusicScript : MonoBehaviour {
 	public AudioClip inkClips;
 	public AudioClip winClips;
 	// intro melody
-	public AudioClip greenlandIntro;
-	public AudioClip citylandIntro;
-	public AudioClip desertlandIntro;
-	public AudioClip darkgreenlandIntro;
-	public AudioClip snowlandIntro;
+	public AudioClip landIntro;
 	// loop melody
-	public AudioClip greenlandLoop;
-	public AudioClip citylandLoop;
-	public AudioClip desertlandLoop;
-	public AudioClip darkgreenlandLoop;
-	public AudioClip snowlandLoop;
-
+	public AudioClip landLoop;
 
 	//public AudioClip gravityReverseClips;
 	//private AudioSource sfxEffect;
@@ -44,48 +35,11 @@ public class SoundsAndMusicScript : MonoBehaviour {
 	}
 
 	IEnumerator PlayBackgroundMusic() {
-		string currentLevel = Application.loadedLevelName;
-		int numberWorld = ((int)currentLevel [5]) - 48; // konverzia z char na int odpocitame 48 ako rozdiel v ascii tabulke
-			switch(numberWorld) {
-			case 1: // greenland
-			    musicBackground.clip = greenlandIntro;  // priradi intro melodiu  
-				musicBackground.Play();  
-				yield return new WaitForSeconds(musicBackground.clip.length);  // ked zisti ze skoncilo intro 
-				musicBackground.clip = greenlandLoop; // priradi loop melodiu
-				musicBackground.Play();
-				break;
-			case 2: // cityland
-				musicBackground.clip = citylandIntro;  // priradi intro melodiu  
-				musicBackground.Play();  
-				yield return new WaitForSeconds(musicBackground.clip.length);  // ked zisti ze skoncilo intro 
-				musicBackground.clip = citylandLoop; // priradi loop melodiu
-				musicBackground.Play();
-				break;
-			case 3: // desertland
-				musicBackground.clip = desertlandIntro;  // priradi intro melodiu  
-				musicBackground.Play();  
-				yield return new WaitForSeconds(musicBackground.clip.length);  // ked zisti ze skoncilo intro 
-				musicBackground.clip = desertlandLoop; // priradi loop melodiu
-				musicBackground.Play();
-				break;
-			case 4: // darkgreenland
-				musicBackground.clip = darkgreenlandIntro;  // priradi intro melodiu  
-				musicBackground.Play();  
-				yield return new WaitForSeconds(musicBackground.clip.length);  // ked zisti ze skoncilo intro 
-				musicBackground.clip = darkgreenlandLoop; // priradi loop melodiu
-				musicBackground.Play();
-				break;
-			case 5: // snowland
-				musicBackground.clip = snowlandIntro;  // priradi intro melodiu  
-				musicBackground.Play();  
-				yield return new WaitForSeconds(musicBackground.clip.length);  // ked zisti ze skoncilo intro 
-				musicBackground.clip = snowlandLoop; // priradi loop melodiu
-				musicBackground.Play();
-				break;
-			default:
-				// default vetva no sounds
-				break;
-			}
+		musicBackground.clip = landIntro;  // priradi intro melodiu  
+		musicBackground.Play();  
+		yield return new WaitForSeconds(musicBackground.clip.length);  // ked zisti ze skoncilo intro 
+		musicBackground.clip = landLoop; // priradi loop melodiu
+		musicBackground.Play();
 	}
 
 	public AudioSource GetMusicBackgroundObject() {

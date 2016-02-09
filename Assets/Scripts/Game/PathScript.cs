@@ -21,7 +21,6 @@ public class PathScript : MonoBehaviour {
 	private Color c4;
 	private GameObject inkBarObject;
 	private GameObject soundsAndMusic;
-	private bool haveInk = true;
 	
 	void Start () {
 		inkBarObject = GameObject.FindGameObjectWithTag ("InkBarReact");
@@ -38,16 +37,18 @@ public class PathScript : MonoBehaviour {
 	void Update () {
 		if(Time.timeScale != 0) {
 			lineStack = inkBarObject.GetComponent<InkBarScript> ().GetInkStack();
-			if (lineStack > 0f) {
-				haveInk = true;
+
 				if (Input.GetMouseButtonDown (0)) {
-					isMousePressed = true;
+					if (lineStack > 0f) {
+						isMousePressed = true;
 
-					lineDrawPrefab = GameObject.Instantiate (lineDrawPrefabs) as GameObject;
-					lineRenderer = lineDrawPrefab.GetComponent<LineRenderer> ();
-					lineRenderer.SetVertexCount (0);
-					lineRenderer.SetColors (c1, c2);
-
+						lineDrawPrefab = GameObject.Instantiate (lineDrawPrefabs) as GameObject;
+						lineRenderer = lineDrawPrefab.GetComponent<LineRenderer> ();
+						lineRenderer.SetVertexCount (0);
+						lineRenderer.SetColors (c1, c2);
+					} else {
+						soundsAndMusic.GetComponent<SoundsAndMusicScript>().NoInkAudio(transform);
+					}
 				} else if (Input.GetMouseButtonUp (0)) {
 					isMousePressed = false;
 					if (drawPoints.Count > 0) { // pokial je drawPoint prazdny collider sa nevytvara
@@ -73,13 +74,7 @@ public class PathScript : MonoBehaviour {
 							lineLength += Vector2.Distance (drawPoints [drawPoints.Count - 2], mousePos); // length of line
 						}
 					}
-				}
-			} else {
-				if(haveInk) {
-					soundsAndMusic.GetComponent<SoundsAndMusicScript>().NoInkAudio(transform);
-					haveInk = false;
-				}
-			}
+				} 
 		}
 	}
 

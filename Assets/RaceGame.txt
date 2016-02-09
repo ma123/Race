@@ -98,18 +98,25 @@
 - exception sounds Y..........................
 - vlozit hudbu na pozadi Y.................................
 - prerusit background zvuk ked pauznem hru Y........................
+- auta v obchode Y...............................
+- problem pri viac zvukoch dlho nacitava Y................
+- problem pri zvuku ziaden atrament neacitava ho v update stale dookola Y........................
+- spodna hmla ine farby   Y.........................
+- dlazdice svetov Y...............................
+- vytvoriť emailový účet s účtom na play Y......................
+- zvuk explozia  Y............
+- zvuk vyhra, aplaus, skandovanie Y..............
+- zvuk zobranie gumy Y....................
+- zvuk zobranie atramentu Y....................
+- zvukpick coin Y...........................
+- zvuk hudba pozadie Y...........................
+- dosiel atrament zvuk Y..................
+- pridat zvuk do UI kliknutie Y...................
 
 
-- pridat zvuk do UI kliknutie
-- problem pri zvuku ziaden atrament neacitava ho v update stale dookola
-
-
-- zmena farieb prekaziek na rôzdne svety
-- startovacie pozicie ine farby
-- spodna hmla ine farby
 - rovnaka velkost aut
 - rozdiely medzi autami, rozdielne jazdne vlastnosti, moznost vylepsovat ak ano tak ako??? 
-- dlazdice svetov 
+- zmena progress baru
 - nasekat levely
 - autaaaaaaaaaa
 - optimalizovat na android rozlisenia
@@ -118,18 +125,11 @@
 
 - nazov hry    {Draw path, Draw road}
 - facebook
-- vytvoriť emailový účet s účtom na play
 - twitter
 - instagram
-
-- zvuky - explozia  Y............
-        - vyhra, aplaus, skandovanie
-        - dosiel atrament
-        - zobranie gumy
-        - zobranie atramentu
-        - pick coin
-        - zobranie otocenia auta gravitacie // v neskorsich verziach hry
-        - hudba pozadie apple tvorba hudby Y...........................
+- reklamy v hre
+- odkaz tlacidiel na facebook 
+- odkaz tlacidla na hodnotenie
 
 
 // dalsie rozsirenia v buducnosti
@@ -142,6 +142,7 @@
 - dzungla padajuce opice
 - piano, náklad na padáku,
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
+-zvuk zobranie otocenia auta gravitacie
 
 240*320-ldpi
 240*400-ldpi
