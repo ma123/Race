@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI; 
 using System.Collections;
+using System;
 
 public class ReactionFromPanelScript : MonoBehaviour {
 	public GameObject winPanel;
@@ -19,7 +20,11 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	}
 
 	public void PauseMusic() {
-		soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
+		try {
+			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
+		} catch(Exception e) {
+			Debug.Log ("Sound exception in panel");
+		}
 	}
 
 	public void WinnPanelReaction(int reaction) {

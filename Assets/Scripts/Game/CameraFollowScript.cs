@@ -9,7 +9,7 @@ public class CameraFollowScript : MonoBehaviour {
 	public int currentVehicle = 0;
 
 	void Start() {
-		currentVehicle = 8;//PlayerPrefs.GetInt ("selectedCar", 0);
+		currentVehicle = PlayerPrefs.GetInt ("selectedCar", 0);
 		GameObject playerParent = GameObject.Find ("Player");
 		Transform car = null;
 

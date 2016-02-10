@@ -113,7 +113,7 @@
 - dosiel atrament zvuk Y..................
 - pridat zvuk do UI kliknutie Y...................
 
-
+- pridanie zamku na zaknute svety po prejdeni odomkne
 - rovnaka velkost aut
 - rozdiely medzi autami, rozdielne jazdne vlastnosti, moznost vylepsovat ak ano tak ako??? 
 - zmena progress baru
