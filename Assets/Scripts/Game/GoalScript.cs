@@ -27,7 +27,8 @@ public class GoalScript : MonoBehaviour {
 						if (i != LockLevelScript.worlds) { // ak nie sme v poslednom svete 
 							worldIndex = i + 1;
 							levelIndex = 1;
-							PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + levelIndex.ToString (), 1);
+							PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + levelIndex.ToString (), 1); // otvorenie prveho levelu v dalsom svete
+							PlayerPrefs.SetInt ("world" + worldIndex.ToString(), 1); // otvorenie dalsieho sveta dlazdica
 						}
 					} else {
 						worldIndex = i;

@@ -12,15 +12,13 @@ public class LevelSelectScript : MonoBehaviour {
 
 	void Start (){
 		PlayerPrefs.SetInt ("background", selectedBackround);
-		//loop thorugh all the worlds
+
 		for (int i = 1; i <= LockLevelScript.worlds; i++) {
 			if (Application.loadedLevelName == "World" + i) {
 				worldIndex = i;
 				CheckLockedLevels (); 
 			}
 		}
-
-		//levelLoadingPanel.SetActive (false);
 	}
 	
 	public void  Update (){
@@ -44,7 +42,6 @@ public class LevelSelectScript : MonoBehaviour {
 	void  CheckLockedLevels (){
 		for(int j = 1; j <= LockLevelScript.levels; j++){ // podla poctu levelov
 			levelIndex = j;
-			//print (worldIndex + " " + levelIndex);
 			if((PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +levelIndex.ToString()))==1){
 				GameObject.Find("Level"+j+"Lock").SetActive(false); // vypnutie tlacitka zo zamkom nad skutocnym tlacitkom
 				Debug.Log ("Unlocked");

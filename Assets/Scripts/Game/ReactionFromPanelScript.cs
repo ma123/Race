@@ -15,21 +15,18 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) { 
 			WinnPanelReaction(1); // parameter pre pauzu
-			PauseMusic();
-		}
-	}
-
-	public void PauseMusic() {
-		try {
-			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
-		} catch(Exception e) {
-			Debug.Log ("Sound exception in panel");
 		}
 	}
 
 	public void WinnPanelReaction(int reaction) {
 		Time.timeScale = 0; // pauznutie hry
 		winPanel.SetActive(true);
+
+		try {
+			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
+		} catch(Exception e) {
+			Debug.Log ("Sound exception in panel");
+		}
 
 		GameObject btnInteractable = GameObject.Find("NextLvlBtn");
 		GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
@@ -90,6 +87,10 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		print ("backToGame");
 		Time.timeScale = 1; // spustenie hry
 		winPanel.SetActive(false);
-		soundsAndMusic.GetComponent<SoundsAndMusicScript> ().GetMusicBackgroundObject().Play (); // znovu spustenie hudby pozadia
+		try {
+			soundsAndMusic.GetComponent<SoundsAndMusicScript> ().GetMusicBackgroundObject().Play (); // znovu spustenie hudby pozadia
+		} catch(Exception e) {
+			Debug.Log ("Sound exception in panel");
+		}
 	}
 }

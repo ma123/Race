@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="592"
+   height="815"
+   viewBox="0 0 592 815.00002"
+   id="svg4141"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="zamok_cisty.svg">
+  <defs
+     id="defs4143" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="-366.70186"
+     inkscape:cy="286.63288"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-nodes="false"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata4146">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-237.36216)">
+    <g
+       id="g5548"
+       transform="matrix(4.0193469,0,0,4.0193469,-1754.6081,-1888.3847)"
+       inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\zamok_cisty.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         id="g5569"
+         transform="translate(-29.294424,-1.9011986e-6)">
+        <path
+           sodipodi:nodetypes="ssssssssscsscsssccccsssssssssssscccccsc"
+           inkscape:connector-curvature="0"
+           id="rect4142-4-8"
+           d="m 486.60456,598.41355 c -11.35324,0 -20.76953,9.41433 -20.76953,20.76757 l 0,91.69727 c 0,11.35324 9.41629,20.76953 20.76953,20.76953 l 105.61719,0 c 11.35324,0 20.76953,-9.41629 20.76953,-20.76953 l 0,-91.69727 c 0,-11.35324 -9.41629,-20.76757 -20.76953,-20.76757 z m 63.69922,44.12681 c 0.6659,0.69089 1.56349,1.41813 2.21795,2.12811 0.87025,0.94408 1.57061,2.0305 2.23674,3.23978 1.09732,1.99206 1.93496,4.45747 2.05466,8.2025 -0.0714,1.40752 -0.59487,4.94604 -1.10713,6.10758 -0.79598,1.80487 -1.08994,2.45354 -1.70554,3.3777 -0.64886,0.9741 -1.46638,2.03118 -2.48608,3.01757 -1.1184,1.08186 -2.49422,2.07053 -4.01556,2.90443 l -5.1e-4,18.16668 -16.17067,0 -5.2e-4,-18.16668 c -1.39732,-0.81435 -2.65909,-1.61647 -3.76908,-2.67049 -0.92667,-0.87995 -1.83077,-1.86404 -2.55851,-2.98908 -0.67208,-1.039 -1.33391,-2.2315 -1.79481,-3.4186 -0.34087,-0.87795 -0.63996,-1.76888 -0.81797,-2.74122 -0.20172,-1.10187 -0.32233,-2.24892 -0.37392,-3.58789 -0.0393,-1.01843 0.0744,-2.10052 0.28428,-3.13248 0.4603,-2.2628 1.28259,-4.37372 2.39843,-6.14989 0.46189,-0.73521 1.05099,-1.56481 1.72286,-2.28942 0.871,-0.93936 1.8294,-1.72625 2.29549,-2.15026 0.45355,-0.41261 -0.0941,0.0815 -10e-5,7e-5 0.38357,-0.33212 0.79379,-0.58866 1.15004,-0.82378 0.58512,-0.38617 1.09601,-0.68518 1.63209,-0.94893 1.11688,-0.54951 2.15414,-0.94465 3.18998,-1.25105 0.64248,-0.20309 1.31117,-0.34067 1.99568,-0.43869 0.71455,-0.0813 1.33572,-0.22102 2.20176,-0.20766 0.6799,-0.012 1.4645,0.009 2.48,0.10159 0.79723,0.0802 1.58785,0.20667 2.3641,0.43373 1.0553,0.34166 1.36084,0.40864 2.12721,0.69292 1.53055,0.56774 3.18114,1.57169 4.44913,2.59346 z"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#d60000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:17.65014839;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+        <g
+           transform="translate(196.7613,90.077465)"
+           style="display:inline"
+           id="g3340-7">
+          <path
+             sodipodi:nodetypes="cc"
+             inkscape:connector-curvature="0"
+             id="path4210-7"
+             d="m 303.31054,534.35621 c -23.7605,-122.50035 107.60421,-112.21259 76.90391,1.66318"
+             style="fill:none;fill-rule:evenodd;stroke:#d60000;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
