@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class MoneyScript : MonoBehaviour {
 	private static int money = 0;
+	private static int moneyCounter = 0;
 	private static Text moneyText;
 	
 	void Start() {
@@ -18,6 +19,7 @@ public class MoneyScript : MonoBehaviour {
 	
 	public static void AddScore(int gains) {
 		money += gains;
+		moneyCounter += gains;
 		RefreshScoreText ();
 	}
 	
@@ -28,5 +30,13 @@ public class MoneyScript : MonoBehaviour {
 	
 	public static int GetMoney() {
 		return money;
+	}
+
+	public static int GetMoneyCounter() {
+		return moneyCounter;
+	}
+
+	public static void SetMoneyCounter(int nullCounter) {
+		moneyCounter = nullCounter;
 	}
 }

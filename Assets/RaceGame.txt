@@ -125,6 +125,7 @@
 - autaaaaaaaaaa
 - optimalizovat na android rozlisenia
 - skutocna cena aut
+- pocet hviezd podla prejdenia levelov
 
 - facebook
 - twitter
@@ -137,7 +138,6 @@
 // dalsie rozsirenia v buducnosti
 - stránka informačná
 - parallax background iba v challenge mode
-- pocet hviezd podla prejdenia levelov
 - ukazatel priebehu levelu skusit pohladat pozriet
 - ostrov sopecna krajina, padajuci popol iskry  
 - jesen padajuce listy 

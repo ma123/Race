@@ -20,7 +20,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 	void Update() {
 		if(particleEnd) {
-			reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(2); // parameter 2 pre dead stav
+			reactionFromPanel.GetComponent<ReactionFromPanelScript>().PausePanelReaction(2); // parameter 2 pre dead stav
 			particleEnd = false;
 		}
 

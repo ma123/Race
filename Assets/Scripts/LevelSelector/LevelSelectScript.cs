@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI; 
+using System;
 using System.Collections;
 
 public class LevelSelectScript : MonoBehaviour {
 	private int worldIndex;   
 	private int levelIndex;  
 	public int selectedBackround = 1;
+	private int stars=0;
 	
 	public GameObject levelLoadingPanel;
 	private int loadProgress;
@@ -41,6 +43,9 @@ public class LevelSelectScript : MonoBehaviour {
 	//zistenie ktory level je odomknuty a zobrazenie bez zamku
 	void  CheckLockedLevels (){
 		for(int j = 1; j <= LockLevelScript.levels; j++){ // podla poctu levelov
+			stars = PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +j.ToString()+"stars", 0);
+			GameObject.Find(j+"Star"+stars).GetComponent<Image>().enabled = true;
+
 			levelIndex = j;
 			if((PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +levelIndex.ToString()))==1){
 				GameObject.Find("Level"+j+"Lock").SetActive(false); // vypnutie tlacitka zo zamkom nad skutocnym tlacitkom
@@ -62,6 +67,3 @@ public class LevelSelectScript : MonoBehaviour {
 		}
 	}
 }
-
-
-

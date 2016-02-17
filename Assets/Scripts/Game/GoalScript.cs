@@ -6,7 +6,7 @@ public class GoalScript : MonoBehaviour {
 	protected string currentLevel;
 	protected int worldIndex;
 	protected int levelIndex;
-	// Use this for initialization
+
 	void Start () {
 		reactionFromPanel = GameObject.FindGameObjectWithTag ("ReactionFromPanel");
 		currentLevel = Application.loadedLevelName; // nacitanie mena aktualneho levela
@@ -38,6 +38,6 @@ public class GoalScript : MonoBehaviour {
 				}
 			}
 		}
-		reactionFromPanel.GetComponent<ReactionFromPanelScript>().WinnPanelReaction(3); // parameter 2 pre dead stav
+		reactionFromPanel.GetComponent<ReactionFromPanelScript>().ShowLevelCompletePanel(); // parameter 2 pre dead stav
 	}
 }
