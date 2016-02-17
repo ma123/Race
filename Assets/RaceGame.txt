@@ -116,6 +116,7 @@
 - vypnutie zvuku po vyhre Y......................
 - LOGO Y...........................
 - nazov hry    {Draw path, Draw road} Y........................
+- pocet hviezd podla prejdenia levelov Y........................
 
 - rovnaka velkost aut
 - rozdiely medzi autami, rozdielne jazdne vlastnosti, moznost vylepsovat ak ano tak ako??? 
@@ -125,7 +126,7 @@
 - autaaaaaaaaaa
 - optimalizovat na android rozlisenia
 - skutocna cena aut
-- pocet hviezd podla prejdenia levelov
+
 
 - facebook
 - twitter

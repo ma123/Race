@@ -5,13 +5,7 @@ using System;
 
 public class ReactionFromPanelScript : MonoBehaviour {
 	public GameObject winPanel;
-	public GameObject levelCompletePanel;
-	public GameObject star0;
-	public GameObject star1;
-	public GameObject star2;
-	public int levelCoinToFull;
 	private GameObject soundsAndMusic;
-	private int moneyCount;
 
 	void Start() {
 		Time.timeScale = 1; // spustenie hry
@@ -51,50 +45,6 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		default:
 			Debug.Log ("Nieco sa zmrvilo");
 			break;
-		}
-	}
-
-	public void ShowLevelCompletePanel(int stars) {
-		Time.timeScale = 0; // pauznutie hry
-		levelCompletePanel.SetActive(true);
-
-		moneyCount = MoneyScript.GetMoneyCounter ();
-		print (moneyCount);
-		int coinPart = levelCoinToFull / 3;
-
-		if (moneyCount == 0) {
-			print ("vsetky false");
-			star0.GetComponent<Image> ().enabled = false;
-			star1.GetComponent<Image> ().enabled = false;
-			star2.GetComponent<Image> ().enabled = false;
-		} else {
-			if (moneyCount <= coinPart) {
-				print ("prva true");
-				star0.GetComponent<Image> ().enabled = true;
-				star1.GetComponent<Image> ().enabled = false;
-				star2.GetComponent<Image> ().enabled = false;
-			} else {
-				if ((moneyCount > coinPart) && (moneyCount <= (2*coinPart))) {
-					print ("dve true");
-					star0.GetComponent<Image> ().enabled = true;
-					star1.GetComponent<Image> ().enabled = true;
-					star2.GetComponent<Image> ().enabled = false;
-				} else {
-					if ((moneyCount > (2* coinPart)) && (moneyCount <= levelCoinToFull)) {
-						print ("vsetky true");
-						star0.GetComponent<Image> ().enabled = true;
-						star1.GetComponent<Image> ().enabled = true;
-						star2.GetComponent<Image> ().enabled = true;
-					}
-				}
-			} // todo pocet hviezd ulozit
-		}
-		MoneyScript.SetMoneyCounter (0);
-
-		try {
-			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
-		} catch(Exception e) {
-			Debug.Log ("Sound exception in panel");
 		}
 	}
 
