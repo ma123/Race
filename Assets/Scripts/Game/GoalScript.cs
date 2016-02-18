@@ -13,6 +13,8 @@ public class GoalScript : MonoBehaviour {
 	public GameObject star0;
 	public GameObject star1;
 	public GameObject star2;
+	public Sprite fullStar;
+	public Sprite emptyStar;
 	public Text pickupCoinText;
 	public int levelCoinToFull;
 	private int moneyCount;
@@ -40,27 +42,27 @@ public class GoalScript : MonoBehaviour {
 		int coinPart = levelCoinToFull / 3;
 
 		if (moneyCount == 0) {
-			star0.GetComponent<Image> ().enabled = false;
-			star1.GetComponent<Image> ().enabled = false;
-			star2.GetComponent<Image> ().enabled = false;
+			star0.GetComponent<Image> ().overrideSprite = emptyStar;
+			star1.GetComponent<Image> ().overrideSprite = emptyStar;
+			star2.GetComponent<Image> ().overrideSprite = emptyStar;
 			UnlockLevels (0);
 		} else {
 			if (moneyCount <= coinPart) {
-				star0.GetComponent<Image> ().enabled = true;
-				star1.GetComponent<Image> ().enabled = false;
-				star2.GetComponent<Image> ().enabled = false;
+				star0.GetComponent<Image> ().overrideSprite = fullStar;
+				star1.GetComponent<Image> ().overrideSprite = emptyStar;
+				star2.GetComponent<Image> ().overrideSprite = emptyStar;
 				UnlockLevels (1);
 			} else {
 				if ((moneyCount > coinPart) && (moneyCount <= (2*coinPart))) {
-					star0.GetComponent<Image> ().enabled = true;
-					star1.GetComponent<Image> ().enabled = true;
-					star2.GetComponent<Image> ().enabled = false;
+					star0.GetComponent<Image> ().overrideSprite = fullStar;
+					star1.GetComponent<Image> ().overrideSprite = fullStar;
+					star2.GetComponent<Image> ().overrideSprite = emptyStar;
 					UnlockLevels (2);
 				} else {
 					if ((moneyCount > (2* coinPart)) && (moneyCount <= (levelCoinToFull + 10))) {
-						star0.GetComponent<Image> ().enabled = true;
-						star1.GetComponent<Image> ().enabled = true;
-						star2.GetComponent<Image> ().enabled = true;
+						star0.GetComponent<Image> ().overrideSprite = fullStar;
+						star1.GetComponent<Image> ().overrideSprite = fullStar;
+						star2.GetComponent<Image> ().overrideSprite = fullStar;
 						UnlockLevels (3);
 					}
 				}
