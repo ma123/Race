@@ -13,6 +13,7 @@ public class GoalScript : MonoBehaviour {
 	public GameObject star0;
 	public GameObject star1;
 	public GameObject star2;
+	public Text pickupCoinText;
 	public int levelCoinToFull;
 	private int moneyCount;
 
@@ -34,6 +35,8 @@ public class GoalScript : MonoBehaviour {
 		levelCompletePanel.SetActive(true);
 
 		moneyCount = MoneyScript.GetMoneyCounter ();
+		pickupCoinText.text = moneyCount.ToString ();
+		print ("money count " + moneyCount);
 		int coinPart = levelCoinToFull / 3;
 
 		if (moneyCount == 0) {
@@ -54,7 +57,7 @@ public class GoalScript : MonoBehaviour {
 					star2.GetComponent<Image> ().enabled = false;
 					UnlockLevels (2);
 				} else {
-					if ((moneyCount > (2* coinPart)) && (moneyCount <= levelCoinToFull)) {
+					if ((moneyCount > (2* coinPart)) && (moneyCount <= (levelCoinToFull + 10))) {
 						star0.GetComponent<Image> ().enabled = true;
 						star1.GetComponent<Image> ().enabled = true;
 						star2.GetComponent<Image> ().enabled = true;
