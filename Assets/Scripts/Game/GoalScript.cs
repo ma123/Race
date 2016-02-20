@@ -94,8 +94,9 @@ public class GoalScript : MonoBehaviour {
 						PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + levelIndex.ToString (), 1);
 					}
 						
-					if(PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +j.ToString()+"stars")< stars)
-						PlayerPrefs.SetInt("level"+worldIndex.ToString() +":" +j.ToString()+"stars",stars);
+					if (PlayerPrefs.GetInt ("level" + worldIndex.ToString () + ":" + j.ToString () + "stars", 0) < stars) {
+						PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + j.ToString () + "stars", stars);
+					}
 				}
 			}
 		}

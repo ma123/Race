@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LockLevelScript : MonoBehaviour {
 
-	public static int worlds = 5; //number of worlds
+	public static int worlds = 3; //number of worlds
 	public static int levels = 15; //number of levels
 	
 	private int worldIndex;   

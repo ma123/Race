@@ -117,16 +117,15 @@
 - LOGO Y...........................
 - nazov hry    {Draw path, Draw road} Y........................
 - pocet hviezd podla prejdenia levelov Y........................
+- rotacia displeja Y............................
 
 - rovnaka velkost aut
 - rozdiely medzi autami, rozdielne jazdne vlastnosti, moznost vylepsovat ak ano tak ako??? 
-- zmena progress baru
 - zoradit auta podla vlastnosti v obchode
 - nasekat levely
 - autaaaaaaaaaa
 - optimalizovat na android rozlisenia
 - skutocna cena aut
-
 
 - facebook
 - twitter
@@ -137,6 +136,7 @@
 
 
 // dalsie rozsirenia v buducnosti
+- zmena progress baru
 - stránka informačná
 - parallax background iba v challenge mode
 - ukazatel priebehu levelu skusit pohladat pozriet
