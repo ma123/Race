@@ -44,6 +44,7 @@ public class LevelSelectScript : MonoBehaviour {
 	void  CheckLockedLevels (){
 		for(int j = 1; j <= LockLevelScript.levels; j++){ // podla poctu levelov
 			stars = PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +j.ToString()+"stars", 0);
+			print (worldIndex + " " + j + " "+ stars);
 			GameObject.Find(j+"Star"+stars).GetComponent<Image>().enabled = true;
 
 			levelIndex = j;

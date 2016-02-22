@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 using System;
@@ -16,12 +17,13 @@ public class GoalScript : MonoBehaviour {
 	public Sprite fullStar;
 	public Sprite emptyStar;
 	public Text pickupCoinText;
-	public int levelCoinToFull;
+	public float levelCoinToFull;
 	private int moneyCount;
 
 	void Start () {
 		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
-		currentLevel = Application.loadedLevelName; // nacitanie mena aktualneho levela
+		currentLevel = SceneManager.GetActiveScene().name;
+		//currentLevel = Application.loadedLevelName; // nacitanie mena aktualneho levela
 	}
 
 	public void GoalReact () {
@@ -36,30 +38,30 @@ public class GoalScript : MonoBehaviour {
 		statsPanel.SetActive(false);
 		levelCompletePanel.SetActive(true);
 
-		moneyCount = MoneyScript.GetMoneyCounter ();
+		moneyCount = MoneyScript.GetMoneyCounter (); // ziskany pocet minci
+		float percent = (100 * (float)moneyCount) / levelCoinToFull; // ziskame pocet percent na kolko sme presli
 		pickupCoinText.text = moneyCount.ToString ();
 		print ("money count " + moneyCount);
-		int coinPart = levelCoinToFull / 3;
 
-		if (moneyCount == 0) {
+		if (percent <= 30.0f) {
 			star0.GetComponent<Image> ().overrideSprite = emptyStar;
 			star1.GetComponent<Image> ().overrideSprite = emptyStar;
 			star2.GetComponent<Image> ().overrideSprite = emptyStar;
 			UnlockLevels (0);
 		} else {
-			if (moneyCount <= coinPart) {
+			if ((percent > 30.0f) && (percent <= 50.0f)) {
 				star0.GetComponent<Image> ().overrideSprite = fullStar;
 				star1.GetComponent<Image> ().overrideSprite = emptyStar;
 				star2.GetComponent<Image> ().overrideSprite = emptyStar;
 				UnlockLevels (1);
 			} else {
-				if ((moneyCount > coinPart) && (moneyCount <= (2*coinPart))) {
+				if ((percent > 50.0f) && (percent <= 80.0f)) {
 					star0.GetComponent<Image> ().overrideSprite = fullStar;
 					star1.GetComponent<Image> ().overrideSprite = fullStar;
 					star2.GetComponent<Image> ().overrideSprite = emptyStar;
 					UnlockLevels (2);
 				} else {
-					if ((moneyCount > (2* coinPart)) && (moneyCount <= (levelCoinToFull + 10))) {
+					if (percent > 80.0f) {  // pokial mame 80 percent tak vsetky hviezdy sa zobrazia ak mame viac ako 100 percent cize chybne nastaveny level tak tiez sa vsetky zobrazia
 						star0.GetComponent<Image> ().overrideSprite = fullStar;
 						star1.GetComponent<Image> ().overrideSprite = fullStar;
 						star2.GetComponent<Image> ().overrideSprite = fullStar;
@@ -80,22 +82,23 @@ public class GoalScript : MonoBehaviour {
 	protected void UnlockLevels (int stars){
 		for(int i = 1; i <= LockLevelScript.worlds; i++){
 			for(int j = 1; j <= LockLevelScript.levels; j++){
-				if(currentLevel == "Level"+ i.ToString() +"." +j.ToString()){
+				if(currentLevel == "Level"+ i.ToString() +"." +j.ToString()) {
 					if (j == LockLevelScript.levels) { // posledny level vo svete
-						if (i != LockLevelScript.worlds) { // ak nie sme v poslednom svete 
-							worldIndex = i + 1;
-							levelIndex = 1;
-							PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + levelIndex.ToString (), 1); // otvorenie prveho levelu v dalsom svete
-							PlayerPrefs.SetInt ("world" + worldIndex.ToString(), 1); // otvorenie dalsieho sveta dlazdica
+						worldIndex = i + 1;
+						levelIndex = 1;
+						PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + levelIndex.ToString (), 1); // otvorenie prveho levelu v dalsom svete
+						PlayerPrefs.SetInt ("world" + worldIndex.ToString (), 1); // otvorenie dalsieho sveta dlazdica
+
+						if (PlayerPrefs.GetInt ("level" + i.ToString () + ":" + j.ToString () + "stars", 0) < stars) {
+							PlayerPrefs.SetInt ("level" + i.ToString () + ":" + j.ToString () + "stars", stars);
 						}
 					} else {
 						worldIndex = i;
 						levelIndex = (j + 1);
 						PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + levelIndex.ToString (), 1);
-					}
-						
-					if (PlayerPrefs.GetInt ("level" + worldIndex.ToString () + ":" + j.ToString () + "stars", 0) < stars) {
-						PlayerPrefs.SetInt ("level" + worldIndex.ToString () + ":" + j.ToString () + "stars", stars);
+						if (PlayerPrefs.GetInt ("level" + i.ToString () + ":" + j.ToString () + "stars", 0) < stars) {
+							PlayerPrefs.SetInt ("level" + i.ToString () + ":" + j.ToString () + "stars", stars);
+						}
 					}
 				}
 			}

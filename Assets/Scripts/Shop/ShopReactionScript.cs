@@ -10,9 +10,9 @@ public class ShopReactionScript : MonoBehaviour {
 	private GameObject[] selectFrame;
 	private GameObject[] selectedFrame;
 
-	private int numberOfCars = 9;
+	private int numberOfCars = 11;
 	private int typeOfCar;
-	private int[] priceCar = {4, 3, 2, 5, 6, 4, 3,4,5}; // polo, papid, army, papa, hippie, ambulance, country, driat
+	private int[] priceCar = {4, 3, 2, 5, 6, 4, 3,4,5, 5, 6}; // polo, papid, army, papa, hippie, ambulance, country, driat, tresla, peep
 	private int selectedCar = 0;
 	
 	void Start() {
