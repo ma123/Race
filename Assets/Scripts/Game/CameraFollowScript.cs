@@ -27,13 +27,13 @@ public class CameraFollowScript : MonoBehaviour {
 			break;
 
 		case 2: 
-			car = playerParent.transform.Find("PlayerArmyCar");
+			car = playerParent.transform.Find("PlayerFiatCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;
 
 		case 3: 
-			car = playerParent.transform.Find("PlayerPapamobilCar");
+			car = playerParent.transform.Find("PlayerCivicCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;
@@ -43,39 +43,39 @@ public class CameraFollowScript : MonoBehaviour {
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;
-
+		
 		case 5: 
-			car = playerParent.transform.Find("PlayerAmbulanceCar");
+			car = playerParent.transform.Find("PlayerPapamobilCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;
 
 		case 6: 
-			car = playerParent.transform.Find("PlayerPickupCar");
+			car = playerParent.transform.Find("PlayerAmbulanceCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;
 
 		case 7: 
-			car = playerParent.transform.Find("PlayerFiatCar");
-			car.gameObject.SetActive(true);
-			observingObject = car.transform;
-			break;
-
-		case 8: 
-			car = playerParent.transform.Find("PlayerCivicCar");
-			car.gameObject.SetActive(true);
-			observingObject = car.transform;
-			break;
-
-		case 9: 
 			car = playerParent.transform.Find("PlayerTeslaSCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;
 
-		case 10: 
+		case 8: 
+			car = playerParent.transform.Find("PlayerPickupCar");
+			car.gameObject.SetActive(true);
+			observingObject = car.transform;
+			break;
+
+		case 9: 
 			car = playerParent.transform.Find("PlayerWranglerCar");
+			car.gameObject.SetActive(true);
+			observingObject = car.transform;
+			break;
+		
+		case 10: 
+			car = playerParent.transform.Find("PlayerArmyCar");
 			car.gameObject.SetActive(true);
 			observingObject = car.transform;
 			break;

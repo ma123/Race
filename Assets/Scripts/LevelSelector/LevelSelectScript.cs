@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI; 
+using UnityEngine.SceneManagement;
 using System;
 using System.Collections;
 
@@ -16,7 +17,7 @@ public class LevelSelectScript : MonoBehaviour {
 		PlayerPrefs.SetInt ("background", selectedBackround);
 
 		for (int i = 1; i <= LockLevelScript.worlds; i++) {
-			if (Application.loadedLevelName == "World" + i) {
+			if (SceneManager.GetActiveScene().name == "World" + i) {
 				worldIndex = i;
 				CheckLockedLevels (); 
 			}
@@ -26,12 +27,14 @@ public class LevelSelectScript : MonoBehaviour {
 	public void  Update (){
 		// po stlaceni esc poprípade back na telefone navrat do SelectWorld sceny
   		if (Input.GetKeyDown(KeyCode.Escape) ){
-   			Application.LoadLevel("SelectWorldScene");
+			SceneManager.LoadScene("SelectWorldScene");
+   			//Application.LoadLevel("SelectWorldScene");
   		}
  	}
 
 	public void BackToSelectWorld() {
-		Application.LoadLevel("SelectWorldScene");
+		SceneManager.LoadScene("SelectWorldScene");
+		//Application.LoadLevel("SelectWorldScene");
 	}
 	
 	//vybranie levelu podla argumentu worldLevel ktory je zadany v editore napr. 1.1, 2.6
@@ -57,7 +60,7 @@ public class LevelSelectScript : MonoBehaviour {
 
 	// asynchronne nacitanie sceny
 	IEnumerator DisplayLevelLoadingScreen(string worldLevel) {
-		AsyncOperation async = Application.LoadLevelAsync ("Level"+worldLevel);
+		AsyncOperation async = 	SceneManager.LoadSceneAsync("Level" + worldLevel);//Application.LoadLevelAsync ("Level"+worldLevel);
 		levelLoadingPanel.SetActive (true);
 		Scrollbar progressBar = levelLoadingPanel.GetComponentInChildren<Scrollbar> ();
 

@@ -16,14 +16,12 @@ public class DynamicScene : MonoBehaviour {
 		{
 			// Set the random seed so it's not the same each game.
 			Random.seed = System.DateTime.Today.Millisecond;
-			
 			// Start the Spawn coroutine.
 			StartCoroutine("Spawn");
 		}
 		
 		
-		IEnumerator Spawn ()
-		{
+		IEnumerator Spawn () {
 			// Create a random wait time before the prop is instantiated.
 			float waitTime = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
 			

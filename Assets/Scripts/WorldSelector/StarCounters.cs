@@ -12,8 +12,7 @@ public class StarCounters : MonoBehaviour {
 			for (int j = 1; j <= LockLevelScript.levels; j++) {
 				totalStars += PlayerPrefs.GetInt ("level" + i.ToString () + ":" + j.ToString () + "stars", 0);
 			}
-			print (totalStars);
-	
+
 			starTextArray[i-1].text = totalStars.ToString() +"/45";
 			totalStars = 0;
 		}

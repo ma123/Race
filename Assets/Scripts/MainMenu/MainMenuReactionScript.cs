@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MainMenuReactionScript : MonoBehaviour {
@@ -24,17 +25,20 @@ public class MainMenuReactionScript : MonoBehaviour {
 
 	public void ClickedLevelSelector() {
 		print ("clicked load SelectWorldScene");
-		Application.LoadLevel ("SelectWorldScene");
+		SceneManager.LoadScene("SelectWorldScene");
+		//Application.LoadLevel ("SelectWorldScene");
 	}
 	
 	public void ClickedShop() {
 		print ("clicked load Shop");
-		Application.LoadLevel ("ShopScene");
+		SceneManager.LoadScene("ShopScene");
+		//Application.LoadLevel ("ShopScene");
 	}
 	
 	public void ClickedChallenge() {
 		print ("clicked load Challenge");
-		Application.LoadLevel ("ChallengeScene");
+		SceneManager.LoadScene("ChallengeScene");
+		//Application.LoadLevel ("ChallengeScene");
 	}
 
 	public void ClickedSettings() {

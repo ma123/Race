@@ -23,7 +23,6 @@ public class GoalScript : MonoBehaviour {
 	void Start () {
 		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
 		currentLevel = SceneManager.GetActiveScene().name;
-		//currentLevel = Application.loadedLevelName; // nacitanie mena aktualneho levela
 	}
 
 	public void GoalReact () {
