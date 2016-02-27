@@ -54,13 +54,13 @@ public class GoalScript : MonoBehaviour {
 				star2.GetComponent<Image> ().overrideSprite = emptyStar;
 				UnlockLevels (1);
 			} else {
-				if ((percent > 50.0f) && (percent <= 80.0f)) {
+				if ((percent > 50.0f) && (percent <= 90.0f)) {
 					star0.GetComponent<Image> ().overrideSprite = fullStar;
 					star1.GetComponent<Image> ().overrideSprite = fullStar;
 					star2.GetComponent<Image> ().overrideSprite = emptyStar;
 					UnlockLevels (2);
 				} else {
-					if (percent > 80.0f) {  // pokial mame 80 percent tak vsetky hviezdy sa zobrazia ak mame viac ako 100 percent cize chybne nastaveny level tak tiez sa vsetky zobrazia
+					if (percent > 90.0f) {  // pokial mame 90 percent tak vsetky hviezdy sa zobrazia ak mame viac ako 100 percent cize chybne nastaveny level tak tiez sa vsetky zobrazia
 						star0.GetComponent<Image> ().overrideSprite = fullStar;
 						star1.GetComponent<Image> ().overrideSprite = fullStar;
 						star2.GetComponent<Image> ().overrideSprite = fullStar;

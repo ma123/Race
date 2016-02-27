@@ -51,7 +51,7 @@ public class LevelSelectScript : MonoBehaviour {
 			GameObject.Find(j+"Star"+stars).GetComponent<Image>().enabled = true;
 
 			levelIndex = j;
-			if((PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +levelIndex.ToString()))==1){
+			if((PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +levelIndex.ToString(), 0))==1){
 				GameObject.Find("Level"+j+"Lock").SetActive(false); // vypnutie tlacitka zo zamkom nad skutocnym tlacitkom
 				Debug.Log ("Unlocked");
 			}

@@ -152,7 +152,7 @@
 - piano, náklad na padáku,
 - dalsie auta
 - skusit vytvorit mincu ktora prevrati svet naruby(popripade cely svet tak spravit)  staci zmenit gravitacia, a otocit auto (zoberie mincu na par sek[nd sa toto stane)
--zvuk zobranie otocenia auta gravitacie
+- zvuk zobranie otocenia auta gravitacie
 
 240*320-ldpi
 240*400-ldpi
