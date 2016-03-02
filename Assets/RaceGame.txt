@@ -127,7 +127,13 @@
 - prepísať scenemanager.load scene Y................
 - zoradit auta podla vlastnosti v obchode   Y...................................
 - rovnaka velkost aut Y........................
+- pozmenit ikonu Y.............................
 
+- background generovanie
+- nahodne umiestnenie minci
+- nahodne umiestnenie atramentu
+- nahodne umiestnenie gumy
+- nahodne umiestnenie prekazok
 
 - nasekat levely
 - optimalizovat na android rozlisenia
