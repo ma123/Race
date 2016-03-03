@@ -24,11 +24,11 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 		List<GameObject> roomsToRemove = new List<GameObject>();
 		bool addRooms = true;       
 		float playerX = transform.position.x;
-		print (playerX + " playerX ");
+		//print (playerX + " playerX ");
 		float removeRoomX = playerX - screenWidthInPoints;   
-		print (removeRoomX + " playerX - camera ");
+		//print (removeRoomX + " playerX - camera ");
 		float addRoomX = playerX + screenWidthInPoints;
-		print (addRoomX + " playerX + camera ");
+		//print (addRoomX + " playerX + camera ");
 		float farhtestRoomEndX = 0;
 
 		foreach(var room in currentRooms)
@@ -43,7 +43,7 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 				addRooms = false;
 			}
 
-			if (roomEndX < removeRoomX) {
+			if (roomEndX < removeRoomX - 20f) {  // magicke cislo 20
 				roomsToRemove.Add (room);
 			}
 			print (farhtestRoomEndX + " max " + roomEndX);
