@@ -128,16 +128,15 @@
 - zoradit auta podla vlastnosti v obchode   Y...................................
 - rovnaka velkost aut Y........................
 - pozmenit ikonu Y.............................
+- nasekat levely Y....................
+- skutocna cena aut Y.................
 
-- background generovanie
+- background generovanie 
 - nahodne umiestnenie minci
 - nahodne umiestnenie atramentu
 - nahodne umiestnenie gumy
 - nahodne umiestnenie prekazok
-
-- nasekat levely
 - optimalizovat na android rozlisenia
-- skutocna cena aut
 
 - facebook
 - twitter

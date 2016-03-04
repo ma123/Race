@@ -12,7 +12,7 @@ public class ShopReactionScript : MonoBehaviour {
 
 	private int numberOfCars = 11;
 	private int typeOfCar;
-	private int[] priceCar = {4, 3, 2, 5, 6, 4, 3,4,5, 5, 6}; // polo, papid, army, papa, hippie, ambulance, country, driat, tresla, peep
+	private int[] priceCar = {0, 70, 90, 120, 150, 180, 190,230,250, 270, 300}; // polo, papid, driad, cynic, hipie, papa, ambulance,tresla, country, peep, army
 	private int selectedCar = 0;
 	
 	void Start() {
