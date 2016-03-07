@@ -3,14 +3,18 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI; 
 using System.Collections;
 using System;
+using GoogleMobileAds;
+using GoogleMobileAds.Api;
 
 public class ReactionFromPanelScript : MonoBehaviour {
 	public GameObject winPanel;
 	private GameObject soundsAndMusic;
+	private InterstitialAd interstitial;
 
 	void Start() {
 		Time.timeScale = 1; // spustenie hry
 		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
+		RequestInterstitial ();
 	}
 	// Update is called once per frame
 	void Update () {
@@ -48,6 +52,8 @@ public class ReactionFromPanelScript : MonoBehaviour {
 			Debug.Log ("Nieco sa zmrvilo");
 			break;
 		}
+			
+		ShowInterstitial ();
 	}
 
 	public void NextLevel() {
@@ -95,4 +101,63 @@ public class ReactionFromPanelScript : MonoBehaviour {
 			Debug.Log ("Sound exception in panel");
 		}
 	}
+
+	private void RequestInterstitial() {
+		#if UNITY_EDITOR
+		string adUnitId = "unused";
+		#elif UNITY_ANDROID
+		string adUnitId = "ca-app-pub-1882232042439946/6451127916";  
+		#elif UNITY_IPHONE
+		string adUnitId = "INSERT_IOS_INTERSTITIAL_AD_UNIT_ID_HERE";
+		#else
+		string adUnitId = "unexpected_platform";
+		#endif
+
+		// Create an interstitial.
+		interstitial = new InterstitialAd(adUnitId);
+		// Register for ad events.
+		interstitial.OnAdLoaded += HandleInterstitialLoaded;
+		interstitial.OnAdFailedToLoad += HandleInterstitialFailedToLoad;
+		interstitial.OnAdOpening += HandleInterstitialOpened;
+		interstitial.OnAdClosed += HandleInterstitialClosed;
+		interstitial.OnAdLeavingApplication += HandleInterstitialLeftApplication;
+		// Load an interstitial ad.
+		AdRequest requestInterstitial = new AdRequest.Builder().Build();
+		interstitial.LoadAd(requestInterstitial);
+	}
+
+	private void ShowInterstitial() {
+		if (interstitial.IsLoaded()) {
+			interstitial.Show();
+		}
+		else {
+			print("Interstitial is not ready yet.");
+		}
+	}
+
+	#region Interstitial callback handlers
+	public void HandleInterstitialLoaded(object sender, EventArgs args) {
+		print("HandleInterstitialLoaded event received.");
+	}
+
+	public void HandleInterstitialFailedToLoad(object sender, AdFailedToLoadEventArgs args) {
+		print("HandleInterstitialFailedToLoad event received with message: " + args.Message);
+	}
+
+	public void HandleInterstitialOpened(object sender, EventArgs args) {
+		print("HandleInterstitialOpened event received");
+	}
+
+	void HandleInterstitialClosing(object sender, EventArgs args) {
+		print("HandleInterstitialClosing event received");
+	}
+
+	public void HandleInterstitialClosed(object sender, EventArgs args) {
+		print("HandleInterstitialClosed event received");
+	}
+
+	public void HandleInterstitialLeftApplication(object sender, EventArgs args) {
+		print("HandleInterstitialLeftApplication event received");
+	}
+	#endregion
 }

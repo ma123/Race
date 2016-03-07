@@ -7,36 +7,47 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 	public GameObject availableRooms;
 	public List<GameObject> currentRooms;
 	private float screenWidthInPoints;
+	private GameObject playerObject;
+	// object generator coin ink 
+	public GameObject objectCoin;    
+	public List<GameObject> objects;
+
+	public float objectsMinDistance = 5.0f;    
+	public float objectsMaxDistance = 10.0f;
+
+	public float objectsMinY = -1.4f;
+	public float objectsMaxY = 1.4f;
+
+	public float objectsMinRotation = -45.0f;
+	public float objectsMaxRotation = 45.0f; 
 
 	// Use this for initialization
 	void Start () {
 		float height = 2.0f * Camera.main.orthographicSize;
 		screenWidthInPoints = height * Camera.main.aspect;
-		print (screenWidthInPoints + " camera ");
+
 	}
 
 	void Update () {
+		playerObject = GameObject.FindGameObjectWithTag ("TypeOfPlayer");
 		GenerateRoomIfRequred();
+
+		GenerateObjectsIfRequired();
 	}
 
 	void GenerateRoomIfRequred()
 	{
 		List<GameObject> roomsToRemove = new List<GameObject>();
 		bool addRooms = true;       
-		float playerX = transform.position.x;
-		//print (playerX + " playerX ");
+		float playerX = playerObject.transform.position.x;
 		float removeRoomX = playerX - screenWidthInPoints;   
-		//print (removeRoomX + " playerX - camera ");
 		float addRoomX = playerX + screenWidthInPoints;
-		//print (addRoomX + " playerX + camera ");
 		float farhtestRoomEndX = 0;
 
 		foreach(var room in currentRooms)
 		{
 			float roomWidth = room.transform.FindChild("DownColliderObject").localScale.x;
-			print (roomWidth + "sirka collideru");
 			float roomStartX = room.transform.position.x - (roomWidth * 0.5f);   
-			print (roomStartX + "sirka collideru");
 			float roomEndX = roomStartX + roomWidth;                            
 
 			if (roomStartX > addRoomX) {
@@ -46,15 +57,13 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 			if (roomEndX < removeRoomX - 20f) {  // magicke cislo 20
 				roomsToRemove.Add (room);
 			}
-			print (farhtestRoomEndX + " max " + roomEndX);
 			farhtestRoomEndX = Mathf.Max(farhtestRoomEndX, roomEndX);
-			print (farhtestRoomEndX);
 		}
 
 		foreach(var room in roomsToRemove)
 		{
 			currentRooms.Remove(room);
-			Destroy(room);            
+			Destroy(room);
 		}
 
 		if (addRooms) {
@@ -63,17 +72,53 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 	}
 
 	void AddRoom(float farhtestRoomEndX) {
-		try {
+		try{
 			GameObject room = (GameObject)Instantiate(availableRooms);
 			float roomWidth = room.transform.FindChild("DownColliderObject").localScale.x;
 			float roomCenter = farhtestRoomEndX + roomWidth * 0.5f;
 			room.transform.position = new Vector3(roomCenter, 0, 0);
-
 			currentRooms.Add(room);
 		} catch(Exception e) {
-			Debug.Log ("GameObject exception");
+			Debug.Log ("Add room problem");
 		}
 	} 
 
+	void GenerateObjectsIfRequired() {
+		try{
+			float playerX = playerObject.transform.position.x;        
+			float removeObjectsX = playerX - screenWidthInPoints;
+			float addObjectX = playerX + screenWidthInPoints;
+			float farthestObjectX = 0;
 
+			List<GameObject> objectsToRemove = new List<GameObject>();
+
+			foreach (var obj in objects) {
+				float objX = obj.transform.position.x;
+
+				farthestObjectX = Mathf.Max(farthestObjectX, objX);
+
+				if (objX < removeObjectsX)            
+					objectsToRemove.Add(obj);
+			}
+				
+			foreach (var obj in objectsToRemove) {
+				objects.Remove(obj);
+				Destroy(obj);
+			}
+			if (farthestObjectX < addObjectX)
+				AddObject(farthestObjectX);
+		} catch(Exception e) {
+			Debug.Log ("Generate object problem");
+		}
+	}
+
+	void AddObject(float lastObjectX) {
+		GameObject obj = (GameObject)Instantiate(objectCoin);
+		float objectPositionX = lastObjectX + UnityEngine.Random.Range(objectsMinDistance, objectsMaxDistance);
+		float randomY = UnityEngine.Random.Range(objectsMinY, objectsMaxY);
+		obj.transform.position = new Vector3(objectPositionX,randomY,0); 
+		//float rotation = Random.Range(objectsMinRotation, objectsMaxRotation);
+		//obj.transform.rotation = Quaternion.Euler(Vector3.forward * rotation);
+		objects.Add(obj);            
+	}
 }

@@ -14,7 +14,7 @@ public class SettingsPanelScript : MonoBehaviour {
 	void Start () {
 		soundInt = PlayerPrefs.GetInt("sound",1);
 		musicInt = PlayerPrefs.GetInt("music",1);
-		vibrationInt = PlayerPrefs.GetInt("vibration",0);
+		vibrationInt = PlayerPrefs.GetInt("vibration",1);
 		print (soundInt + " " + musicInt + " " + vibrationInt);
 
 		if (soundInt == 0) {

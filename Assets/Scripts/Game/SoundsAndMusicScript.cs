@@ -24,9 +24,9 @@ public class SoundsAndMusicScript : MonoBehaviour {
 	private int vibrationEnabled = 0;
 	
 	void Start() {
-		soundEnabled = PlayerPrefs.GetInt("sound",0);
-		musicEnabled = PlayerPrefs.GetInt("music",0);
-		vibrationEnabled = PlayerPrefs.GetInt("vibration",0);
+		soundEnabled = PlayerPrefs.GetInt("sound",1);
+		musicEnabled = PlayerPrefs.GetInt("music",1);
+		vibrationEnabled = PlayerPrefs.GetInt("vibration",1);
 
 		if (musicEnabled == 1) {
 			musicBackground = this.GetComponent<AudioSource> ();
