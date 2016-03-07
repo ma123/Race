@@ -8,6 +8,7 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 	public List<GameObject> currentRooms;
 	private float screenWidthInPoints;
 	private GameObject playerObject;
+	private List<GameObject> roomsToRemove;
 	// object generator coin ink 
 	public GameObject objectCoin;    
 	public List<GameObject> objects;
@@ -18,34 +19,31 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 	public float objectsMinY = -1.4f;
 	public float objectsMaxY = 1.4f;
 
-	public float objectsMinRotation = -45.0f;
-	public float objectsMaxRotation = 45.0f; 
+	//public float objectsMinRotation = -45.0f;
+	//public float objectsMaxRotation = 45.0f; 
 
 	// Use this for initialization
 	void Start () {
 		float height = 2.0f * Camera.main.orthographicSize;
 		screenWidthInPoints = height * Camera.main.aspect;
-
+		roomsToRemove = new List<GameObject>();
 	}
 
 	void Update () {
 		playerObject = GameObject.FindGameObjectWithTag ("TypeOfPlayer");
-		GenerateRoomIfRequred();
+		//GenerateRoomIfRequred();
 
 		GenerateObjectsIfRequired();
 	}
 
-	void GenerateRoomIfRequred()
-	{
-		List<GameObject> roomsToRemove = new List<GameObject>();
+	void GenerateRoomIfRequred() {
 		bool addRooms = true;       
 		float playerX = playerObject.transform.position.x;
 		float removeRoomX = playerX - screenWidthInPoints;   
 		float addRoomX = playerX + screenWidthInPoints;
 		float farhtestRoomEndX = 0;
 
-		foreach(var room in currentRooms)
-		{
+		foreach(var room in currentRooms) {
 			float roomWidth = room.transform.FindChild("DownColliderObject").localScale.x;
 			float roomStartX = room.transform.position.x - (roomWidth * 0.5f);   
 			float roomEndX = roomStartX + roomWidth;                            
@@ -60,10 +58,13 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 			farhtestRoomEndX = Mathf.Max(farhtestRoomEndX, roomEndX);
 		}
 
-		foreach(var room in roomsToRemove)
-		{
-			currentRooms.Remove(room);
-			Destroy(room);
+		foreach(var room in roomsToRemove) {   // stale error hadze nechapem
+			try {
+				currentRooms.Remove(room);
+				Destroy(room);
+			} catch(Exception e) {
+				Debug.Log("Destroy room problem" + e);
+			}
 		}
 
 		if (addRooms) {
@@ -72,20 +73,15 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 	}
 
 	void AddRoom(float farhtestRoomEndX) {
-		try{
 			GameObject room = (GameObject)Instantiate(availableRooms);
 			float roomWidth = room.transform.FindChild("DownColliderObject").localScale.x;
 			float roomCenter = farhtestRoomEndX + roomWidth * 0.5f;
 			room.transform.position = new Vector3(roomCenter, 0, 0);
 			currentRooms.Add(room);
-		} catch(Exception e) {
-			Debug.Log ("Add room problem");
-		}
 	} 
 
 	void GenerateObjectsIfRequired() {
-		try{
-			float playerX = playerObject.transform.position.x;        
+			float playerX = playerObject.transform.position.x;
 			float removeObjectsX = playerX - screenWidthInPoints;
 			float addObjectX = playerX + screenWidthInPoints;
 			float farthestObjectX = 0;
@@ -97,22 +93,25 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 
 				farthestObjectX = Mathf.Max(farthestObjectX, objX);
 
-				if (objX < removeObjectsX)            
-					objectsToRemove.Add(obj);
+				if (objX < removeObjectsX) {            
+					objectsToRemove.Add (obj);
+				}
 			}
 				
 			foreach (var obj in objectsToRemove) {
-				objects.Remove(obj);
-				Destroy(obj);
+			   objects.Remove (obj);
+			   Destroy(obj.gameObject);
 			}
-			if (farthestObjectX < addObjectX)
-				AddObject(farthestObjectX);
-		} catch(Exception e) {
-			Debug.Log ("Generate object problem");
-		}
+
+		print (" far " + farthestObjectX + " addObj " + addObjectX);
+			
+			if (farthestObjectX < addObjectX) {
+				AddObject (farthestObjectX);
+			}
 	}
 
 	void AddObject(float lastObjectX) {
+		print ("last object " + lastObjectX);
 		GameObject obj = (GameObject)Instantiate(objectCoin);
 		float objectPositionX = lastObjectX + UnityEngine.Random.Range(objectsMinDistance, objectsMaxDistance);
 		float randomY = UnityEngine.Random.Range(objectsMinY, objectsMaxY);

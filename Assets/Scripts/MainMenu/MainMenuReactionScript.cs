@@ -45,7 +45,15 @@ public class MainMenuReactionScript : MonoBehaviour {
 		print ("clicked settings");
 		ChangePanel(2);
 	}
-	
+
+	public void OpenFacebookPage() {
+		Application.OpenURL("https://www.facebook.com/atonomgames/?ref=aymt_homepage_panel");
+	}
+		
+	public void OpenGooglePlayPage() {
+		Application.OpenURL("https://play.google.com/store/apps/details?id=sk.ag.drawingroad");
+	}
+
 	public void ClickedExit() {
 		print ("clicked exit");
 		Application.Quit ();
