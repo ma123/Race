@@ -19,6 +19,7 @@ public class ChallengeMoveCarScript : MonoBehaviour {
 
 	void Update() {
 		if(particleEnd) {
+			PlayerPrefs.SetInt ("money", MoneyScript.GetMoney());  // ulozenie poctu coin do preferences
 			reactionFromPanel.GetComponent<ReactionChallengeScript>().PausePanelReaction(true); // parameter 2 pre dead stav
 			particleEnd = false;
 		}

@@ -6,7 +6,9 @@ using System;
 
 public class ReactionChallengeScript : MonoBehaviour {
 	public GameObject winPanel;
+	public Text pickupCoinText;
 	private GameObject soundsAndMusic;
+	private int pickupCoin;
 
 	void Start() {
 		Time.timeScale = 1; // spustenie hry
@@ -21,16 +23,19 @@ public class ReactionChallengeScript : MonoBehaviour {
 
 	public void PausePanelReaction(bool offBackBtn) {
 		Time.timeScale = 0; // pauznutie hry
-		winPanel.SetActive(true);
+		winPanel.SetActive (true);
 
 		try {
-			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
-		} catch(Exception e) {
+			soundsAndMusic.GetComponent<SoundsAndMusicScript> ().GetMusicBackgroundObject ().Pause (); // pauznutie background hudby
+		} catch (Exception e) {
 			Debug.Log ("Sound exception in panel");
 		}
 
-		GameObject btnInteractableBack = GameObject.Find("BackToGameBtn");
-		if(offBackBtn) {
+		pickupCoin = MoneyScript.GetMoneyCounter ();  // ziskanie zozbieranych poctu minci 
+		pickupCoinText.text = pickupCoin.ToString ();  // priradenie do panelu text
+
+		GameObject btnInteractableBack = GameObject.Find ("BackToGameBtn");
+		if (offBackBtn) {
 			print ("dead");
 			btnInteractableBack.GetComponent<Button> ().interactable = false;
 			MoneyScript.SetMoneyCounter (0);

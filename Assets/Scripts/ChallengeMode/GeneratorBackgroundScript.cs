@@ -36,6 +36,22 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 	public float gumMaxTimeSpawn = 0;
 	private float lastGumTime = 0;
 
+	public GameObject obstacleObject;    
+	public float objectsObstacleMinDistance = 5.0f;    
+	public float objectsObstacleMaxDistance = 10.0f;
+	public float objectsObstacleMinY = -14f;
+	public float objectsObstacleMaxY = 13f;
+	public float obstacleMinTimeSpawn = 0;
+	public float obstacleMaxTimeSpawn = 0;
+	public float obstacleMinRotation = -45.0f;
+	public float obstacleMaxRotation = 45.0f; 
+	public float minXSize = 0.1f;
+	public float maxXSize = 0.1f;
+	public float minYSize = 0.1f;
+	public float maxYSize = 0.1f;
+
+	private float lastObstacleTime = 0;
+
 	// Use this for initialization
 	void Start () {
 		float height = 2.0f * Camera.main.orthographicSize;
@@ -46,7 +62,7 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 		playerObject = GameObject.FindGameObjectWithTag ("TypeOfPlayer");
 		playerX = playerObject.transform.position.x;  
 		GenerateRoomIfRequred();
-		GenerateCollections ();
+		GenerateObjects ();
 	}
 
 	void GenerateRoomIfRequred() {
@@ -90,7 +106,7 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 		currentRooms.Add(room);
 	} 
 
-	void GenerateCollections() {
+	void GenerateObjects() {
 		float waitCoinTime = Random.Range(coinMinTimeSpawn, coinMaxTimeSpawn);
 		if (Time.time > waitCoinTime + lastCoinTime) {
 			CreateCoin ();
@@ -108,6 +124,12 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 			CreateGum ();
 			lastGumTime = Time.time;
 		}   
+
+		float waitObstacleTime = Random.Range(obstacleMinTimeSpawn, obstacleMaxTimeSpawn);
+		if (Time.time > waitObstacleTime + lastObstacleTime) {
+			CreateObstacle ();
+			lastObstacleTime = Time.time;
+		}   
 	}
 
 	void CreateCoin() {
@@ -120,7 +142,7 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 
 	void CreateInk() {
 		GameObject obj = (GameObject)Instantiate(inkObject);
-		float playerPos = playerX + 10f;
+		float playerPos = playerX + 15f;
 		float objectPositionX = playerPos + Random.Range(objectsCoinMinDistance, objectsInkMaxDistance);
 		float randomY = Random.Range(objectsCoinMinY, objectsInkMaxY);
 		obj.transform.position = new Vector3(objectPositionX,randomY,0);   
@@ -128,9 +150,23 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 
 	void CreateGum() {
 		GameObject obj = (GameObject)Instantiate(gumObject);
-		float playerPos = playerX + 10f;
+		float playerPos = playerX + 15f;
 		float objectPositionX = playerPos + Random.Range(objectsGumMinDistance, objectsGumMaxDistance);
 		float randomY = Random.Range(objectsGumMinY, objectsGumMaxY);
 		obj.transform.position = new Vector3(objectPositionX,randomY,0);   
+	}
+
+	void CreateObstacle() {
+		GameObject obj = (GameObject)Instantiate(obstacleObject);
+		float playerPos = playerX + 15f;
+		float objectPositionX = playerPos + Random.Range(objectsObstacleMinDistance, objectsObstacleMaxDistance);
+		float randomY = Random.Range(objectsObstacleMinY, objectsObstacleMaxY);
+		obj.transform.position = new Vector3(objectPositionX,randomY,0); 
+
+		float rotation = Random.Range(obstacleMinRotation, obstacleMaxRotation);
+		obj.transform.rotation = Quaternion.Euler(Vector3.forward * rotation);
+		float xSize = Random.Range(minXSize, maxXSize);
+		float ySize = Random.Range(minYSize, maxYSize);
+		obj.transform.localScale = new Vector3 (xSize, ySize, 0);
 	}
 }

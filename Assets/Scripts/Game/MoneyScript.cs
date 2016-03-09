@@ -11,6 +11,7 @@ public class MoneyScript : MonoBehaviour {
 		money = PlayerPrefs.GetInt("money",0);
 		moneyText = gameObject.GetComponent<Text>();
 		RefreshScoreText ();
+		moneyCounter = 0;
 	}
 	
 	private static void RefreshScoreText() {
