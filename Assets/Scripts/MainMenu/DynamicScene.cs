@@ -12,11 +12,8 @@ public class DynamicScene : MonoBehaviour {
 		public float minSpeed;					// The lowest possible speed of the prop.
 		public float maxSpeed;					// The highest possible speeed of the prop.
 		
-		void Start ()
-		{
-			// Set the random seed so it's not the same each game.
+		void Start () {
 			Random.seed = System.DateTime.Today.Millisecond;
-			// Start the Spawn coroutine.
 			StartCoroutine("Spawn");
 		}
 		
@@ -44,8 +41,7 @@ public class DynamicScene : MonoBehaviour {
 			Rigidbody2D propInstance = Instantiate(backgroundProp, spawnPos, Quaternion.identity) as Rigidbody2D;
 			
 			// The sprites for the props all face left.  Therefore, if the prop should be facing right...
-			if(!facingLeft)
-			{
+			if(!facingLeft) {
 				// ... flip the scale in the x axis.
 				Vector3 scale = propInstance.transform.localScale;
 				scale.x *= -1;
@@ -65,26 +61,22 @@ public class DynamicScene : MonoBehaviour {
 			StartCoroutine(Spawn());
 			
 			// While the prop exists...
-			while(propInstance != null)
-			{
+			while(propInstance != null) {
 				// ... and if it's facing left...
-				if(facingLeft)
-				{
+				if(facingLeft) {
 					// ... and if it's beyond the left spawn position...
 					if(propInstance.transform.position.x < leftSpawnPosX - 0.5f)
 						// ... destroy the prop.
 						Destroy(propInstance.gameObject);
 				}
-				else
-				{
+				else {
 					// Otherwise, if the prop is facing right and it's beyond the right spawn position...
 					if(propInstance.transform.position.x > rightSpawnPosX + 0.5f)
 						// ... destroy the prop.
 						Destroy(propInstance.gameObject);
 				}
-				
-				// Return to this point after the next update.
+
 				yield return null;
 			}
 		}
-	}
+}
