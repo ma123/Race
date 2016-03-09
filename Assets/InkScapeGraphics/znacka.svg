@@ -17,7 +17,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="znacka.svg"
-   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\Collections\znackalyziar.png"
+   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\Collections\znackachallenge.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -30,10 +30,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="391.44514"
+     inkscape:cx="-78.55486"
      inkscape:cy="527.89565"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="706"
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,7 +64,8 @@
      inkscape:label="Vrstva 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-252.36233)">
+     transform="translate(0,-252.36233)"
+     sodipodi:insensitive="true">
     <g
        id="g4239"
        transform="matrix(1.0377563,0,0,1.0377993,1145.4542,330.32342)">
@@ -90,7 +91,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Lyziar"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <image
        width="421.42865"
@@ -100,6 +101,20 @@
        id="image3447"
        x="189.28564"
        y="189.28563" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Challenge"
+     sodipodi:insensitive="true">
+    <image
+       width="405.71429"
+       height="405.71429"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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 "
+       id="image10"
+       x="197.14282"
+       y="197.14281" />
   </g>
   <g
      inkscape:groupmode="layer"
