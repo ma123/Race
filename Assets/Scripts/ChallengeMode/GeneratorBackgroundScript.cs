@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
 public class GeneratorBackgroundScript : MonoBehaviour {
-	public GameObject availableRooms;
-	public List<GameObject> currentRooms;
 	private float screenWidthInPoints;
 	private GameObject playerObject;
 	private float playerX;
@@ -61,71 +60,29 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 	void FixedUpdate () {
 		playerObject = GameObject.FindGameObjectWithTag ("TypeOfPlayer");
 		playerX = playerObject.transform.position.x;  
-		GenerateRoomIfRequred();
 		GenerateObjects ();
 	}
 
-	void GenerateRoomIfRequred() {
-		List<GameObject> roomsToRemove = new List<GameObject>();;
-		bool addRooms = true;       
-		float removeRoomX = playerX - screenWidthInPoints;   
-		float addRoomX = playerX + screenWidthInPoints;
-		float farhtestRoomEndX = 0;
-
-		foreach(var room in currentRooms) {
-			float roomWidth = room.transform.FindChild("DownColliderObject").localScale.x;
-			float roomStartX = room.transform.position.x - (roomWidth * 0.5f);   
-			float roomEndX = roomStartX + roomWidth;                            
-
-			if (roomStartX > addRoomX) {
-				addRooms = false;
-			}
-
-			if (roomEndX < (removeRoomX - 20f)) {  // magicke cislo 20
-				roomsToRemove.Add (room);
-			}
-			farhtestRoomEndX = Mathf.Max(farhtestRoomEndX, roomEndX);
-		}
-
-		foreach(var room in roomsToRemove) {   // stale error hadze nechapem
-			currentRooms.Remove(room);
-			Destroy(room);	
-		}
-
-		if (addRooms) {
-			AddRoom (farhtestRoomEndX);
-		}
-	}
-
-	void AddRoom(float farhtestRoomEndX) {
-		GameObject room = (GameObject) Instantiate(availableRooms);
-
-		float roomWidth = room.transform.FindChild("DownColliderObject").localScale.x;
-		float roomCenter = farhtestRoomEndX + roomWidth * 0.5f;
-		room.transform.position = new Vector3(roomCenter, 0, 0);
-		currentRooms.Add(room);
-	} 
-
 	void GenerateObjects() {
-		float waitCoinTime = Random.Range(coinMinTimeSpawn, coinMaxTimeSpawn);
+		float waitCoinTime = UnityEngine.Random.Range(coinMinTimeSpawn, coinMaxTimeSpawn);
 		if (Time.time > waitCoinTime + lastCoinTime) {
 			CreateCoin ();
 			lastCoinTime = Time.time;
 		}    
 
-		float waitInkTime = Random.Range(inkMinTimeSpawn, inkMaxTimeSpawn);
+		float waitInkTime = UnityEngine.Random.Range(inkMinTimeSpawn, inkMaxTimeSpawn);
 		if (Time.time > waitInkTime + lastInkTime) {
 			CreateInk ();
 			lastInkTime = Time.time;
 		}   
 
-		float waitGumTime = Random.Range(gumMinTimeSpawn, gumMaxTimeSpawn);
+		float waitGumTime = UnityEngine.Random.Range(gumMinTimeSpawn, gumMaxTimeSpawn);
 		if (Time.time > waitGumTime + lastGumTime) {
 			CreateGum ();
 			lastGumTime = Time.time;
 		}   
 
-		float waitObstacleTime = Random.Range(obstacleMinTimeSpawn, obstacleMaxTimeSpawn);
+		float waitObstacleTime = UnityEngine.Random.Range(obstacleMinTimeSpawn, obstacleMaxTimeSpawn);
 		if (Time.time > waitObstacleTime + lastObstacleTime) {
 			CreateObstacle ();
 			lastObstacleTime = Time.time;
@@ -135,38 +92,38 @@ public class GeneratorBackgroundScript : MonoBehaviour {
 	void CreateCoin() {
 		GameObject obj = (GameObject)Instantiate(coinObject);
 		float playerPos = playerX + 10f;
-		float objectPositionX = playerPos + Random.Range(objectsCoinMinDistance, objectsCoinMaxDistance);
-		float randomY = Random.Range(objectsCoinMinY, objectsCoinMaxY);
+		float objectPositionX = playerPos + UnityEngine.Random.Range(objectsCoinMinDistance, objectsCoinMaxDistance);
+		float randomY = UnityEngine.Random.Range(objectsCoinMinY, objectsCoinMaxY);
 		obj.transform.position = new Vector3(objectPositionX,randomY,0);   
 	}
 
 	void CreateInk() {
 		GameObject obj = (GameObject)Instantiate(inkObject);
 		float playerPos = playerX + 15f;
-		float objectPositionX = playerPos + Random.Range(objectsCoinMinDistance, objectsInkMaxDistance);
-		float randomY = Random.Range(objectsCoinMinY, objectsInkMaxY);
+		float objectPositionX = playerPos + UnityEngine.Random.Range(objectsCoinMinDistance, objectsInkMaxDistance);
+		float randomY = UnityEngine.Random.Range(objectsCoinMinY, objectsInkMaxY);
 		obj.transform.position = new Vector3(objectPositionX,randomY,0);   
 	}
 
 	void CreateGum() {
 		GameObject obj = (GameObject)Instantiate(gumObject);
 		float playerPos = playerX + 15f;
-		float objectPositionX = playerPos + Random.Range(objectsGumMinDistance, objectsGumMaxDistance);
-		float randomY = Random.Range(objectsGumMinY, objectsGumMaxY);
+		float objectPositionX = playerPos + UnityEngine.Random.Range(objectsGumMinDistance, objectsGumMaxDistance);
+		float randomY = UnityEngine.Random.Range(objectsGumMinY, objectsGumMaxY);
 		obj.transform.position = new Vector3(objectPositionX,randomY,0);   
 	}
 
 	void CreateObstacle() {
 		GameObject obj = (GameObject)Instantiate(obstacleObject);
 		float playerPos = playerX + 15f;
-		float objectPositionX = playerPos + Random.Range(objectsObstacleMinDistance, objectsObstacleMaxDistance);
-		float randomY = Random.Range(objectsObstacleMinY, objectsObstacleMaxY);
+		float objectPositionX = playerPos + UnityEngine.Random.Range(objectsObstacleMinDistance, objectsObstacleMaxDistance);
+		float randomY = UnityEngine.Random.Range(objectsObstacleMinY, objectsObstacleMaxY);
 		obj.transform.position = new Vector3(objectPositionX,randomY,0); 
 
-		float rotation = Random.Range(obstacleMinRotation, obstacleMaxRotation);
+		float rotation = UnityEngine.Random.Range(obstacleMinRotation, obstacleMaxRotation);
 		obj.transform.rotation = Quaternion.Euler(Vector3.forward * rotation);
-		float xSize = Random.Range(minXSize, maxXSize);
-		float ySize = Random.Range(minYSize, maxYSize);
+		float xSize = UnityEngine.Random.Range(minXSize, maxXSize);
+		float ySize = UnityEngine.Random.Range(minYSize, maxYSize);
 		obj.transform.localScale = new Vector3 (xSize, ySize, 0);
 	}
 }

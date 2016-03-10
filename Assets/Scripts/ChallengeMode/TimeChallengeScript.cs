@@ -15,7 +15,7 @@ public class TimeChallengeScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		challengeTime = Time.time;
+		challengeTime = Time.deltaTime;
 		moneyText.text = challengeTime.ToString();
 	}
 }
