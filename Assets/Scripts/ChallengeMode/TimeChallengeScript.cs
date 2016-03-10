@@ -4,18 +4,21 @@ using System.Collections;
 
 
 public class TimeChallengeScript : MonoBehaviour {
-	public static float challengeTime = 0;
-	private static Text moneyText;
+	public static float timer = 0;
+	private Text moneyText;
 
 	// Use this for initialization
 	void Start () {
-		challengeTime = 0;
 		moneyText = gameObject.GetComponent<Text> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		challengeTime = Time.deltaTime;
-		moneyText.text = challengeTime.ToString();
+		timer += Time.deltaTime;
+		moneyText.text = System.Math.Round(timer,0).ToString();
+	}
+
+	public static float GetTime() {
+		return timer;
 	}
 }

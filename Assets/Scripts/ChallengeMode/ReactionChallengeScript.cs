@@ -11,6 +11,7 @@ public class ReactionChallengeScript : MonoBehaviour {
 	public Text pickupCoinText;
 	private GameObject soundsAndMusic;
 	private int pickupCoin;
+	private float timer;
 	private InterstitialAd interstitial;
 
 	void Start() {
@@ -37,6 +38,8 @@ public class ReactionChallengeScript : MonoBehaviour {
 
 		pickupCoin = MoneyScript.GetMoneyCounter ();  // ziskanie zozbieranych poctu minci 
 		pickupCoinText.text = pickupCoin.ToString ();  // priradenie do panelu text
+
+		timer = TimeChallengeScript.GetTime ();
 
 		GameObject btnInteractableBack = GameObject.Find ("BackToGameBtn");
 		if (offBackBtn) {
