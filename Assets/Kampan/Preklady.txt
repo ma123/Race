@@ -1,0 +1,57 @@
+SK
+
+Drawing road
+
+Kresli svojmu autu cestu a dostaò ho do cie¾a.
+
+Kresli cestu pre svoje auto a vyhni sa všetkım prekákam na tvojej ceste do cie¾a. Na ceste zbieraj mince a sna sa doplni svoj zásobník zbieraním atramentov, guma ti atrament uberá a zniuje ti šancu, e sa dostaneš do cie¾a. Za zozbierané mince si kupuj v obchode nové autá, prièom kadé má iné jazdné vlastnosti.
+
+EN-UK
+
+Drawing road
+
+Draw a road for your car and get it to the finish.
+
+Draw a road for your car and avoid all the obstacles while getting it to the finish. Collect coins and try to refill your ink container by picking up ink. Rubber icon lowers your ink level and decreases your chances of getting to the finish. In the shop, you can buy new cars for the coins you have collected. Each  car has different on-road performance.
+
+EN-US
+
+Drawing road
+
+Draw a road for your car and get it to the finish.
+
+Draw a road for your car and avoid all the obstacles while getting it to the finish. Collect coins and try to refill your ink container by picking up ink. Rubber icon lowers your ink level and decreases your chances of getting to the finish. In the shop, you can buy new cars for the coins you have collected. Each  car has different on-road performance.
+
+CZ
+
+Drawing road
+
+Kresli svému autu cestu a dostaò ho do cíle.
+
+Nakresli cestu pro své auto a vyhni se všem pøekákám na tvé cestì do cíle. Na cestì sbírej mince a sna se doplnit svùj zásobník sbíráním inkoustù, guma ti inkoust ubírá a sniuje ti šanci, e se dostaneš do cíle. Za shromádìné mince si kupuj v obchodì nová auta, pøièem kadé má jiné jízdní vlastnosti.
+
+HU
+
+PO
+
+
+FR
+
+Drawing road
+
+Dessinez une route pour votre voiture et arrivez ? la fin.
+
+Dessinez une route pour votre voiture et évitez tout les obstacles dans la route. Collectionnez des monnaies et essayez de remplir votre réservoir d'encre. La gomme enleve votre encre et baisser votre chance d'arriver ? la fin. Vous pouvez acheter une nouvelle voiture pour les monnaies vous avez collectionné. Chaque voiture a des differents qualités. 
+
+FR-CA
+
+Drawing road
+
+Dessinez une route pour votre voiture et arrivez ? la fin.
+
+Dessinez une route pour votre voiture et évitez tout les obstacles dans la route. Collectionnez des monnaies et essayez de remplir votre réservoir d'encre. La gomme enleve votre encre et baisser votre chance d'arriver ? la fin. Vous pouvez acheter une nouvelle voiture pour les monnaies vous avez collectionné. Chaque voiture a des differents qualités. 
+
+DE
+
+AU
+
