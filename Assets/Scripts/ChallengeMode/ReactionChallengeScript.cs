@@ -12,6 +12,7 @@ public class ReactionChallengeScript : MonoBehaviour {
 	private GameObject soundsAndMusic;
 	private int pickupCoin;
 	private float timer;
+	public Text mText;
 	private InterstitialAd interstitial;
 
 	void Start() {
@@ -40,6 +41,11 @@ public class ReactionChallengeScript : MonoBehaviour {
 		pickupCoinText.text = pickupCoin.ToString ();  // priradenie do panelu text
 
 		timer = TimeChallengeScript.GetTime ();
+		if(timer > PlayerPrefs.GetFloat("time",0)) {
+			PlayerPrefs.SetFloat ("time", timer);	
+		}
+		 
+		mText.text = System.Math.Round(timer,0).ToString ();  // priradenie do panelu text
 
 		GameObject btnInteractableBack = GameObject.Find ("BackToGameBtn");
 		if (offBackBtn) {
@@ -99,37 +105,37 @@ public class ReactionChallengeScript : MonoBehaviour {
 		}
 
 		private void ShowInterstitial() {
-		if (interstitial.IsLoaded()) {
-		interstitial.Show();
-		}
-		else {
-		print("Interstitial is not ready yet.");
-		}
+			if (interstitial.IsLoaded()) {
+				interstitial.Show();
+			}
+			else {
+				print("Interstitial is not ready yet.");
+			}
 		}
 
 		#region Interstitial callback handlers
 		public void HandleInterstitialLoaded(object sender, EventArgs args) {
-		print("HandleInterstitialLoaded event received.");
+			print("HandleInterstitialLoaded event received.");
 		}
 
 		public void HandleInterstitialFailedToLoad(object sender, AdFailedToLoadEventArgs args) {
-		print("HandleInterstitialFailedToLoad event received with message: " + args.Message);
+			print("HandleInterstitialFailedToLoad event received with message: " + args.Message);
 		}
 
 		public void HandleInterstitialOpened(object sender, EventArgs args) {
-		print("HandleInterstitialOpened event received");
+			print("HandleInterstitialOpened event received");
 		}
 
 		void HandleInterstitialClosing(object sender, EventArgs args) {
-		print("HandleInterstitialClosing event received");
+			print("HandleInterstitialClosing event received");
 		}
 
 		public void HandleInterstitialClosed(object sender, EventArgs args) {
-		print("HandleInterstitialClosed event received");
+			print("HandleInterstitialClosed event received");
 		}
 
 		public void HandleInterstitialLeftApplication(object sender, EventArgs args) {
-		print("HandleInterstitialLeftApplication event received");
+			print("HandleInterstitialLeftApplication event received");
 		}
 		#endregion
 }

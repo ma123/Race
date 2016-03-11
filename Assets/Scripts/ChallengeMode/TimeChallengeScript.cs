@@ -9,13 +9,14 @@ public class TimeChallengeScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		timer = 0;
 		moneyText = gameObject.GetComponent<Text> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		timer += Time.deltaTime;
-		moneyText.text = System.Math.Round(timer,0).ToString();
+		moneyText.text = System.Math.Round(timer,0).ToString() + " m";
 	}
 
 	public static float GetTime() {
