@@ -1,0 +1,7 @@
+FR
+
+Drawing road
+
+Dessinez une route pour votre voiture et arrivez ? la fin.
+
+Dessinez une route pour votre voiture et évitez tout les obstacles dans la route. Collectionnez des monnaies et essayez de remplir votre réservoir d'encre. La gomme enleve votre encre et baisser votre chance d'arriver ? la fin. Vous pouvez acheter une nouvelle voiture pour les monnaies vous avez collectionné. Chaque voiture a des differents qualités. 
