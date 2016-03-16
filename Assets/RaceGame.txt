@@ -142,6 +142,7 @@
 - parallax background iba v challenge mode Y.....................
 - optimalizovat na android rozlisenia Y..............
 
+- reklama menej zobrazeni
 - twitter
 - instagram
 

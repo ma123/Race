@@ -22,6 +22,7 @@ public class GoalScript : MonoBehaviour {
 	public float levelCoinToFull;
 	private int moneyCount;
 	private InterstitialAd interstitial;
+	private bool showIntersticial = true;
 
 	void Start () {
 		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
@@ -81,7 +82,9 @@ public class GoalScript : MonoBehaviour {
 			Debug.Log ("Sound exception in panel");
 		}
 
-		ShowInterstitial ();
+		if(showIntersticial) { // ak je true zobrazi reklamu
+			ShowInterstitial ();
+		}
 	}
 
 	protected void UnlockLevels (int stars){
@@ -141,6 +144,7 @@ public class GoalScript : MonoBehaviour {
 		else {
 			print("Interstitial is not ready yet.");
 		}
+		showIntersticial = false;
 	}
 
 	// Returns an ad request with custom ad targeting.

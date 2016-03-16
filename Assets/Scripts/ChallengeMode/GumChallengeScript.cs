@@ -12,6 +12,5 @@ public class GumChallengeScript : MonoBehaviour {
 		GameObject inkBarObject = GameObject.FindGameObjectWithTag ("InkBarReact");
 		inkBarObject.GetComponent<InkBarScript>().Hit (30f);
 		Destroy (gameObject);
-		print ("destroy object gum");
 	}
 }

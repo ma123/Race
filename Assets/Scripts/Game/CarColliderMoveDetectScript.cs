@@ -26,9 +26,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 		if(firstMeasure) {  // prve meranie az po 2 sekundach funkcie Wait() 
 			speed = (float) System.Math.Round(this.GetComponentInChildren<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
-			//print (speed);
-			if(speed <= 0.01) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
-				print ("ides pomaly");
+			if(speed <= 0.01f) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
 				DestroyCarAndWinnPanel(); 
 				firstMeasure = false;
 			}
@@ -119,17 +117,14 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("DownCollider")) {
-			print ("down collider");
 			DestroyCarAndWinnPanel();
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("TopCollider")) {
-			print ("top collider");
 			DestroyCarAndWinnPanel();
 		}
 
 		if(coll.GetComponent<Collider2D>().CompareTag("DynamicObstacle")) {
-			print ("dynamic obstacle");
 			DestroyCarAndWinnPanel();
 		}
 	}
@@ -139,7 +134,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			StartCoroutine(WaitParticle());
 
 			GameObject vehicle = GameObject.Find ("Player");
-			for(int i = 0; i < 3; i++) {
+			for(byte i = 0; i < 3; i++) {
 				vehicle.GetComponentsInChildren<Rigidbody2D> ()[i].isKinematic = true;
 				vehicle.GetComponentsInChildren<SpriteRenderer>()[i].enabled = false;
 			}
@@ -147,7 +142,6 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().ExplosionAudio(transform);
 			Instantiate(particles, transform.position, transform.rotation);
 			isParticle = false;
-
 		}
 	}
 

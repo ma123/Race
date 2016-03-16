@@ -67,5 +67,10 @@ Cada auto es diferente para cada carretera
 
 DE
 
-AU
+Drawing road
+
+Zeichne  für dein Auto ein Fahrt und bekomme es in das Ziel zu.
+
+Zeichne einen Pfad für dein Auto und vermeide du alle Hindernisse auf dem Weg zu deinem Ziel. Auf dem Weg sammele Münzen und versuche dein Stapel mit Sammeln der Tinten. Das Gummi ergänzt dir der Tinte und verringert die Chance, dass du dein Ziel erreicht. Mit gesammelter Münzen kanst du im Laden neue Autos kaufen. Jedes Auto hat unterschiedliche Fahreigenschaften.
+
 

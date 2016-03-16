@@ -12,6 +12,5 @@ public class InkBottleCHallengeScript : MonoBehaviour {
 		GameObject inkBarObject = GameObject.FindGameObjectWithTag ("InkBarReact");
 		inkBarObject.GetComponent<InkBarScript>().AddInk(40f);
 		Destroy (gameObject);
-		print ("destroy object inkbottle");
 	}
 }

@@ -10,6 +10,7 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	public GameObject winPanel;
 	private GameObject soundsAndMusic;
 	private InterstitialAd interstitial;
+	private bool showIntersticial = true;
 
 	void Start() {
 		Time.timeScale = 1; // spustenie hry
@@ -53,7 +54,9 @@ public class ReactionFromPanelScript : MonoBehaviour {
 			break;
 		}
 			
-		ShowInterstitial ();
+		if(showIntersticial) { // ak je true zobrazi reklamu
+			ShowInterstitial ();
+		}
 	}
 
 	public void NextLevel() {
@@ -133,6 +136,7 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		else {
 			print("Interstitial is not ready yet.");
 		}
+		showIntersticial = false;
 	}
 
 	#region Interstitial callback handlers

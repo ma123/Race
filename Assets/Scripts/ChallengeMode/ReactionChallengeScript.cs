@@ -14,6 +14,7 @@ public class ReactionChallengeScript : MonoBehaviour {
 	private float timer;
 	public Text mText;
 	private InterstitialAd interstitial;
+	private bool showIntersticial = true;
 
 	void Start() {
 		Time.timeScale = 1; // spustenie hry
@@ -34,7 +35,7 @@ public class ReactionChallengeScript : MonoBehaviour {
 		try {
 			soundsAndMusic.GetComponent<SoundsAndMusicScript> ().GetMusicBackgroundObject ().Pause (); // pauznutie background hudby
 		} catch (Exception e) {
-			Debug.Log ("Sound exception in panel");
+			Debug.Log ("Sound exception in panel" + e);
 		}
 
 		pickupCoin = MoneyScript.GetMoneyCounter ();  // ziskanie zozbieranych poctu minci 
@@ -49,34 +50,31 @@ public class ReactionChallengeScript : MonoBehaviour {
 
 		GameObject btnInteractableBack = GameObject.Find ("BackToGameBtn");
 		if (offBackBtn) {
-			print ("dead");
 			btnInteractableBack.GetComponent<Button> ().interactable = false;
 			MoneyScript.SetMoneyCounter (0);
 		}
 
-		ShowInterstitial ();
+		if(showIntersticial) { // ak je true zobrazi reklamu
+			ShowInterstitial ();
+		}
 	}
 
 	public void Restart() {
-		print ("restartLevel");
 		string sceneName = SceneManager.GetActiveScene().name;
 		SceneManager.LoadScene(sceneName,LoadSceneMode.Single);
 	}
 
 	public void BackToLevelSelector() {
-		print ("backMainMenu");
-		string sceneName = SceneManager.GetActiveScene().name;
 		SceneManager.LoadScene("MainMenuScene");
 	}
 
 	public void BackToGame() {
-		print ("backToGame");
 		Time.timeScale = 1; // spustenie hry
 		winPanel.SetActive(false);
 		try {
 			soundsAndMusic.GetComponent<SoundsAndMusicScript> ().GetMusicBackgroundObject().Play (); // znovu spustenie hudby pozadia
 		} catch(Exception e) {
-			Debug.Log ("Sound exception in panel");
+			Debug.Log ("Sound exception in panel" + e);
 		}
 	}
 
@@ -102,15 +100,16 @@ public class ReactionChallengeScript : MonoBehaviour {
 		// Load an interstitial ad.
 		AdRequest requestInterstitial = new AdRequest.Builder().Build();
 		interstitial.LoadAd(requestInterstitial);
-		}
+	}
 
 		private void ShowInterstitial() {
 			if (interstitial.IsLoaded()) {
 				interstitial.Show();
 			}
 			else {
-				print("Interstitial is not ready yet.");
+				Debug.Log("Interstitial is not ready yet.");
 			}
+		    showIntersticial = false;
 		}
 
 		#region Interstitial callback handlers

@@ -1,0 +1,5 @@
+Dobrı deò, 
+
+posielam Vám tip na èlánok o slovenskej hre od dvoch študentov z katedry informatiky na UMB BB. Je to naša prvá hra na ktorej sme pracovali popri škole v našom vo¾nom èase. Hra sa volá Drawing road https://play.google.com/store/apps/details?id=sk.ag.drawingroad a jej podstata je v kreslení cesty prstom po obrazovke pre svoje auto a dosta ho bezpeène do cie¾a. V hre sa nachádzajú statické prekáky ktoré znázoròujú skaly a dynamické prekáky ako je napríklad balón, vzducholoï, satelit èi meteorit. Poèas svojej cesty môe auto zbiera mince ktoré sa dajú poui pri kúpe nového auta v obchode alebo atrament èi gumu ktoré nám náplò atramentu dopåòajú alebo z nej uberajú. Hru je moné hra štandardne a to prechádzaním levelov alebo v challenge móde kde sa meria prejdená vzdialenos a prekáky sa generujú náhodne. 
+
+S pozdravom Matúš Klimko a Marek Súkeník
