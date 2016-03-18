@@ -88,11 +88,3 @@ public class PathScript : MonoBehaviour {
 		col.points = drawPoints.ToArray();
 	}
 }
-
-/*public Color c1 = Color.white;
-public Color c2 = new Color(1, 1, 1, 0);
-void Start() {
-	LineRenderer lineRenderer = gameObject.AddComponent<LineRenderer>();
-	lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
-	lineRenderer.SetColors(c1, c2);
-}*/
