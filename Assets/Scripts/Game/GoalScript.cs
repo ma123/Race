@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 using System;
-using GoogleMobileAds;
-using GoogleMobileAds.Api;
+//using GoogleMobileAds;
+//using GoogleMobileAds.Api;
 
 public class GoalScript : MonoBehaviour {
 	private GameObject soundsAndMusic;
@@ -21,13 +21,13 @@ public class GoalScript : MonoBehaviour {
 	public Text pickupCoinText;
 	public float levelCoinToFull;
 	private int moneyCount;
-	private InterstitialAd interstitial;
-	private bool showIntersticial = true;
+	//private InterstitialAd interstitial;
+	//private bool showIntersticial = true;
 
 	void Start () {
 		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
 		currentLevel = SceneManager.GetActiveScene().name;
-		RequestInterstitial ();
+		//RequestInterstitial ();
 	}
 
 	public void GoalReact () {
@@ -79,12 +79,12 @@ public class GoalScript : MonoBehaviour {
 		try {
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
 		} catch(Exception e) {
-			Debug.Log ("Sound exception in panel");
+			Debug.Log ("Sound exception in panel" + e);
 		}
 
-		if(showIntersticial) { // ak je true zobrazi reklamu
+		/*if(showIntersticial) { // ak je true zobrazi reklamu
 			ShowInterstitial ();
-		}
+		}*/
 	}
 
 	protected void UnlockLevels (int stars){
@@ -113,7 +113,7 @@ public class GoalScript : MonoBehaviour {
 		}
 	}
 
-	private void RequestInterstitial() {
+	/*private void RequestInterstitial() {
 		#if UNITY_EDITOR
 		string adUnitId = "unused";
 		#elif UNITY_ANDROID
@@ -184,5 +184,5 @@ public class GoalScript : MonoBehaviour {
 	public void HandleInterstitialLeftApplication(object sender, EventArgs args) {
 		print("HandleInterstitialLeftApplication event received");
 	}
-	#endregion
+	#endregion*/
 }

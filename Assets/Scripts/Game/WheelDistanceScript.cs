@@ -26,19 +26,19 @@ public class WheelDistanceScript : MonoBehaviour {
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("InkBottle")) {
 			GameObject inkBottle = coll.GetComponent<Collider2D>().gameObject;
-			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
+			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupInkAudio(transform);
 			inkBottle.SendMessage ("InkBottleReact");
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("Gum")) {
 			GameObject gum = coll.GetComponent<Collider2D>().gameObject;
-			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
+			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupGumAudio(transform);
 			gum.SendMessage ("GumReact");
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("Goal")) {
 			GameObject goal = coll.GetComponent<Collider2D>().gameObject;
-			//soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
+			soundsAndMusic.GetComponent<SoundsAndMusicScript>().WinAudio(transform);
 			goal.SendMessage ("GoalReact");
 		}
 	}

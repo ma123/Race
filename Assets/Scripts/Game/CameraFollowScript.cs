@@ -6,7 +6,7 @@ public class CameraFollowScript : MonoBehaviour {
 	private Vector3 pos;
 	private Vector3 newPos;
 	public float offSet = 8f;
-	public byte currentVehicle = 0;
+	public int currentVehicle = 0;
 
 	void Start() {
 		currentVehicle = PlayerPrefs.GetInt ("selectedCar", 0);

@@ -57,7 +57,6 @@ public class ShopReactionScript : MonoBehaviour {
 		if (PlayerPrefs.GetInt ("car" + typeOfCar, 0) == 0) {
 			ChangePanel(1);
 		} else {
-			print ("vyberam");
 			PlayerPrefs.SetInt ("selectedCar", typeOfCar);
 
 			for(int i = 0; i < numberOfCars; i++) {

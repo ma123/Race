@@ -28,18 +28,15 @@ public class LevelSelectScript : MonoBehaviour {
 		// po stlaceni esc poprípade back na telefone navrat do SelectWorld sceny
   		if (Input.GetKeyDown(KeyCode.Escape) ){
 			SceneManager.LoadScene("SelectWorldScene");
-   			//Application.LoadLevel("SelectWorldScene");
   		}
  	}
 
 	public void BackToSelectWorld() {
 		SceneManager.LoadScene("SelectWorldScene");
-		//Application.LoadLevel("SelectWorldScene");
 	}
 	
 	//vybranie levelu podla argumentu worldLevel ktory je zadany v editore napr. 1.1, 2.6
 	public void Selectlevel(string worldLevel){
-		print ("Level loaded " + worldLevel);
 		StartCoroutine (DisplayLevelLoadingScreen(worldLevel));
 	}
 		
@@ -47,7 +44,6 @@ public class LevelSelectScript : MonoBehaviour {
 	void  CheckLockedLevels (){
 		for(int j = 1; j <= LockLevelScript.levels; j++){ // podla poctu levelov
 			stars = PlayerPrefs.GetInt("level"+worldIndex.ToString() +":" +j.ToString()+"stars", 0);
-			print (worldIndex + " " + j + " "+ stars);
 			GameObject.Find(j+"Star"+stars).GetComponent<Image>().enabled = true;
 
 			levelIndex = j;

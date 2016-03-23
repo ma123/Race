@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI; 
 using System.Collections;
 using System;
-using GoogleMobileAds;
-using GoogleMobileAds.Api;
+//using GoogleMobileAds;
+//using GoogleMobileAds.Api;
 
 public class ReactionChallengeScript : MonoBehaviour {
 	public GameObject winPanel;
@@ -13,13 +13,13 @@ public class ReactionChallengeScript : MonoBehaviour {
 	private int pickupCoin;
 	private float timer;
 	public Text mText;
-	private InterstitialAd interstitial;
-	private bool showIntersticial = true;
+	//private InterstitialAd interstitial;
+	//private bool showIntersticial = true;
 
 	void Start() {
 		Time.timeScale = 1; // spustenie hry
 		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
-		RequestInterstitial ();
+		//RequestInterstitial ();
 	}
 	// Update is called once per frame
 	void Update () {
@@ -54,9 +54,9 @@ public class ReactionChallengeScript : MonoBehaviour {
 			MoneyScript.SetMoneyCounter (0);
 		}
 
-		if(showIntersticial) { // ak je true zobrazi reklamu
+		/*if(showIntersticial) { // ak je true zobrazi reklamu
 			ShowInterstitial ();
-		}
+		}*/
 	}
 
 	public void Restart() {
@@ -78,7 +78,7 @@ public class ReactionChallengeScript : MonoBehaviour {
 		}
 	}
 
-	private void RequestInterstitial() {
+	/*private void RequestInterstitial() {
 		#if UNITY_EDITOR
 		string adUnitId = "unused";
 		#elif UNITY_ANDROID
@@ -100,9 +100,9 @@ public class ReactionChallengeScript : MonoBehaviour {
 		// Load an interstitial ad.
 		AdRequest requestInterstitial = new AdRequest.Builder().Build();
 		interstitial.LoadAd(requestInterstitial);
-	}
+	}*/
 
-		private void ShowInterstitial() {
+	/*	private void ShowInterstitial() {
 			if (interstitial.IsLoaded()) {
 				interstitial.Show();
 			}
@@ -136,5 +136,5 @@ public class ReactionChallengeScript : MonoBehaviour {
 		public void HandleInterstitialLeftApplication(object sender, EventArgs args) {
 			print("HandleInterstitialLeftApplication event received");
 		}
-		#endregion
+		#endregion*/
 }

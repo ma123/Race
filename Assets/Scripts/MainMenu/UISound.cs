@@ -16,7 +16,7 @@ public class UISound : MonoBehaviour {
 				AudioSource.PlayClipAtPoint (clickClips, this.transform.position);
 			}
 			catch (Exception e) {
-				print("no sound");
+				Debug.Log ("no sound" + e);
 			}  
 		}
 	}

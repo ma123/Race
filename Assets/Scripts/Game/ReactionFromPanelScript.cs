@@ -3,19 +3,19 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI; 
 using System.Collections;
 using System;
-using GoogleMobileAds;
-using GoogleMobileAds.Api;
+//using GoogleMobileAds;
+//using GoogleMobileAds.Api;
 
 public class ReactionFromPanelScript : MonoBehaviour {
 	public GameObject winPanel;
 	private GameObject soundsAndMusic;
-	private InterstitialAd interstitial;
-	private bool showIntersticial = true;
+	//private InterstitialAd interstitial;
+	//private bool showIntersticial = true;
 
 	void Start() {
 		Time.timeScale = 1; // spustenie hry
 		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
-		RequestInterstitial ();
+		//RequestInterstitial ();
 	}
 	// Update is called once per frame
 	void Update () {
@@ -31,7 +31,7 @@ public class ReactionFromPanelScript : MonoBehaviour {
 		try {
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().GetMusicBackgroundObject().Pause(); // pauznutie background hudby
 		} catch(Exception e) {
-			Debug.Log ("Sound exception in panel");
+			Debug.Log ("Sound exception in panel" + e);
 		}
 
 		GameObject btnInteractable = GameObject.Find("NextLvlBtn");
@@ -39,12 +39,10 @@ public class ReactionFromPanelScript : MonoBehaviour {
 
 		switch(reaction) {
 			case 1:    //esc
-			    print("esc");
 				btnInteractable.GetComponent<Button>().interactable = false;
 			break;
 
 			case 2:   //dead
-				print ("dead");
 				btnInteractable.GetComponent<Button> ().interactable = false;
 				btnInteractableBack.GetComponent<Button> ().interactable = false;
 				MoneyScript.SetMoneyCounter (0);
@@ -54,9 +52,9 @@ public class ReactionFromPanelScript : MonoBehaviour {
 			break;
 		}
 			
-		if(showIntersticial) { // ak je true zobrazi reklamu
+		/*if(showIntersticial) { // ak je true zobrazi reklamu
 			ShowInterstitial ();
-		}
+		}*/
 	}
 
 	public void NextLevel() {
@@ -80,32 +78,27 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	}
 	
 	public void Restart() {
-		print ("restartLevel");
 		string sceneName = SceneManager.GetActiveScene().name;
 		SceneManager.LoadScene(sceneName,LoadSceneMode.Single);
 		//Application.LoadLevel (Application.loadedLevel);
 	}
 	
 	public void BackToLevelSelector() {
-		print ("backLevelSelector");
 		string sceneName = SceneManager.GetActiveScene().name;
 		SceneManager.LoadScene("World" + sceneName[5],LoadSceneMode.Single);
-		//string currentLevel = Application.loadedLevelName;
-		//Application.LoadLevel ("World"+ currentLevel[5]); // ziskam svet v ktorom sa nachadzam a vratim sa do vyberu levelov
 	}
 
 	public void BackToGame() {
-		print ("backToGame");
 		Time.timeScale = 1; // spustenie hry
 		winPanel.SetActive(false);
 		try {
 			soundsAndMusic.GetComponent<SoundsAndMusicScript> ().GetMusicBackgroundObject().Play (); // znovu spustenie hudby pozadia
 		} catch(Exception e) {
-			Debug.Log ("Sound exception in panel");
+			Debug.Log ("Sound exception in panel" + e);
 		}
 	}
 
-	private void RequestInterstitial() {
+	/*private void RequestInterstitial() {
 		#if UNITY_EDITOR
 		string adUnitId = "unused";
 		#elif UNITY_ANDROID
@@ -163,5 +156,5 @@ public class ReactionFromPanelScript : MonoBehaviour {
 	public void HandleInterstitialLeftApplication(object sender, EventArgs args) {
 		print("HandleInterstitialLeftApplication event received");
 	}
-	#endregion
+	#endregion*/
 }

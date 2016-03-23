@@ -54,7 +54,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				AudioSource.PlayClipAtPoint(pickupCoinClips, transPos.position);
 			}
 			catch (Exception e) {
-				print("no sound");
+				Debug.Log ("Sound problem " + e);
 			}  
 		}
 	}
@@ -67,7 +67,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				AudioSource.PlayClipAtPoint (explosionClips, transPos.position);
 			}
 			catch (Exception e) {
-				print("no sound");
+				Debug.Log ("Sound problem " + e);
 			}  
 		}
 	}
@@ -80,7 +80,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				AudioSource.PlayClipAtPoint (gumClips, transPos.position);
 			}
 			catch (Exception e) {
-				print("no sound");
+				Debug.Log ("Sound problem " + e);
 			}  
 		}
 	}
@@ -93,7 +93,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				AudioSource.PlayClipAtPoint (inkClips, transPos.position);
 			}
 			catch (Exception e) {
-				print("no sound");
+				Debug.Log ("Sound problem " + e);
 			}  
 		}
 	}
@@ -106,7 +106,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				AudioSource.PlayClipAtPoint (noInkClips, transPos.position);
 			}
 			catch (Exception e) {
-				print("no sound");
+				Debug.Log ("Sound problem " + e);
 			}  
 		}
 	}
@@ -119,7 +119,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				AudioSource.PlayClipAtPoint (winClips, transPos.position);
 			}
 			catch (Exception e) {
-				print("no sound");
+				Debug.Log ("Sound problem " + e);
 			}  
 		}
 	}
@@ -130,7 +130,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				Handheld.Vibrate();
 			}
 			catch (Exception e) {
-				print("vibration problem");
+				Debug.Log ("Sound problem " + e);
 			}  
 		}
 	}
