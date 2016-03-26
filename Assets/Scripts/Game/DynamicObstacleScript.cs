@@ -13,7 +13,7 @@ public class DynamicObstacleScript : MonoBehaviour {
 		transform.position = path [0].position;
 	}
 
-	void Update() {
+	void FixedUpdate() {
 	  if(SwitchDynamicObstacleScript.GetSwitchOn()) { 
 		float dist = Vector3.Distance (path[currentPoint].position, transform.position);
 		transform.position = Vector3.MoveTowards(transform.position, path[currentPoint].position, Time.deltaTime * speed);

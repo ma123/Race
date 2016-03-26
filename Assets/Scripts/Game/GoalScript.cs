@@ -31,7 +31,6 @@ public class GoalScript : MonoBehaviour {
 	}
 
 	public void GoalReact () {
-		print ("destroy object Goal");
 		PlayerPrefs.SetInt ("money", MoneyScript.GetMoney());
 		ShowLevelCompletePanel ();
 		Destroy (gameObject);
@@ -45,7 +44,6 @@ public class GoalScript : MonoBehaviour {
 		moneyCount = MoneyScript.GetMoneyCounter (); // ziskany pocet minci
 		float percent = (100 * (float)moneyCount) / levelCoinToFull; // ziskame pocet percent na kolko sme presli
 		pickupCoinText.text = moneyCount.ToString ();
-		print ("money count " + moneyCount);
 
 		if (percent <= 30.0f) {
 			star0.GetComponent<Image> ().overrideSprite = emptyStar;

@@ -44,19 +44,19 @@ public class ChallengeMoveCarScript : MonoBehaviour {
 		if(coll.GetComponent<Collider2D>().CompareTag("Coin")) {
 			GameObject coin = coll.GetComponent<Collider2D>().gameObject;
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
-			coin.SendMessage ("CoinReact");
+			coin.GetComponent<CoinChallengeScript> ().CoinReact ();
 		}
 
 		if(coll.GetComponent<Collider2D>().CompareTag("InkBottle")) {
 			GameObject inkBottle = coll.GetComponent<Collider2D>().gameObject;
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupInkAudio(transform);
-			inkBottle.SendMessage ("InkBottleReact");
+			inkBottle.GetComponent<InkBottleCHallengeScript> ().InkBottleReact ();
 		}
 
 		if(coll.GetComponent<Collider2D>().CompareTag("Gum")) {
 			GameObject gum = coll.GetComponent<Collider2D>().gameObject;
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupGumAudio(transform);
-			gum.SendMessage ("GumReact");
+			gum.GetComponent<GumChallengeScript> ().GumReact ();
 		}
 
 	if(coll.GetComponent<Collider2D>().CompareTag("DownCollider")) {

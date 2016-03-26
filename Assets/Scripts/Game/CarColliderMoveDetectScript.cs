@@ -44,19 +44,19 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 		if(coll.GetComponent<Collider2D>().CompareTag("Coin")) {
 			GameObject coin = coll.GetComponent<Collider2D>().gameObject;
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupCoinAudio(transform);
-			coin.SendMessage ("CoinReact");
+			coin.GetComponent<CoinScript> ().CoinReact ();
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("InkBottle")) {
 			GameObject inkBottle = coll.GetComponent<Collider2D>().gameObject;
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupInkAudio(transform);
-			inkBottle.SendMessage ("InkBottleReact");
+			inkBottle.GetComponent<InkBottleScript> ().InkBottleReact();
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("Gum")) {
 			GameObject gum = coll.GetComponent<Collider2D>().gameObject;
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().PickupGumAudio(transform);
-			gum.SendMessage ("GumReact");
+			gum.GetComponent<GumScript> ().GumReact ();
 		}
 
 		/*if(coll.GetComponent<Collider2D>().CompareTag("ReverseGravity")) {
@@ -113,7 +113,8 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 		if(coll.GetComponent<Collider2D>().CompareTag("Goal")) {
 			GameObject goal = coll.GetComponent<Collider2D>().gameObject;
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().WinAudio(transform);
-			goal.SendMessage ("GoalReact");
+			goal.GetComponent<GoalScript> ().GoalReact ();
+			//goal.SendMessage ("GoalReact");
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("DownCollider")) {

@@ -26,22 +26,15 @@ public class MainMenuReactionScript : MonoBehaviour {
 	}
 
 	public void ClickedLevelSelector() {
-		print ("clicked load SelectWorldScene");
 		SceneManager.LoadScene("SelectWorldScene");
-		//Application.LoadLevel ("SelectWorldScene");
 	}
 	
 	public void ClickedShop() {
-		print ("clicked load Shop");
 		SceneManager.LoadScene("ShopScene");
-		//Application.LoadLevel ("ShopScene");
 	}
 	
 	public void ClickedChallenge() {
 		StartCoroutine (DisplayLevelLoadingScreen());
-		print ("clicked load Challenge");
-		//SceneManager.LoadScene("ChallengeScene");
-		//Application.LoadLevel ("ChallengeScene");
 	}
 
 	// asynchronne nacitanie sceny
@@ -58,7 +51,6 @@ public class MainMenuReactionScript : MonoBehaviour {
 	}
 
 	public void ClickedSettings() {
-		print ("clicked settings");
 		ChangePanel(2);
 	}
 
