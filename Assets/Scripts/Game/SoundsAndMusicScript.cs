@@ -130,7 +130,7 @@ public class SoundsAndMusicScript : MonoBehaviour {
 				Handheld.Vibrate();
 			}
 			catch (Exception e) {
-				Debug.Log ("Sound problem " + e);
+				Debug.Log ("Vibration problem " + e);
 			}  
 		}
 	}
