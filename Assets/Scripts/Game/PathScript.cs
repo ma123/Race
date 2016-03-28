@@ -50,7 +50,7 @@ public class PathScript : MonoBehaviour {
 						soundsAndMusic.GetComponent<SoundsAndMusicScript>().NoInkAudio(transform);
 					}
 				} else if (Input.GetMouseButtonUp (0)) {
-					isMousePressed = false;
+				    isMousePressed = false;
 					if (drawPoints.Count > 0) { // pokial je drawPoint prazdny collider sa nevytvara
 						AddColliderToDraw (); // pridanie collideru pre ciaru
 					}
