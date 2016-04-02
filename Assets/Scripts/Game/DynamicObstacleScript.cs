@@ -8,13 +8,14 @@ public class DynamicObstacleScript : MonoBehaviour {
 	private int currentPoint = 0;
 	private float direction = 1.0f;
 	private bool pathDirection = true;
+	public GameObject switchObject;
 
 	void Start() {
 		transform.position = path [0].position;
 	}
 
 	void FixedUpdate() {
-	  if(SwitchDynamicObstacleScript.GetSwitchOn()) { 
+		if(switchObject.GetComponent<SwitchDynamicObstacleScript>().GetSwitchOn()) { 
 		float dist = Vector3.Distance (path[currentPoint].position, transform.position);
 		transform.position = Vector3.MoveTowards(transform.position, path[currentPoint].position, Time.deltaTime * speed);
 
