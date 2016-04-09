@@ -26,7 +26,7 @@ public class ChallengeMoveCarScript : MonoBehaviour {
 
 		if(firstMeasure) {  // prve meranie az po 2 sekundach funkcie Wait() 
 			speed = (float) System.Math.Round(this.GetComponentInChildren<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
-			if(speed <= 0.01) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
+			if(speed <= 0.015) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
 				DestroyCarAndWinnPanel(); 
 				firstMeasure = false;
 			}
@@ -38,7 +38,6 @@ public class ChallengeMoveCarScript : MonoBehaviour {
 		yield return new WaitForSeconds(2);
 		firstMeasure = true;
 	}
-
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if(coll.GetComponent<Collider2D>().CompareTag("Coin")) {

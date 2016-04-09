@@ -26,7 +26,7 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 
 		if(firstMeasure) {  // prve meranie az po 2 sekundach funkcie Wait() 
 			speed = (float) System.Math.Round(this.GetComponentInChildren<Rigidbody2D>().velocity.magnitude,2); // meranie rychlosti objektu + zaokruhlenie na dve desat miesta
-			if(speed <= 0.01f) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
+			if(speed <= 0.015f) {  // ak je rychlost mensia alebo rovna nule hrac prehrava 
 				DestroyCarAndWinnPanel(); 
 				firstMeasure = false;
 			}
