@@ -111,10 +111,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.47140453"
-     inkscape:cx="9.692155"
+     inkscape:cx="-316.99117"
      inkscape:cy="381.87397"
      inkscape:document-units="px"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="g17423"
      showgrid="false"
      height="1080mm"
      units="px"
@@ -186,15 +186,13 @@
      id="layer8"
      inkscape:label="Majak"
      style="display:inline"
-     transform="translate(0,-3583)"
-     sodipodi:insensitive="true" />
+     transform="translate(0,-3583)" />
   <g
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="dlazdica"
      style="display:inline"
-     transform="translate(0,-3583)"
-     sodipodi:insensitive="true">
+     transform="translate(0,-3583)">
     <g
        id="g17423"
        transform="translate(-388.80925,928.11083)">
@@ -24376,7 +24374,7 @@
            y="2121.0112" />
       </g>
       <rect
-         style="fill:none;fill-opacity:1;stroke:#d60000;stroke-width:33.09999847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="fill:none;fill-opacity:1;stroke:#e91222;stroke-width:33.09999847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect6729-6-0"
          width="783.54156"
          height="478.62372"

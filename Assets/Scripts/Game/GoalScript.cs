@@ -3,8 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 using System;
-//using GoogleMobileAds;
-//using GoogleMobileAds.Api;
+using GoogleMobileAds.Api;
 
 public class GoalScript : MonoBehaviour {
 	private GameObject soundsAndMusic;
@@ -21,13 +20,13 @@ public class GoalScript : MonoBehaviour {
 	public Text pickupCoinText;
 	public float levelCoinToFull;
 	private int moneyCount;
-	//private InterstitialAd interstitial;
-	//private bool showIntersticial = true;
+	private InterstitialAd interstitial;
+	private int adsNumber;
 
 	void Start () {
 		soundsAndMusic = GameObject.FindGameObjectWithTag ("SoundsAndMusic");
 		currentLevel = SceneManager.GetActiveScene().name;
-		//RequestInterstitial ();
+		RequestInterstitial ();
 	}
 
 	public void GoalReact () {
@@ -80,9 +79,14 @@ public class GoalScript : MonoBehaviour {
 			Debug.Log ("Sound exception in panel" + e);
 		}
 
-		/*if(showIntersticial) { // ak je true zobrazi reklamu
+		adsNumber = PlayerPrefs.GetInt ("ads", 4);
+		if (adsNumber <= 0) {
 			ShowInterstitial ();
-		}*/
+			PlayerPrefs.SetInt ("ads", 4);
+		} else {
+			adsNumber -= 1;
+			PlayerPrefs.SetInt ("ads", adsNumber);
+		}
 	}
 
 	protected void UnlockLevels (int stars){
@@ -111,29 +115,15 @@ public class GoalScript : MonoBehaviour {
 		}
 	}
 
-	/*private void RequestInterstitial() {
-		#if UNITY_EDITOR
-		string adUnitId = "unused";
-		#elif UNITY_ANDROID
+	private void RequestInterstitial() {
 		string adUnitId = "ca-app-pub-1882232042439946/9404594317";  
-		#elif UNITY_IPHONE
-		string adUnitId = "INSERT_IOS_INTERSTITIAL_AD_UNIT_ID_HERE";
-		#else
-		string adUnitId = "unexpected_platform";
-		#endif
 
 		// Create an interstitial.
 		interstitial = new InterstitialAd(adUnitId);
 		// Register for ad events.
-		interstitial.OnAdLoaded += HandleInterstitialLoaded;
-		interstitial.OnAdFailedToLoad += HandleInterstitialFailedToLoad;
-		interstitial.OnAdOpening += HandleInterstitialOpened;
-		interstitial.OnAdClosed += HandleInterstitialClosed;
-		interstitial.OnAdLeavingApplication += HandleInterstitialLeftApplication;
-		// Load an interstitial ad.
 		AdRequest requestInterstitial = new AdRequest.Builder().Build();
 		interstitial.LoadAd(requestInterstitial);
-		}
+	}
 
 	private void ShowInterstitial() {
 		if (interstitial.IsLoaded()) {
@@ -142,45 +132,9 @@ public class GoalScript : MonoBehaviour {
 		else {
 			print("Interstitial is not ready yet.");
 		}
-		showIntersticial = false;
 	}
-
-	// Returns an ad request with custom ad targeting.
-	private AdRequest createAdRequest() {
-		return new AdRequest.Builder()
-		.AddTestDevice(AdRequest.TestDeviceSimulator)
-		.AddTestDevice("0123456789ABCDEF0123456789ABCDEF")
-		.AddKeyword("game")
-		.SetGender(Gender.Male)
-		.SetBirthday(new DateTime(1985, 1, 1))
-		.TagForChildDirectedTreatment(false)
-		.AddExtra("color_bg", "9B30FF")
-		.Build();
+		
+	void OnDisable() {
+		interstitial.Destroy();
 	}
-
-	#region Interstitial callback handlers
-	public void HandleInterstitialLoaded(object sender, EventArgs args) {
-		print("HandleInterstitialLoaded event received.");
-	}
-
-	public void HandleInterstitialFailedToLoad(object sender, AdFailedToLoadEventArgs args) {
-		print("HandleInterstitialFailedToLoad event received with message: " + args.Message);
-	}
-
-	public void HandleInterstitialOpened(object sender, EventArgs args) {
-		print("HandleInterstitialOpened event received");
-	}
-
-	void HandleInterstitialClosing(object sender, EventArgs args) {
-		print("HandleInterstitialClosing event received");
-	}
-
-	public void HandleInterstitialClosed(object sender, EventArgs args) {
-		print("HandleInterstitialClosed event received");
-	}
-
-	public void HandleInterstitialLeftApplication(object sender, EventArgs args) {
-		print("HandleInterstitialLeftApplication event received");
-	}
-	#endregion*/
 }

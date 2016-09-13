@@ -17,8 +17,8 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="dlazdica_SL.svg"
    inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\Backgrounds\dlazdicasnowland.png"
-   inkscape:export-xdpi="179.39"
-   inkscape:export-ydpi="179.39">
+   inkscape:export-xdpi="179.3"
+   inkscape:export-ydpi="179.3">
   <defs
      id="defs4">
     <clipPath
@@ -45,11 +45,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25"
-     inkscape:cx="-895.96836"
-     inkscape:cy="654.29679"
+     inkscape:zoom="0.5"
+     inkscape:cx="-409.26773"
+     inkscape:cy="635.57797"
      inkscape:document-units="px"
-     inkscape:current-layer="layer8"
+     inkscape:current-layer="g4267"
      showgrid="false"
      units="px"
      inkscape:window-width="1366"
@@ -1688,7 +1688,7 @@
          height="478.62372"
          width="783.54156"
          id="rect6729-6-0"
-         style="fill:none;fill-opacity:1;stroke:#d60000;stroke-width:33.09999847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="fill:none;fill-opacity:1;stroke:#e91222;stroke-width:33.09999847;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
   </g>
 </svg>

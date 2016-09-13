@@ -17,8 +17,8 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="checkbutton.svg"
    inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\checkbutton.png"
-   inkscape:export-xdpi="93.71032"
-   inkscape:export-ydpi="93.71032">
+   inkscape:export-xdpi="93.709999"
+   inkscape:export-ydpi="93.709999">
   <defs
      id="defs3342" />
   <sodipodi:namedview
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="614.05542"
+     inkscape:cx="312.01981"
      inkscape:cy="129.53177"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,7 +58,7 @@
      id="layer1"
      transform="translate(0,-752.36209)">
     <rect
-       style="fill:#ffb300;fill-opacity:1;stroke:#d60000;stroke-width:19.40210724;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#f7e041;fill-opacity:1;stroke:#e91222;stroke-width:19.40210724;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect6729-7-6"
        width="280.5979"
        height="280.5979"
@@ -67,7 +67,7 @@
        ry="77.157013"
        rx="69.388878" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#d60000;stroke-width:32.08819199;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-rule:evenodd;stroke:#e91222;stroke-width:32.08819199;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 355.09493,904.74755 68.76041,60.67094 136.17259,-119.99361"
        id="path4277"
        inkscape:connector-curvature="0" />
