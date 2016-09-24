@@ -17,8 +17,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="greenland.svg"
-   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\greenland.png"
+   sodipodi:docname="greenland01.svg"
+   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\Backgrounds\greenlandEmpty.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -119,11 +119,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.041666666"
-     inkscape:cx="-903.9216"
-     inkscape:cy="-1038.5517"
+     inkscape:zoom="0.23570226"
+     inkscape:cx="1116.4396"
+     inkscape:cy="3263.4116"
      inkscape:document-units="px"
-     inkscape:current-layer="g24988"
+     inkscape:current-layer="g7053"
      showgrid="false"
      height="1080mm"
      units="px"
@@ -192,7 +192,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
