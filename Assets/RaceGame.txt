@@ -141,14 +141,16 @@
 - facebook Y........................
 - parallax background iba v challenge mode Y.....................
 - optimalizovat na android rozlisenia Y..............
+- reklama menej zobrazeni Y....................
+- twitter Y.....................................
+- stránka informačná Y........................
 
-- reklama menej zobrazeni
-- twitter
+
+- po vybuchu auto ide dalej bug opravit
+
 - instagram
-
 // dalsie rozsirenia v buducnosti
 - zmena progress baru
-- stránka informačná
 - ukazatel priebehu levelu skusit pohladat pozriet
 - ostrov sopecna krajina, padajuci popol iskry  
 - jesen padajuce listy 
