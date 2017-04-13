@@ -114,7 +114,6 @@ public class CarColliderMoveDetectScript : MonoBehaviour {
 			GameObject goal = coll.GetComponent<Collider2D>().gameObject;
 			soundsAndMusic.GetComponent<SoundsAndMusicScript>().WinAudio(transform);
 			goal.GetComponent<GoalScript> ().GoalReact ();
-			//goal.SendMessage ("GoalReact");
 		}
 		
 		if(coll.GetComponent<Collider2D>().CompareTag("DownCollider")) {
