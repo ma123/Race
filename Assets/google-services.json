@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "262224671496",
+    "firebase_url": "https://drawingroad-5315b.firebaseio.com",
+    "project_id": "drawingroad-5315b",
+    "storage_bucket": "drawingroad-5315b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262224671496:android:f0a0017a1978d35e",
+        "android_client_info": {
+          "package_name": "sk.ag.drawingroad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262224671496-o6u8g72qlvofnnlohku9non5seidjruk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd23oNIawZCeUuYJj_6a20AfREzoqtENE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

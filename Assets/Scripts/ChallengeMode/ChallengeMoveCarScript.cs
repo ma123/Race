@@ -77,7 +77,8 @@ public void DestroyCarAndWinnPanel() {
 
 		GameObject vehicle = GameObject.Find ("Player");
 		for(byte i = 0; i < 3; i++) {
-			vehicle.GetComponentsInChildren<Rigidbody2D> ()[i].isKinematic = true;
+				vehicle.GetComponentsInChildren<Rigidbody2D> () [i].bodyType = RigidbodyType2D.Static;
+			//vehicle.GetComponentsInChildren<Rigidbody2D> ()[i].isKinematic = true;
 			vehicle.GetComponentsInChildren<SpriteRenderer>()[i].enabled = false;
 		}
 
