@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="282.97775"
+     inkscape:cx="-15.017249"
      inkscape:cy="100.52376"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g6612"
      showgrid="false"
      units="px"
      inkscape:window-width="1366"
@@ -23684,13 +23684,13 @@
          transform="translate(-3.8158435,-20.203049)"
          id="g13287">
         <path
-           style="fill:#d60000;fill-opacity:1;stroke:#d60000;stroke-width:15.23169994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="fill:#e91222;fill-opacity:1;stroke:#e91222;stroke-width:15.23169994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            d="m 312.96957,648.49874 537.99821,0 c 17.7411,0 19.21418,18.01154 19.21418,42.04257 0,24.03097 -1.47308,44.71189 -19.21418,44.71189 l -537.99821,0 c -6.91577,0 -30.95831,-0.18186 -56.84697,0.0211 0.72285,-71.81713 -1.26338,-15.75116 0,-86.4341 25.85132,-0.0484 49.93678,-0.34147 56.84697,-0.34147 z"
            id="rect6694-2"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="sssssccs" />
         <rect
-           style="fill:#ffb300;fill-opacity:1;stroke:#f22c00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="fill:#f7e041;fill-opacity:1;stroke:#f22c00;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="rect6697-7"
            width="502.67316"
            height="101.99052"
@@ -23699,7 +23699,7 @@
            rx="0"
            ry="0" />
         <path
-           style="opacity:1;fill:#d60000;fill-opacity:1;fill-rule:nonzero;stroke:#d60000;stroke-width:9.43953228;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="opacity:1;fill:#e91222;fill-opacity:1;fill-rule:nonzero;stroke:#e91222;stroke-width:9.43953228;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            inkscape:transform-center-x="14.47693"
            d="m 160.85032,686.88737 89.23341,-34.62235 -5e-5,79.19482 -89.42462,-35.73397 c -2.42869,-6.74502 -3.2559,-2.74324 0.19126,-8.8385 z"
            id="path4204"
@@ -23707,12 +23707,12 @@
            sodipodi:nodetypes="ccccc" />
       </g>
       <flowRoot
-         transform="translate(20.333159,548.92388)"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55px;line-height:125%;font-family:Helsinki;-inkscape-font-specification:Helsinki;letter-spacing:0px;word-spacing:0px;fill:#d60000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         transform="translate(-4.7641467,553.02091)"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;line-height:125%;font-family:Moon;-inkscape-font-specification:'Moon Bold';letter-spacing:0px;word-spacing:0px;fill:#e91222;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
          id="flowRoot13311"
          xml:space="preserve"><flowRegion
            id="flowRegion13313"><rect
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55px;font-family:Helsinki;-inkscape-font-specification:Helsinki;fill:#d60000;fill-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:55px;font-family:Moon;-inkscape-font-specification:'Moon Bold';fill:#e91222;fill-opacity:1;"
              y="87.857765"
              x="317.1879"
              height="72.73098"
