@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="-22.214852"
-     inkscape:cy="83.690092"
+     inkscape:zoom="0.35"
+     inkscape:cx="-203.65557"
+     inkscape:cy="121.97574"
      inkscape:document-units="px"
      inkscape:current-layer="g7038"
      showgrid="false"
@@ -68,7 +68,7 @@
     <g
        id="g7038"
        transform="matrix(0.63393519,0,0,0.63393519,169.92975,-55.791665)"
-       style="stroke:#e91222;stroke-opacity:1;fill:#f7e041;fill-opacity:1">
+       style="fill:#f7e041;fill-opacity:1;stroke:#e91222;stroke-opacity:1">
       <ellipse
          ry="178.31514"
          rx="182.5108"
@@ -86,7 +86,7 @@
       <flowRoot
          xml:space="preserve"
          id="flowRoot3487"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:LCDMono;-inkscape-font-specification:LCDMono;letter-spacing:0px;word-spacing:0px;fill:#e91222;fill-opacity:1;stroke:#e91222;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:LCDMono;-inkscape-font-specification:LCDMono;letter-spacing:0px;word-spacing:0px;fill:#e91222;fill-opacity:1;stroke:#e91222;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          transform="matrix(7.1545703,0,0,6.1686651,-552.43398,895.15314)"><flowRegion
            id="flowRegion3489"><rect
              id="rect3491"
@@ -94,7 +94,7 @@
              height="183.84776"
              x="58.588848"
              y="80.131935"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LCDMono;-inkscape-font-specification:LCDMono;fill:#e91222;fill-opacity:1;stroke:#e91222;stroke-opacity:1;" /></flowRegion><flowPara
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:LCDMono;-inkscape-font-specification:LCDMono;fill:#e91222;fill-opacity:1;stroke:#e91222;stroke-opacity:1" /></flowRegion><flowPara
            id="flowPara3493">M</flowPara></flowRoot>    </g>
   </g>
 </svg>
