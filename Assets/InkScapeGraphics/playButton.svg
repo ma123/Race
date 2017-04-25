@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="-808.97798"
-     inkscape:cy="549.67617"
+     inkscape:zoom="0.69999999"
+     inkscape:cx="549.22439"
+     inkscape:cy="380.15336"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -70,24 +70,23 @@
            style="fill:#f7e041;fill-opacity:1;stroke:#e91222;stroke-width:37.29980087;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            r="183.8501" />
       </g>
-      <path
-         transform="matrix(0.32463651,0,0,0.33025517,608.41127,854.01488)"
-         inkscape:transform-center-y="-0.9907632"
-         inkscape:transform-center-x="-13.278259"
-         d="M -984.00002,12.000021 -1222.5,149.69805 l 0,-275.39605 z"
-         inkscape:randomized="0"
-         inkscape:rounded="0"
-         inkscape:flatsided="true"
-         sodipodi:arg2="1.0471976"
-         sodipodi:arg1="-1.1367197e-009"
-         sodipodi:r2="87.051704"
-         sodipodi:r1="158.99998"
-         sodipodi:cy="12.000021"
-         sodipodi:cx="-1143"
-         sodipodi:sides="3"
-         id="path6692"
-         style="fill:#e91222;fill-opacity:1;stroke:#e91222;stroke-width:70.74157715;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         sodipodi:type="star" />
     </g>
+    <path
+       inkscape:transform-center-y="-4.734871e-005"
+       inkscape:transform-center-x="-38.418547"
+       d="m 264.74542,835.44779 -1e-5,-266.17133 230.51114,133.08566 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="3.1415927"
+       sodipodi:arg1="2.0943951"
+       sodipodi:r2="76.837044"
+       sodipodi:r1="153.67409"
+       sodipodi:cy="702.36212"
+       sodipodi:cx="341.58246"
+       sodipodi:sides="3"
+       id="path3338"
+       style="display:inline;opacity:1;fill:#e91222;fill-opacity:1;fill-rule:nonzero;stroke:#e91222;stroke-width:39.07852173;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       sodipodi:type="star" />
   </g>
 </svg>
