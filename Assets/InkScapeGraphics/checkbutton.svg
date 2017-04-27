@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="600"
+   width="300"
    height="300"
-   viewBox="0 0 600.00001 300.00001"
+   viewBox="0 0 300 300.00001"
    id="svg3340"
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="checkbutton.svg"
-   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\checkbutton.png"
-   inkscape:export-xdpi="93.709999"
-   inkscape:export-ydpi="93.709999">
+   inkscape:export-filename="C:\Users\Q7W5\Programovanie\Git\Race\Assets\Graphics\checkbuttonTrue.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3342" />
   <sodipodi:namedview
@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="312.01981"
+     inkscape:cx="9.9842011"
      inkscape:cy="129.53177"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      units="px"
      inkscape:window-width="1366"
@@ -64,11 +64,17 @@
        height="280.5979"
        x="9.7010536"
        y="762.06317"
-       ry="77.157013"
-       rx="69.388878" />
+       ry="140.29895"
+       rx="140.29895" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Vrstva 2"
+     style="display:inline">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#e91222;stroke-width:32.08819199;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 355.09493,904.74755 68.76041,60.67094 136.17259,-119.99361"
+       style="fill:none;fill-rule:evenodd;stroke:#e91222;stroke-width:24.84879112;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 70.650879,149.5369 53.247411,46.983 105.45076,-92.92191"
        id="path4277"
        inkscape:connector-curvature="0" />
   </g>
